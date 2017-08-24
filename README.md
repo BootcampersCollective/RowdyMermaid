@@ -1,4 +1,4 @@
-[![Stories in Ready](https://badge.waffle.io/BootcampersCollective/5340CoffeeShop.png?label=ready&title=Ready)](https://waffle.io/BootcampersCollective/5340CoffeeShop)
+[![Stories in Ready](https://badge.waffle.io/BootcampersCollective/RowdyMermaid.svg?label=ready&title=Ready)](http://waffle.io/BootcampersCollective/RowdyMermaid)
 
 # Rowdy Mermaid
 Repository for the Rowdy Mermaid Kombucha website.
