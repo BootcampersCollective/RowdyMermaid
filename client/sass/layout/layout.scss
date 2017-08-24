@@ -1,0 +1,46 @@
+.container-main {
+
+  .container-top {
+    display: flex;
+    flex-direction: column;
+    height: 92.9vh;
+    .container-left {
+      flex: 0 0 auto;
+      flex-direction: column;
+      // align-items: center;
+      display: flex;
+
+      @include breakpoint($bp-768) {
+        flex: 0 0 200px;
+        height: 50vh;
+        justify-content: stretch;
+      }
+
+      .container-menu {
+        height: 150px;
+        width: 100%;
+        background-color: #31b0d5;
+
+        @include breakpoint($bp-768) {
+          width: 100vw;
+          height: auto;
+        }
+      }
+    }
+
+    .container-right {
+      flex: 0 0 auto;
+
+      @include breakpoint($bp-768) {
+        flex: 1 0 auto;
+        height: 93vh;
+        overflow-y: scroll;
+      }
+    }
+  }
+
+  .container-footer {
+    flex: 0 0 5vh;
+    background-color: #B99967;
+  }
+}

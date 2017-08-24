@@ -1,0 +1,10 @@
+@mixin breakpoint($bp, $direction: min) {
+  @media screen and (#{$direction}-width: $bp)  {
+    @content;
+  }
+}
+
+@mixin font-size($pxSize) {
+  font-size: $pxSize; // fallback in px (also good for sanity-checking)
+  font-size: px-to-rem($pxSize);
+}

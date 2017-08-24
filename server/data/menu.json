@@ -1,0 +1,1094 @@
+[
+  {
+    "Category": "Brewed Coffee",
+    "Item": "Brewed Coffee",
+    "Description": "Choose our house blend, Midnight Sun, the current staff pick, or decaf.",
+    "Size": "Bottomless",
+    "Price": 4.49
+  },
+  {
+    "Category": "Brewed Coffee",
+    "Item": "Cold Brewed Iced Coffee",
+    "Description": "We use a cold-brew process for the best tasting iced coffee around. Smooth and delicious!",
+    "Size": "Bottomless",
+    "Price": 8.49
+  },
+  {
+    "Category": "Teas",
+    "Item": "Lavender Milk Tea",
+    "Description": "Black tea, sweetened and blended with lavender and whole milk. Calming and relaxing, either iced or hot.",
+    "Size": "Bottomless",
+    "Price": 8.99
+  },
+  {
+    "Category": "Teas",
+    "Item": "Milk Tea",
+    "Description": "A customer favorite, whether iced or hot. Sweetened black tea blended with whole milk.",
+    "Size": "Bottomless",
+    "Price": 8.79
+  },
+  {
+    "Category": "Teas",
+    "Item": "Tea",
+    "Description": "Your choice of tea, iced or hot. Choose from black, green, Earl Grey,  cinnamon orange, rooibos, Village Mist herbal or market chai. All you care to drink during the same visit, and feel free to switch flavors.",
+    "Size": "Bottomless",
+    "Price": 4.39
+  },
+  {
+    "Category": "Teas",
+    "Item": "Thai Tea",
+    "Description": "Exotic black tea, sweetened and served over ice, topped with whole milk.",
+    "Size": "Bottomless",
+    "Price": 8.79
+  },
+  {
+    "Category": "Brewed Coffee",
+    "Item": "Brewed Coffee",
+    "Description": "Choose our house blend, Midnight Sun, the current staff pick, or decaf.",
+    "Size": "Large",
+    "Price": 2.49
+  },
+  {
+    "Category": "Brewed Coffee",
+    "Item": "Cafe au Lait",
+    "Description": "Half brewed coffee of your choice, and half steamed milk.",
+    "Size": "Large",
+    "Price": 4.19
+  },
+  {
+    "Category": "Brewed Coffee",
+    "Item": "Cold Brewed Iced Coffee",
+    "Description": "We use a cold-brew process for the best tasting iced coffee around. Smooth and delicious!",
+    "Size": "Large",
+    "Price": 3.99
+  },
+  {
+    "Category": "Creme Slushes, Specialty",
+    "Item": "Banana Pie Creme Slush",
+    "Description": "Banana and vanilla blended with milk and ice and topped with whipped to make a creamy, smooth frozen version of a the well-loved pie.",
+    "Size": "Large",
+    "Price": 6.69
+  },
+  {
+    "Category": "Creme Slushes, Specialty",
+    "Item": "Coconut Creme Slush",
+    "Description": "Milk and coconut blended with ice for a creamy, exotic beverage.",
+    "Size": "Large",
+    "Price": 5.99
+  },
+  {
+    "Category": "Creme Slushes, Specialty",
+    "Item": "Coconut Pie Creme Slush",
+    "Description": "Like your grandma's coconut cream pie in a glass--frozen, creamy and delicious!",
+    "Size": "Large",
+    "Price": 6.99
+  },
+  {
+    "Category": "Creme Slushes, Specialty",
+    "Item": "German Chocolate Creme Slush",
+    "Description": "Our version of a chocolate, coconut, and almond milk shake.",
+    "Size": "Large",
+    "Price": 5.99
+  },
+  {
+    "Category": "Creme Slushes, Specialty",
+    "Item": "Matcha Creme Slush",
+    "Description": "Matcha, a finely ground green tea powder, blended with milk and ice and lightly sweetened. Lots of health benefits!",
+    "Size": "Large",
+    "Price": 5.99
+  },
+  {
+    "Category": "Creme Slushes, Specialty",
+    "Item": "Orange Dream Creme Slush",
+    "Description": "Tastes just like your favorite orange & vanilla frozen treat! Topped with our homemade whipped cream.",
+    "Size": "Large",
+    "Price": 6.69
+  },
+  {
+    "Category": "Creme Slushes, Specialty",
+    "Item": "Oreo Creme Slush",
+    "Description": "Our vanilla cr�me slush with added oreos.",
+    "Size": "Large",
+    "Price": 6.19
+  },
+  {
+    "Category": "Creme Slushes, Specialty",
+    "Item": "Pina Colada Creme Slush",
+    "Description": "A tropical delight! Coconut & pineapple, blended with milk & ice.",
+    "Size": "Large",
+    "Price": 6.69
+  },
+  {
+    "Category": "Creme Slushes, Specialty",
+    "Item": "Pumpkin Pie Creme Slush",
+    "Description": "Just what it sounds like--pumpkiny, spicy, creamy and icy!",
+    "Size": "Large",
+    "Price": 7.39
+  },
+  {
+    "Category": "Espresso Drinks",
+    "Item": "Americano",
+    "Description": "Espresso shots (4) diluted with water to make this beverage created during World War II.",
+    "Size": "Large",
+    "Price": 3.39
+  },
+  {
+    "Category": "Espresso Drinks",
+    "Item": "Espresso",
+    "Description": "A small serving of strong, rich coffee, brewed quickly under pressure.",
+    "Size": "Large",
+    "Price": 2.99
+  },
+  {
+    "Category": "Espresso Drinks",
+    "Item": "Flavored Latte",
+    "Description": "Our delicious latte (3 shots of espresso and steamed milk) with your choice of flavor: almond, caramel, chocolate (mocha),  cinnamon, coconut, hazelnut, Irish cream, peppermint, pumpkin spice, raspberry, sugar-free almond, sugar-free caramel, sugar-free ha",
+    "Size": "Large",
+    "Price": 5.19
+  },
+  {
+    "Category": "Espresso Drinks",
+    "Item": "Plain Latte",
+    "Description": "Three shots of espresso and steamed milk, topped with creamy milk foam. Choose a cappuccino for more foam. (Latte can also be served iced--1 espresso shot with cold milk.)",
+    "Size": "Large",
+    "Price": 4.69
+  },
+  {
+    "Category": "Extras",
+    "Item": "Added Flavor",
+    "Description": "Add a flavor (or two) to any large drink.",
+    "Size": "Large",
+    "Price": 0.89
+  },
+  {
+    "Category": "Extras",
+    "Item": "Almond or Soy Milk in drink",
+    "Description": "Replace the milk in your large drink with almond milk or soy milk.",
+    "Size": "Large",
+    "Price": 0.99
+  },
+  {
+    "Category": "Extras",
+    "Item": "Boba",
+    "Description": "Try this unique added texture in your favorite iced or blended drink. Kind of like a gummy bear that takes on the flavor of your beverage.",
+    "Size": "Large",
+    "Price": 0.99
+  },
+  {
+    "Category": "Extras",
+    "Item": "Breve (Half and Half in Drink)",
+    "Description": "Replace the milk in your large drink with half and half.",
+    "Size": "Large",
+    "Price": 1.99
+  },
+  {
+    "Category": "Extras",
+    "Item": "Coconut Milk",
+    "Description": "Replace the milk in your large drink with creamy coconut milk.",
+    "Size": "Large",
+    "Price": 1.49
+  },
+  {
+    "Category": "Extras",
+    "Item": "Steamed Milk",
+    "Description": "Add steamed milk to your large drink.",
+    "Size": "Large",
+    "Price": 0.99
+  },
+  {
+    "Category": "Icy Drinks, Regular",
+    "Item": "Creme Slush",
+    "Description": "We blend milk, ice, and your choice of flavor for a yummy treat. Flavors include: almond, blueberry, cherry, chocolate, lemon, mango, orange, papaya, passion fruit, peach, pineapple, raspberry, strawberry, triple berry, or vanilla. Or combine flavors for",
+    "Size": "Large",
+    "Price": 4.79
+  },
+  {
+    "Category": "Icy Drinks, Regular",
+    "Item": "Frozen Latte",
+    "Description": "Our original recipe--we blend cold-brewed coffee, half and half, a little sweetness, and ice for a summertime (or anytime) treat that really hits the spot. Make yours even more special with caramel, chocolate, toffee, or vanilla.",
+    "Size": "Large",
+    "Price": 4.69
+  },
+  {
+    "Category": "Icy Drinks, Regular",
+    "Item": "Slush",
+    "Description": "We blend water, ice, and your choice of flavor for a yummy treat. Flavors include: almond, blueberry, cherry, chocolate, lemon, mango, orange, papaya, passion fruit, peach, pineapple, raspberry, strawberry, triple berry, or vanilla. Or combine flavors for",
+    "Size": "Large",
+    "Price": 4.29
+  },
+  {
+    "Category": "Other Drinks",
+    "Item": "Hot Chocolate or Steamer",
+    "Description": "Creamy, sweet, and topped with our homemade whipped cream! Choose chocolate, or use your imagination.",
+    "Size": "Large",
+    "Price": 5.79
+  },
+  {
+    "Category": "Other Drinks",
+    "Item": "Milk",
+    "Description": "Skim, 2%, or whole.",
+    "Size": "Large",
+    "Price": 3.19
+  },
+  {
+    "Category": "Pastries",
+    "Item": "Bread, Full Loaf",
+    "Description": "Delicious bread, fresh-baked by La Patisserie Francaise. Choose banana or pumpkin chocolate. 24-hour pre-order required.",
+    "Size": "Large",
+    "Price": 16.99
+  },
+  {
+    "Category": "Slushes, Specialty",
+    "Item": "Hawaiian Sunset Slush",
+    "Description": "Icy, slushy, with pineapple, passion fruit, coconut, and banana. Aloha!",
+    "Size": "Large",
+    "Price": 6.39
+  },
+  {
+    "Category": "Slushes, Specialty",
+    "Item": "Tropical Fruit Slush",
+    "Description": "Orange, pineapple, strawberry, and banana, blended into icy deliciousness.",
+    "Size": "Large",
+    "Price": 6.39
+  },
+  {
+    "Category": "Teas",
+    "Item": "Cambric",
+    "Description": "Steamed milk and your choice of tea (black, green, Earl Grey,  cinnamon orange, rooibos, market chai, or Village Mist herbal).",
+    "Size": "Large",
+    "Price": 4.69
+  },
+  {
+    "Category": "Teas",
+    "Item": "Chai (Blended, Hot, or Iced)",
+    "Description": "A customer favorite--black tea skillfully combined with delicious spices and milk for a creamy treat. Choose spiced or vanilla, served blended, iced, or hot.",
+    "Size": "Large",
+    "Price": 5.39
+  },
+  {
+    "Category": "Teas",
+    "Item": "Cinnamon Milk Tea",
+    "Description": "It tastes like cinnamon gummy bears--yum!",
+    "Size": "Large",
+    "Price": 5.39
+  },
+  {
+    "Category": "Teas",
+    "Item": "Lavender Milk Tea",
+    "Description": "Black tea, sweetened and blended with lavender and whole milk. Calming and relaxing, either iced or hot.",
+    "Size": "Large",
+    "Price": 4.99
+  },
+  {
+    "Category": "Teas",
+    "Item": "Milk Tea",
+    "Description": "A customer favorite, whether iced or hot. Sweetened black tea blended with whole milk.",
+    "Size": "Large",
+    "Price": 4.99
+  },
+  {
+    "Category": "Teas",
+    "Item": "Tea",
+    "Description": "Your choice of tea, iced or hot. Choose from black, green, Earl Grey,  cinnamon orange, rooibos, Village Mist herbal or market chai.",
+    "Size": "Large",
+    "Price": 2.49
+  },
+  {
+    "Category": "Teas",
+    "Item": "Thai Tea",
+    "Description": "Exotic black tea, sweetened and served over ice, topped with whole milk.",
+    "Size": "Large",
+    "Price": 4.89
+  },
+  {
+    "Category": "Brewed Coffee",
+    "Item": "Brewed Coffee",
+    "Description": "Choose our house blend, Midnight Sun, the current staff pick , or decaf.",
+    "Size": "Medium",
+    "Price": 1.89
+  },
+  {
+    "Category": "Brewed Coffee",
+    "Item": "Cafe au Lait",
+    "Description": "Half brewed coffee of your choice, and half steamed milk.",
+    "Size": "Medium",
+    "Price": 3.49
+  },
+  {
+    "Category": "Brewed Coffee",
+    "Item": "Cold Brewed Iced Coffee",
+    "Description": "We use a cold-brew process for the best tasting iced coffee around. Smooth and delicious!",
+    "Size": "Medium",
+    "Price": 3.49
+  },
+  {
+    "Category": "Creme Slushes, Specialty",
+    "Item": "Banana Pie Creme Slush",
+    "Description": "Banana and vanilla blended with milk and ice and topped with whipped to make a creamy, smooth frozen version of a the well-loved pie.",
+    "Size": "Medium",
+    "Price": 5.39
+  },
+  {
+    "Category": "Creme Slushes, Specialty",
+    "Item": "Coconut Creme Slush",
+    "Description": "Milk and coconut blended with ice for a creamy, exotic beverage.",
+    "Size": "Medium",
+    "Price": 4.99
+  },
+  {
+    "Category": "Creme Slushes, Specialty",
+    "Item": "Coconut Pie Creme Slush",
+    "Description": "Like your grandma's coconut cream pie in a glass--frozen, creamy and delicious!",
+    "Size": "Medium",
+    "Price": 5.89
+  },
+  {
+    "Category": "Creme Slushes, Specialty",
+    "Item": "German Chocolate Creme Slush",
+    "Description": "Our version of a chocolate, coconut, and almond milk shake.",
+    "Size": "Medium",
+    "Price": 5.19
+  },
+  {
+    "Category": "Creme Slushes, Specialty",
+    "Item": "Matcha Creme Slush",
+    "Description": "Matcha, a finely ground green tea powder, blended with milk and ice and lightly sweetened. Lots of health benefits!",
+    "Size": "Medium",
+    "Price": 4.99
+  },
+  {
+    "Category": "Creme Slushes, Specialty",
+    "Item": "Orange Dream Creme Slush",
+    "Description": "Tastes just like your favorite orange & vanilla frozen treat! Topped with our homemade whipped cream.",
+    "Size": "Medium",
+    "Price": 5.39
+  },
+  {
+    "Category": "Creme Slushes, Specialty",
+    "Item": "Oreo Creme Slush",
+    "Description": "Our vanilla cr�me slush with added oreos.",
+    "Size": "Medium",
+    "Price": 4.89
+  },
+  {
+    "Category": "Creme Slushes, Specialty",
+    "Item": "Pina Colada Creme Slush",
+    "Description": "A tropical delight! Coconut & pineapple, blended with milk & ice.",
+    "Size": "Medium",
+    "Price": 5.39
+  },
+  {
+    "Category": "Creme Slushes, Specialty",
+    "Item": "Pumpkin Pie Creme Slush",
+    "Description": "Just what it sounds like--pumpkiny, spicy, creamy and icy!",
+    "Size": "Medium",
+    "Price": 6.49
+  },
+  {
+    "Category": "Espresso Drinks",
+    "Item": "Americano",
+    "Description": "Espresso shots (3) diluted with water to make this beverage created during World War II.",
+    "Size": "Medium",
+    "Price": 2.49
+  },
+  {
+    "Category": "Espresso Drinks",
+    "Item": "Cappuccino",
+    "Description": "3 shots of espresso topped with creamy steamed milk and a generous helping of milk foam.",
+    "Size": "Medium",
+    "Price": 4.69
+  },
+  {
+    "Category": "Espresso Drinks",
+    "Item": "Espresso",
+    "Description": "A small serving of strong, rich coffee, brewed quickly under pressure.",
+    "Size": "Medium",
+    "Price": 2.49
+  },
+  {
+    "Category": "Espresso Drinks",
+    "Item": "Flavored Latte",
+    "Description": "Our delicious latte (2 shots of espresso and steamed milk) with your choice of flavor: almond, caramel, chocolate (mocha),  cinnamon, coconut, hazelnut, Irish cream, peppermint, pumpkin spice, raspberry, sugar-free almond, sugar-free caramel, sugar-free ha",
+    "Size": "Medium",
+    "Price": 4.69
+  },
+  {
+    "Category": "Espresso Drinks",
+    "Item": "Plain Latte",
+    "Description": "Two shots of espresso and steamed milk, topped with creamy milk foam. Choose a cappuccino for more foam. (Latte can also be served iced--1 espresso shot with cold milk.)",
+    "Size": "Medium",
+    "Price": 3.89
+  },
+  {
+    "Category": "Extras",
+    "Item": "Added Flavor",
+    "Description": "Add a flavor (or two) to any medium drink.",
+    "Size": "Medium",
+    "Price": 0.79
+  },
+  {
+    "Category": "Extras",
+    "Item": "Almond or Soy Milk in drink",
+    "Description": "Replace the milk in your medium drink with almond milk or soy milk.",
+    "Size": "Medium",
+    "Price": 0.89
+  },
+  {
+    "Category": "Extras",
+    "Item": "Boba",
+    "Description": "Try this unique added texture in your favorite iced or blended drink. Kind of like a gummy bear that takes on the flavor of your beverage.",
+    "Size": "Medium",
+    "Price": 0.89
+  },
+  {
+    "Category": "Extras",
+    "Item": "Breve (Half and Half in Drink)",
+    "Description": "Replace the milk in your medium drink with half and half.",
+    "Size": "Medium",
+    "Price": 1.59
+  },
+  {
+    "Category": "Extras",
+    "Item": "Coconut Milk",
+    "Description": "Replace the milk in your medium drink with creamy coconut milk.",
+    "Size": "Medium",
+    "Price": 1.29
+  },
+  {
+    "Category": "Extras",
+    "Item": "Steamed Milk",
+    "Description": "Add steamed milk to your medium drink.",
+    "Size": "Medium",
+    "Price": 0.89
+  },
+  {
+    "Category": "Icy Drinks, Regular",
+    "Item": "Creme Slush",
+    "Description": "We blend milk, ice, and your choice of flavor for a yummy treat. Flavors include: almond, blueberry, cherry, chocolate, lemon, mango, orange, papaya, passion fruit, peach, pineapple, raspberry, strawberry, triple berry, or vanilla. Or combine flavors for",
+    "Size": "Medium",
+    "Price": 3.89
+  },
+  {
+    "Category": "Icy Drinks, Regular",
+    "Item": "Frozen Latte",
+    "Description": "Our original recipe--we blend cold-brewed coffee, half and half, a little sweetness, and ice for a summertime (or anytime) treat that really hits the spot. Make yours even more special with caramel, chocolate, toffee, or vanilla.",
+    "Size": "Medium",
+    "Price": 3.99
+  },
+  {
+    "Category": "Icy Drinks, Regular",
+    "Item": "Slush",
+    "Description": "We blend water, ice, and your choice of flavor for a yummy treat. Flavors include: almond, blueberry, cherry, chocolate, lemon, mango, orange, papaya, passion fruit, peach, pineapple, raspberry, strawberry, triple berry, or vanilla. Or combine flavors for",
+    "Size": "Medium",
+    "Price": 3.39
+  },
+  {
+    "Category": "Other Drinks",
+    "Item": "Hot Chocolate or Steamer",
+    "Description": "Creamy, sweet, and topped with our homemade whipped cream! Choose chocolate, or use your imagination.",
+    "Size": "Medium",
+    "Price": 4.99
+  },
+  {
+    "Category": "Other Drinks",
+    "Item": "Milk",
+    "Description": "Skim, 2%, or whole.",
+    "Size": "Medium",
+    "Price": 2.69
+  },
+  {
+    "Category": "Slushes, Specialty",
+    "Item": "Hawaiian Sunset Slush",
+    "Description": "Icy, slushy, with pineapple, passion fruit, coconut, and banana. Aloha!",
+    "Size": "Medium",
+    "Price": 5.29
+  },
+  {
+    "Category": "Slushes, Specialty",
+    "Item": "Tropical Fruit Slush",
+    "Description": "Orange, pineapple, strawberry, and banana, blended into icy deliciousness.",
+    "Size": "Medium",
+    "Price": 5.29
+  },
+  {
+    "Category": "Teas",
+    "Item": "Cambric",
+    "Description": "Steamed milk and your choice of tea (black, green, Earl Grey,  cinnamon orange, rooibos, market chai, or Village Mist herbal).",
+    "Size": "Medium",
+    "Price": 3.79
+  },
+  {
+    "Category": "Teas",
+    "Item": "Chai (Blended, Hot, or Iced)",
+    "Description": "A customer favorite--black tea skillfully combined with delicious spices and milk for a creamy treat. Choose spiced or vanilla, served blended, iced, or hot.",
+    "Size": "Medium",
+    "Price": 4.49
+  },
+  {
+    "Category": "Teas",
+    "Item": "Cinnamon Milk Tea",
+    "Description": "It tastes like cinnamon gummy bears--yum!",
+    "Size": "Medium",
+    "Price": 4.49
+  },
+  {
+    "Category": "Teas",
+    "Item": "Lavender Milk Tea",
+    "Description": "Black tea, sweetened and blended with lavender and whole milk. Calming and relaxing, either iced or hot.",
+    "Size": "Medium",
+    "Price": 4.19
+  },
+  {
+    "Category": "Teas",
+    "Item": "Milk Tea",
+    "Description": "A customer favorite, whether iced or hot. Sweetened black tea blended with whole milk.",
+    "Size": "Medium",
+    "Price": 3.99
+  },
+  {
+    "Category": "Teas",
+    "Item": "Tea",
+    "Description": "Your choice of tea, iced or hot. Choose from black, green, Earl Grey,  cinnamon orange, rooibos, Village Mist herbal or market chai.",
+    "Size": "Medium",
+    "Price": 2.19
+  },
+  {
+    "Category": "Teas",
+    "Item": "Thai Tea",
+    "Description": "Exotic black tea, sweetened and served over ice, topped with whole milk.",
+    "Size": "Medium",
+    "Price": 3.99
+  },
+  {
+    "Category": "Catering",
+    "Item": "Airpot Deposit",
+    "Description": "Deposit returned when airpot is returned, in good shape, to 5340 Coffee.",
+    "Size": "",
+    "Price": 20
+  },
+  {
+    "Category": "Catering",
+    "Item": "Airpot of Brewed Coffee",
+    "Description": "Serve our delicious  coffee at your gathering. Choose Midnight Sun, decaf or seasonal staff pick.",
+    "Size": "",
+    "Price": 7.59
+  },
+  {
+    "Category": "Catering",
+    "Item": "Airpot of Chai",
+    "Description": "Delicious, warm chai, ready to serve your guests from our insulated pot (2.2 liters).",
+    "Size": "",
+    "Price": 21.99
+  },
+  {
+    "Category": "Catering",
+    "Item": "Airpot of Lavender Milk Tea",
+    "Description": "Smooth, sweet and calming lavender milk tea, served from our convenient insulated pot (2.2 liters).",
+    "Size": "",
+    "Price": 9.99
+  },
+  {
+    "Category": "Catering",
+    "Item": "Airpot of Milk Tea",
+    "Description": "Creamy, sweet, black tea, served in a convenient insulated pot (2.2 liters).",
+    "Size": "",
+    "Price": 8.99
+  },
+  {
+    "Category": "Catering",
+    "Item": "Airpot of Tea",
+    "Description": "Your choice of tea (black, green, cinnamon orange, Village Mist herbal, market chai, Earl Grey or rooibos) served in our convenient insulated pot (2.2 liters).",
+    "Size": "",
+    "Price": 7.59
+  },
+  {
+    "Category": "Catering",
+    "Item": "Cups/Sleeves/Lids/Condiments",
+    "Description": "Everything you need to go with your coffee--cups, lids, sleeves, sugar, Splenda, cream, and stir sticks.",
+    "Size": "",
+    "Price": 6.7
+  },
+  {
+    "Category": "Catering",
+    "Item": "Delivery Fee",
+    "Description": "We know you're busy; we'll bring your catering order to you.",
+    "Size": "",
+    "Price": 10
+  },
+  {
+    "Category": "Catering",
+    "Item": "Gallon of Chai",
+    "Description": "Take our delicious chai to your next event. Choose spiced or vanilla. One gallon (128 ounces).",
+    "Size": "",
+    "Price": 34.99
+  },
+  {
+    "Category": "Catering",
+    "Item": "Gallon of Lavender Milk Tea",
+    "Description": "Our unique lavender milk tea is perfect for your parter or shower. One gallon (128 ounces).",
+    "Size": "",
+    "Price": 15.99
+  },
+  {
+    "Category": "Catering",
+    "Item": "Gallon of Milk Tea",
+    "Description": "Our sweet, Creme addition to any event! One gallon (128 ounces).",
+    "Size": "",
+    "Price": 13.99
+  },
+  {
+    "Category": "Catering",
+    "Item": "Gallon of Tea",
+    "Description": "Your choice of tea--black, green, Earl Grey, market chai, rooibos,  cinnamon orange, or Village Mist herbal. One gallon (128 ounces).",
+    "Size": "",
+    "Price": 8.99
+  },
+  {
+    "Category": "Catering",
+    "Item": "Room Rental Per Hour",
+    "Description": "Use 5340 Coffee after hours or on Sunday. Two-hour minimum, $70 per hour.",
+    "Size": "",
+    "Price": 70
+  },
+  {
+    "Category": "Extras",
+    "Item": "1/2 Banana",
+    "Description": "Add to your favorite drink for a little boost!",
+    "Size": "",
+    "Price": 0.59
+  },
+  {
+    "Category": "Extras",
+    "Item": "Added Espresso Shot",
+    "Description": "Add a shot (1 1/2 ounces) of espresso to any drink.",
+    "Size": "",
+    "Price": 0.69
+  },
+  {
+    "Category": "Extras",
+    "Item": "Oreo",
+    "Description": "Add Oreos to your drink",
+    "Size": "",
+    "Price": 0.59
+  },
+  {
+    "Category": "Extras",
+    "Item": "Whipped Cream",
+    "Description": "Top your favorite drink with our homemade whipped cream for an extra-special treat.",
+    "Size": "",
+    "Price": 0.79
+  },
+  {
+    "Category": "Misc Items",
+    "Item": "Boba, Bag",
+    "Description": "Can't get enough boba? Take a bag home to make it whenever you have a craving!",
+    "Size": "",
+    "Price": 15.99
+  },
+  {
+    "Category": "Misc Items",
+    "Item": "Chai Powder, Full Bag",
+    "Description": "A customer favorite, Big Train Chai powder for your use at home.",
+    "Size": "",
+    "Price": 41
+  },
+  {
+    "Category": "Misc Items",
+    "Item": "Coffee Beans",
+    "Description": "Our coffee beans are carefully roasted for maximum flavor and smoothness. Take them along for that special 5340 Coffee taste at home!",
+    "Size": "",
+    "Price": 14.99
+  },
+  {
+    "Category": "Misc Items",
+    "Item": "Coffee Beans",
+    "Description": "Our coffee beans are carefully roasted for maximum flavor and smoothness. Take them along for that special 5340 Coffee taste at home!",
+    "Size": "",
+    "Price": 12.79
+  },
+  {
+    "Category": "Misc Items",
+    "Item": "Coffee Beans",
+    "Description": "Our coffee beans are carefully roasted for maximum flavor and smoothness. Take them along for that special 5340 Coffee taste at home!",
+    "Size": "",
+    "Price": 4.29
+  },
+  {
+    "Category": "Misc Items",
+    "Item": "Coffee Beans",
+    "Description": "Our coffee beans are carefully roasted for maximum flavor and smoothness. Take them along for that special 5340 Coffee taste at home!",
+    "Size": "",
+    "Price": 8.49
+  },
+  {
+    "Category": "Misc Items",
+    "Item": "Golden Milk Tea Leaves, Full Bag",
+    "Description": "Our Golden Milk Tea has a taste unlike any other. Make it at YOUR home!",
+    "Size": "",
+    "Price": 10
+  },
+  {
+    "Category": "Misc Items",
+    "Item": "Organic Coffee Beans",
+    "Description": "Our coffee beans are carefully roasted for maximum flavor and smoothness. Take them along for that special 5340 Coffee taste at home!",
+    "Size": "",
+    "Price": 13.49
+  },
+  {
+    "Category": "Misc Items",
+    "Item": "Tea Leaves by the Ounce",
+    "Description": "Take some of our loose-leaf tea with you & enjoy that 5340 Coffee taste in your own home. Choose from black, green, Earl Grey,  cinnamon orange, rooibos, Village Mist herbal or market chai. 1 ounce by weight.",
+    "Size": "",
+    "Price": 2
+  },
+  {
+    "Category": "Other Drinks",
+    "Item": "Bottled Water",
+    "Description": "16.9 ounce bottle",
+    "Size": "",
+    "Price": 1.29
+  },
+  {
+    "Category": "Other Food",
+    "Item": "Burrito",
+    "Description": "Freshly-made, hot burritos from Arvada's own Burrito Shack. Your choice of bean and cheese or breakfast (eggs, potatoes, cheese, and green chile, in mild, medium or hot).",
+    "Size": "",
+    "Price": 3.39
+  },
+  {
+    "Category": "Other Food",
+    "Item": "Chocolate Espresso Beans",
+    "Description": "For an added boost or just a special treat, nothing beats our espresso beans dipped in dark and white chocolate.",
+    "Size": "",
+    "Price": 1.69
+  },
+  {
+    "Category": "Other Food",
+    "Item": "Oatmeal",
+    "Description": "Your choice of toasted almond brown sugar, toasted pecan cranberry orange, ginger, or chia cherry berry. Handcrafted locally by Enjoy Biscotti.",
+    "Size": "",
+    "Price": 3.79
+  },
+  {
+    "Category": "Pastries",
+    "Item": "Biscotti",
+    "Description": "Delicious cookies, made locally. Each variety features a hint of liquer. Flavors include Frangelico Chocolate Toffe Chunk, Dark Chocolate Almond Anise, Amaretto Double Chunk, Orange Cranberry Toasted Pecan, Limoncello Cherry, Raspy Blues, and It's All Cho",
+    "Size": "",
+    "Price": 2.19
+  },
+  {
+    "Category": "Pastries",
+    "Item": "Bread, Slice",
+    "Description": "Delicious bread, fresh-baked by La Patisserie Francaise. Choose banana or pumpkin chocolate. Make sure to ask for it warm!",
+    "Size": "",
+    "Price": 2.39
+  },
+  {
+    "Category": "Pastries",
+    "Item": "Chocolate Chip Cookie",
+    "Description": "These chewy, yummy cookies are fresh-baked by La Patisserie Francaise. They're as big as your face!",
+    "Size": "",
+    "Price": 1.75
+  },
+  {
+    "Category": "Pastries",
+    "Item": "Cinnamon Roll",
+    "Description": "Cinnamon-y goodness from La Patisserie Francaise.",
+    "Size": "",
+    "Price": 2.99
+  },
+  {
+    "Category": "Pastries",
+    "Item": "Croissant",
+    "Description": "Flaky and light, freshly baked by the masters at La Patisserie Francaise.",
+    "Size": "",
+    "Price": 2.99
+  },
+  {
+    "Category": "Pastries",
+    "Item": "Danish",
+    "Description": "Which is your favorite? Apple, blueberry, cherry, cream cheese, or�? Fresh from La Patisserie Francaise.",
+    "Size": "",
+    "Price": 2.99
+  },
+  {
+    "Category": "Pastries",
+    "Item": "Dippers",
+    "Description": "Chewy oatmeal cookies, two in a package, perfect for dipping in your coffee. Try chocolate chip or pecan.",
+    "Size": "",
+    "Price": 2.79
+  },
+  {
+    "Category": "Pastries",
+    "Item": "Iced Cookie",
+    "Description": "Black and white (half moon) or whimsical characters, fresh-baked by La Patisserie Francaise.",
+    "Size": "",
+    "Price": 1.25
+  },
+  {
+    "Category": "Brewed Coffee",
+    "Item": "Brewed Coffee",
+    "Description": "Choose our house blend, Midnight Sun, the current staff pick, or decaf.",
+    "Size": "Small",
+    "Price": 1.79
+  },
+  {
+    "Category": "Brewed Coffee",
+    "Item": "Cafe au Lait",
+    "Description": "Half brewed coffee of your choice, and half steamed milk.",
+    "Size": "Small",
+    "Price": 2.79
+  },
+  {
+    "Category": "Brewed Coffee",
+    "Item": "Cold Brewed Iced Coffee",
+    "Description": "We use a cold-brew process for the best tasting iced coffee around. Smooth and delicious!",
+    "Size": "Small",
+    "Price": 2.99
+  },
+  {
+    "Category": "Creme Slushes, Specialty",
+    "Item": "Banana Pie Creme Slush",
+    "Description": "Banana and vanilla blended with milk and ice and topped with whipped to make a creamy, smooth frozen version of a the well-loved pie.",
+    "Size": "Small",
+    "Price": 4.19
+  },
+  {
+    "Category": "Creme Slushes, Specialty",
+    "Item": "Coconut Creme Slush",
+    "Description": "Milk and coconut blended with ice for a creamy, exotic beverage.",
+    "Size": "Small",
+    "Price": 3.69
+  },
+  {
+    "Category": "Creme Slushes, Specialty",
+    "Item": "Coconut Pie Creme Slush",
+    "Description": "Like your grandma's coconut cream pie in a glass--frozen, creamy and delicious!",
+    "Size": "Small",
+    "Price": 4.59
+  },
+  {
+    "Category": "Creme Slushes, Specialty",
+    "Item": "German Chocolate Creme Slush",
+    "Description": "Our version of a chocolate, coconut, and almond milk shake.",
+    "Size": "Small",
+    "Price": 4.09
+  },
+  {
+    "Category": "Creme Slushes, Specialty",
+    "Item": "Matcha Creme Slush",
+    "Description": "Matcha, a finely ground green tea powder, blended with milk and ice and lightly sweetened. Lots of health benefits!",
+    "Size": "Small",
+    "Price": 3.69
+  },
+  {
+    "Category": "Creme Slushes, Specialty",
+    "Item": "Orange Dream Creme Slush",
+    "Description": "Tastes just like your favorite orange & vanilla frozen treat! Topped with our homemade whipped cream.",
+    "Size": "Small",
+    "Price": 4.19
+  },
+  {
+    "Category": "Creme Slushes, Specialty",
+    "Item": "Oreo Creme Slush",
+    "Description": "Our vanilla cr�me slush with added oreos.",
+    "Size": "Small",
+    "Price": 3.69
+  },
+  {
+    "Category": "Creme Slushes, Specialty",
+    "Item": "Pina Colada Creme Slush",
+    "Description": "A tropical delight! Coconut & pineapple, blended with milk & ice.",
+    "Size": "Small",
+    "Price": 4.19
+  },
+  {
+    "Category": "Creme Slushes, Specialty",
+    "Item": "Pumpkin Pie Creme Slush",
+    "Description": "Just what it sounds like--pumpkiny, spicy, creamy and icy!",
+    "Size": "Small",
+    "Price": 5.59
+  },
+  {
+    "Category": "Espresso Drinks",
+    "Item": "Americano",
+    "Description": "Espresso shots (2) diluted with water to make this beverage created during World War II.",
+    "Size": "Small",
+    "Price": 2.09
+  },
+  {
+    "Category": "Espresso Drinks",
+    "Item": "Cappuccino",
+    "Description": "2 shots of espresso topped with creamy steamed milk and a generous helping of milk foam.",
+    "Size": "Small",
+    "Price": 3.89
+  },
+  {
+    "Category": "Espresso Drinks",
+    "Item": "Espresso",
+    "Description": "A small serving of strong, rich coffee, brewed quickly under pressure.",
+    "Size": "Small",
+    "Price": 1.99
+  },
+  {
+    "Category": "Espresso Drinks",
+    "Item": "Flavored Latte",
+    "Description": "Our delicious latte (1 shot of espresso and steamed milk) with your choice of flavor: almond, caramel, chocolate (mocha),  cinnamon, coconut, hazelnut, Irish cream, peppermint, pumpkin spice, raspberry, sugar-free almond, sugar-free caramel, sugar-free ha",
+    "Size": "Small",
+    "Price": 3.79
+  },
+  {
+    "Category": "Espresso Drinks",
+    "Item": "Plain Latte",
+    "Description": "One shot of espresso and steamed milk, topped with creamy milk foam. Choose a cappuccino for more foam. (Latte can also be served iced--1 espresso shot with cold milk.)",
+    "Size": "Small",
+    "Price": 3.19
+  },
+  {
+    "Category": "Extras",
+    "Item": "Added Flavor",
+    "Description": "Add a flavor (or two) to any small drink.",
+    "Size": "Small",
+    "Price": 0.69
+  },
+  {
+    "Category": "Extras",
+    "Item": "Almond or Soy Milk in drink",
+    "Description": "Replace the milk in your small drink with almond milk or soy milk.",
+    "Size": "Small",
+    "Price": 0.79
+  },
+  {
+    "Category": "Extras",
+    "Item": "Boba",
+    "Description": "Try this unique added texture in your favorite iced or blended drink. Kind of like a gummy bear that takes on the flavor of your beverage.",
+    "Size": "Small",
+    "Price": 0.79
+  },
+  {
+    "Category": "Extras",
+    "Item": "Breve (Half and Half in Drink)",
+    "Description": "Replace the milk in your small drink with half and half.",
+    "Size": "Small",
+    "Price": 1.19
+  },
+  {
+    "Category": "Extras",
+    "Item": "Coconut Milk",
+    "Description": "Replace the milk in your small drink with creamy coconut milk.",
+    "Size": "Small",
+    "Price": 1.19
+  },
+  {
+    "Category": "Extras",
+    "Item": "Steamed Milk",
+    "Description": "Add steamed milk to your small drink.",
+    "Size": "Small",
+    "Price": 0.79
+  },
+  {
+    "Category": "Icy Drinks, Regular",
+    "Item": "Creme Slush",
+    "Description": "We blend milk, ice, and your choice of flavor for a yummy treat. Flavors include: almond, blueberry, cherry, chocolate, lemon, mango, orange, papaya, passion fruit, peach, pineapple, raspberry, strawberry, triple berry, or vanilla. Or combine flavors for",
+    "Size": "Small",
+    "Price": 2.99
+  },
+  {
+    "Category": "Icy Drinks, Regular",
+    "Item": "Frozen Latte",
+    "Description": "Our original recipe--we blend cold-brewed coffee, half and half, a little sweetness, and ice for a summertime (or anytime) treat that really hits the spot. Make yours even more special with caramel, chocolate, toffee, or vanilla.",
+    "Size": "Small",
+    "Price": 3.39
+  },
+  {
+    "Category": "Icy Drinks, Regular",
+    "Item": "Slush",
+    "Description": "We blend water, ice, and your choice of flavor for a yummy treat. Flavors include: almond, blueberry, cherry, chocolate, lemon, mango, orange, papaya, passion fruit, peach, pineapple, raspberry, strawberry, triple berry, or vanilla. Or combine flavors for",
+    "Size": "Small",
+    "Price": 2.49
+  },
+  {
+    "Category": "Other Drinks",
+    "Item": "Hot Chocolate or Steamer",
+    "Description": "Creamy, sweet, and topped with our homemade whipped cream! Choose chocolate, or use your imagination.",
+    "Size": "Small",
+    "Price": 3.99
+  },
+  {
+    "Category": "Other Drinks",
+    "Item": "Milk",
+    "Description": "Skim, 2%, or whole.",
+    "Size": "Small",
+    "Price": 2.09
+  },
+  {
+    "Category": "Slushes, Specialty",
+    "Item": "Hawaiian Sunset Slush",
+    "Description": "Icy, slushy, with pineapple, passion fruit, coconut, and banana. Aloha!",
+    "Size": "Small",
+    "Price": 3.79
+  },
+  {
+    "Category": "Slushes, Specialty",
+    "Item": "Tropical Fruit Slush",
+    "Description": "Orange, pineapple, strawberry, and banana, blended into icy deliciousness.",
+    "Size": "Small",
+    "Price": 3.79
+  },
+  {
+    "Category": "Staff Favorites",
+    "Item": "Vietnamese-Style Coffee",
+    "Description": "Delicious espresso with sweetened condensed milk, served over ice.",
+    "Size": "Small",
+    "Price": 3.09
+  },
+  {
+    "Category": "Teas",
+    "Item": "Cambric",
+    "Description": "Steamed milk and your choice of tea (black, green, Earl Grey,  cinnamon orange, rooibos, market chai, or Village Mist herbal).",
+    "Size": "Small",
+    "Price": 2.89
+  },
+  {
+    "Category": "Teas",
+    "Item": "Chai (Blended, Hot, or Iced)",
+    "Description": "A customer favorite--black tea skillfully combined with delicious spices and milk for a creamy treat. Choose spiced or vanilla, served blended, iced, or hot.",
+    "Size": "Small",
+    "Price": 3.59
+  },
+  {
+    "Category": "Teas",
+    "Item": "Cinnamon Milk Tea",
+    "Description": "It tastes like cinnamon gummy bears--yum!",
+    "Size": "Small",
+    "Price": 3.59
+  },
+  {
+    "Category": "Teas",
+    "Item": "Lavender Milk Tea",
+    "Description": "Black tea, sweetened and blended with lavender and whole milk. Calming and relaxing, either iced or hot.",
+    "Size": "Small",
+    "Price": 3.39
+  },
+  {
+    "Category": "Teas",
+    "Item": "Milk Tea",
+    "Description": "A customer favorite, whether iced or hot. Sweetened black tea blended with whole milk.",
+    "Size": "Small",
+    "Price": 3.19
+  },
+  {
+    "Category": "Teas",
+    "Item": "Tea",
+    "Description": "Your choice of tea, iced or hot. Choose from black, green, Earl Grey,  cinnamon orange, rooibos, Village Mist herbal or market chai.",
+    "Size": "Small",
+    "Price": 1.79
+  },
+  {
+    "Category": "Teas",
+    "Item": "Thai Tea",
+    "Description": "Exotic black tea, sweetened and served over ice, topped with whole milk.",
+    "Size": "Small",
+    "Price": 3.09
+  }
+]
