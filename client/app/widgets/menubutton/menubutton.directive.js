@@ -3,7 +3,7 @@ function rowdyMenuButton() {
 		link: link,
 		restrict: 'EA',
 		template: `<div class="menu-button">
-    <a ui-sref="{{button.sref}}">{{button.name}}</a>
+    <a ui-sref="{{button.sref}}" ng-class="button.iconClasses"><span>{{button.name}}</span></a>
 </div>`,
 	};
 	return directive;
