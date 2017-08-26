@@ -12,5 +12,6 @@ angular.module('RowdyMermaid-site', [
     'RowdyMermaid-site.shoppingCart',
     'RowdyMermaid-site.store',
     'RowdyMermaid-site.taproom',
-    'RowdyMermaid-site.widgets'
+    'RowdyMermaid-site.widgets',
+    'RowdyMermaid-site.kombuchaBeer'
 ]);
