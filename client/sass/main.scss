@@ -8,6 +8,7 @@
 
 @import "layout/layout";
 @import "layout/body";
+@import "layout/footer";
 
 @import "pages/products";
 @import "pages/find";
@@ -22,4 +23,9 @@
 
 body {
   margin: 0;
+}
+
+a{
+  text-decoration: none;
+  color: black;
 }
