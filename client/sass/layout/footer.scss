@@ -4,6 +4,9 @@
     display: flex;
     justify-content: space-around;
   }
+  .footer-links{
+  	z-index: $z-index-normal;
+  }
 }
 
 .container-footer {
