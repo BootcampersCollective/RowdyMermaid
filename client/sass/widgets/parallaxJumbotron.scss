@@ -1,0 +1,19 @@
+.parallax-container {
+  .image {
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .title {
+    position: absolute;
+    left: 0;
+    top: 50vh;
+    width: 100vw;
+    text-align: center;
+    color: #000;
+  }
+}
+
