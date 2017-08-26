@@ -8,7 +8,7 @@ function rowdyMenuBar() {
 			<h1>Menu Bar</h1>
 			<div class="page-links">
 				<rowdy-menu-button data="{{button}}" ng-repeat="button in menuButtons">
-			</div>
+			</div><i class="fa fa-camera-retro fa-lg"></i>
 			<div class="user-links">
 				<rowdy-menu-button data="{{button}}" ng-repeat="button in iconButtons">
 			</div>
@@ -50,12 +50,12 @@ function rowdyMenuBar() {
 			{
 				name: 'Log In',
 				sref: 'app.login',
-				iconClasses: 'header-fa fa-user',
+				iconClass: 'fa-user',
 			},
 			{
 				name: 'Shopping Cart',
 				sref: 'app.shoppingCart',
-				iconClasses: 'header-fa fa-shopping-cart',
+				iconClass: 'fa-shopping-cart',
 			},
 		]
 

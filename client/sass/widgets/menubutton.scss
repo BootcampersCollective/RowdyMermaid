@@ -1,7 +1,7 @@
 .menu-button {
     display: inline;
 
-    .header-fa{
+    .icon{
       span{
          display: inline-block;
          width: 0;
@@ -9,12 +9,4 @@
          overflow: hidden;
       }
     }
-}
-
-.fa-user:after{
-   content: "user";
-}
-
-.fa-shopping-cart:after{
-   content: "cart";
 }
