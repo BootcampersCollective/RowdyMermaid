@@ -12,7 +12,11 @@ const home = {
 		ctrl.$postLink = function () {};
 	},
 	template: `
+	<div class="siteName">
 		<h1>This is the home page</h1>
+		<h3>ROWDY MERMAID KOMBUCHA</h3>
+		<h3>BOULDER, COLORADO</h3>
+	</div>
 	`
 
 };
