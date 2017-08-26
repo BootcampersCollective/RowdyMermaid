@@ -19,14 +19,25 @@
       .container-menu {
         height: 150px;
         width: 100%;
-        background-color: #31b0d5;
+        background-color: $white;
 
         @include breakpoint($bp-768) {
           width: 100vw;
           height: auto;
         }
+
       }
-    }
+	  .container-menu-transparent {
+        height: 150px;
+        width: 100%;
+        background-color: transparent;
+
+        @include breakpoint($bp-768) {
+          width: 100vw;
+          height: auto;
+        }
+
+		}
 
     .container-right {
       flex: 0 0 auto;
@@ -43,4 +54,6 @@
     flex: 0 0 5vh;
     background-color: #B99967;
   }
+ 
+}
 }
