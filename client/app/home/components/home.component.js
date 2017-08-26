@@ -13,11 +13,15 @@ const home = {
 	},
 	template: `
 	<h1>This is the home page</h1>
+	<div class="image-wrapper">
+		<img src="images/coloradoSnowmeltKombucha.png">
+	</div>
 	<div class="siteName">
 		<img src="images/bottleLivingGingerCircleFrame.png"/>
 		<h3>Rowdy Mermaid Kombucha</h3>
 		<h4>Boulder, Colorado</h4>
 	</div>
+	
 	`
 
 };
