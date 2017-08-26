@@ -3,11 +3,16 @@ function rowdyMenuBar() {
 		link: link,
 		restrict: 'EA',
 		template: `
-			<nav class="menu-bar">
-          <div id="nav-img"></div>
-    			<h1>Menu Bar</h1>
-    			<rowdy-menu-button data="{{button}}" ng-repeat="button in menuButtons">
-			</nav>
+		<nav class="menu-bar">
+			<div id="nav-img"></div>
+			<h1>Menu Bar</h1>
+			<div class="page-links">
+				<rowdy-menu-button data="{{button}}" ng-repeat="button in menuButtons">
+			</div>
+			<div class="user-links">
+				<rowdy-menu-button data="{{button}}" ng-repeat="button in iconButtons">
+			</div>
+		</nav>
 		`,
 	};
 	return directive;
@@ -38,15 +43,21 @@ function rowdyMenuBar() {
 				name: 'Social',
 				sref: 'app.social'
 			},
+		];
+
+		//pulled out log in and cart buttons because they need to be in a different div
+		scope.iconButtons = [
 			{
 				name: 'Log In',
-				sref: 'app.login'
+				sref: 'app.login',
+				iconClass: 'fa-user',
 			},
 			{
 				name: 'Shopping Cart',
-				sref: 'app.shoppingCart'
-			}
-		];
+				sref: 'app.shoppingCart',
+				iconClass: 'fa-shopping-cart',
+			},
+		]
 
 	}
 }
