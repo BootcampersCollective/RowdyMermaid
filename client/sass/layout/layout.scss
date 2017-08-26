@@ -26,6 +26,13 @@
           height: auto;
         }
       }
+
+      .menu-bar a{
+        @include hover-text-color-transition();
+        &:hover{
+          color: $gray;
+        }
+      }
     }
 
     .container-right {

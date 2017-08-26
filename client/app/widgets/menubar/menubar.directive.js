@@ -3,6 +3,7 @@ function rowdyMenuBar() {
 		link: link,
 		restrict: 'EA',
 		template: `
+<<<<<<< HEAD
 		<div>
 			<div id="nav-img"></div>
 			<h1>Menu Bar</h1>
@@ -13,6 +14,13 @@ function rowdyMenuBar() {
 				<rowdy-menu-button data="{{button}}" ng-repeat="button in iconButtons">
 			</nav>
 		</div>
+=======
+			<nav class="menu-bar">
+          <div id="nav-img"></div>
+    			<h1>Menu Bar</h1>
+    			<rowdy-menu-button data="{{button}}" ng-repeat="button in menuButtons">
+			</nav>
+>>>>>>> development
 		`,
 	};
 	return directive;

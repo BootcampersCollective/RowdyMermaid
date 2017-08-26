@@ -4,7 +4,6 @@ const headerComponent = {
 
 	},
 	template: `<div class="container-menu">
-<div>Header</div>
     <rowdy-menu-bar></rowdy-menu-bar>
 </div>`
 };
