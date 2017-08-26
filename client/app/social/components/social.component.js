@@ -16,10 +16,12 @@ const social = {
 
   },
   template: `<h1>this is where pictures will go</h1>
-	<iframe src="https://www.instagram.com/p/BV7ZrBiABKN/embed/" height="375"></iframe>
 	<div class ="pictures" ng-repeat = "photo in $ctrl.photos">
 		<iframe src={{photo}} height="375"></iframe>
-		</div>`
+		</div>
+
+		<a class="twitter-timeline" href="https://twitter.com/TwitterDev/timelines/539487832448843776">National Park Tweets - Curated tweets by TwitterDev</a>
+		 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>`
 
 };
 
