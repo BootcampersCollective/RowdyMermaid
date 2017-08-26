@@ -8,6 +8,7 @@
 
 @import "layout/layout";
 @import "layout/body";
+@import "layout/footer";
 
 @import "pages/products";
 @import "pages/find";
@@ -20,6 +21,17 @@
 @import "widgets/menubar";
 @import "widgets/menubutton";
 
+@import "../../node_modules/font-awesome/scss/font-awesome.scss";
+
 body {
   margin: 0;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+image{
+  width: 100%;
 }

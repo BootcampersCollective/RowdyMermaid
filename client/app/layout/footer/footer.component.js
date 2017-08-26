@@ -5,9 +5,12 @@ const footerComponent = {
 
 	},
 
-	template:`
-
-	`
+	template:`<div class="container-footer">
+<div class="copyright-text">
+    ROWDY MERMAID KOMBUCHA © 2017
+		<a class="link-to-top" href='#top'>Back to Top</a>
+</div>
+</div>`
 };
 
 angular.module('RowdyMermaid-site.layout')
