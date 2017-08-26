@@ -13,6 +13,7 @@ const home = {
 	},
 	template: `
 	<div class="siteName">
+		<img src="images/bottleLivingGingerCircleFrame.png"/>
 		<h1>This is the home page</h1>
 		<h3>ROWDY MERMAID KOMBUCHA</h3>
 		<h3>BOULDER, COLORADO</h3>
