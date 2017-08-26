@@ -8,7 +8,7 @@ function rowdyMenuBar() {
 			<h1>Menu Bar</h1>
 			<div class="page-links">
 				<rowdy-menu-button data="{{button}}" ng-repeat="button in menuButtons">
-			</div><i class="fa fa-camera-retro fa-lg"></i>
+			</div>
 			<div class="user-links">
 				<rowdy-menu-button data="{{button}}" ng-repeat="button in iconButtons">
 			</div>
