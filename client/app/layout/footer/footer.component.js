@@ -5,8 +5,10 @@ const footerComponent = {
 
 	},
 
-	template:`<div class="copyright-text">
+	template:`<div class="container-footer">
+<div class="copyright-text">
     ROWDY MERMAID KOMBUCHA © 2017
+</div>
 </div>`
 };
 
