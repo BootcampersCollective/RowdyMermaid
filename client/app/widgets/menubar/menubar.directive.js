@@ -3,24 +3,16 @@ function rowdyMenuBar() {
 		link: link,
 		restrict: 'EA',
 		template: `
-<<<<<<< HEAD
-		<div>
+		<nav class="menu-bar">
 			<div id="nav-img"></div>
 			<h1>Menu Bar</h1>
-			<nav class="page-links">
+			<div class="page-links">
 				<rowdy-menu-button data="{{button}}" ng-repeat="button in menuButtons">
-			</nav>
-			<nav class="user-links">
+			</div>
+			<div class="user-links">
 				<rowdy-menu-button data="{{button}}" ng-repeat="button in iconButtons">
-			</nav>
-		</div>
-=======
-			<nav class="menu-bar">
-          <div id="nav-img"></div>
-    			<h1>Menu Bar</h1>
-    			<rowdy-menu-button data="{{button}}" ng-repeat="button in menuButtons">
-			</nav>
->>>>>>> development
+			</div>
+		</nav>
 		`,
 	};
 	return directive;
