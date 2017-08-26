@@ -5,7 +5,12 @@
     justify-content: space-around;
   }
   .footer-links{
-  	z-index: $z-index-normal;
+  	max-width: 200px;
+  	margin: 0 auto;
+  	padding: 10px 0;
+  	display: flex;
+  	justify-content: space-between;
+  	color: white;
   }
 }
 
