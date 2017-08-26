@@ -16,7 +16,7 @@ const CLIENT_SCRIPTS_PATH = ['client/app/**/*.module.js', 'client/app/**/*.js'];
 const SERVER_SCRIPTS_PATH = ['server/**/*.js'];
 const STYLE_PATH = 'client/sass/**/*.scss';
 const IMAGE_PATH = 'client/assets/images/*';
-const FONT_PATH = 'client/assets/fonts/*';
+const FONT_PATH = ['client/assets/fonts/*', 'node_modules/font-awesome/fonts/*'];
 const INDEX_PATH = 'client/assets/index.html';
 
 // Lint
@@ -42,7 +42,7 @@ gulp.task('copyImages', function () {
 
 gulp.task('copyFonts', function () {
 	console.log('---Starting Copy Fonts task---');
-	return gulp.src([FONT_PATH])
+	return gulp.src(FONT_PATH)
 		.pipe(gulp.dest('public/fonts'))
 		.on('error', plugins.util.log)
 		.pipe(plugins.livereload());

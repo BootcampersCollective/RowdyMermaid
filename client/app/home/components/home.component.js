@@ -13,6 +13,9 @@ const home = {
 	},
 	template: `
 		<h1>This is the home page</h1>
+		<div class="image-wrapper">
+			<img src="images/coloradoSnowmeltKombucha.png">
+		</div>
 	`
 
 };

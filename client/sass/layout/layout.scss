@@ -25,6 +25,11 @@
           width: 100vw;
           height: auto;
         }
+
+        .logo{
+          text-align: Left;
+          margin: 0.5em;
+        }
       }
 
       .menu-bar a{
@@ -37,6 +42,12 @@
 
     .container-right {
       flex: 0 0 auto;
+
+      .image-wrapper{
+        width: 44.53%;
+        height: auto;
+        margin: 0 auto;
+      }
 
       @include breakpoint($bp-768) {
         flex: 1 0 auto;
