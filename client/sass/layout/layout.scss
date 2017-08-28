@@ -3,10 +3,9 @@
     display: flex;
     flex-direction: column;
     height: 92.9vh;
-    .container-left {
+    .container-header {
       flex: 0 0 auto;
       flex-direction: column;
-      // align-items: center;
       display: flex;
 
       @include breakpoint($bp-768) {
@@ -28,14 +27,8 @@
       }
     }
 
-    .container-right {
+    .container-body {
       flex: 0 0 auto;
-
-      .image-wrapper {
-        width: 44.53%;
-        height: auto;
-        margin: 0 auto;
-      }
 
       @include breakpoint($bp-768) {
         flex: 1 0 auto;

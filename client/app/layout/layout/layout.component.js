@@ -10,10 +10,10 @@ const layoutComponent = {
 	template: `
 		<div class="container-main">
             <div class="container-top">
-                <div class="container-left">
+                <div class="container-header">
                     <header-component></header-component>
                 </div>
-                <div class="container-right">
+                <div class="container-body">
                     <body-component></body-component>
                 </div>
             </div>
