@@ -7,7 +7,6 @@ const taproomNews = {
     ctrl.$onInit = function() {};
   },
   template: `
-		<h1>This is the TAPROOM NEWS page.</h1>
 	`,
 };
 
