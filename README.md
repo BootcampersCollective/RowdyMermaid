@@ -18,7 +18,7 @@ Repository for the Rowdy Mermaid Kombucha website.
 
 
 * Once you have been added to the team, clone the repository to your machine.
- - git clone <insert url>
+    - git clone <insert URL>
 
 * Next, you will need to install dependencies:
     - yarn
