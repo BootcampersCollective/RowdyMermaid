@@ -9,14 +9,14 @@
       display: flex;
 
       @include breakpoint($bp-768) {
-        flex: 0 0 200px;
+        flex: 0 0 12%;
         height: 50vh;
         justify-content: stretch;
       }
 
       .container-menu {
-        background-color: #31b0d5;
-        height: 150px;
+        // background-color: #31b0d5;
+        height: 12%;
         padding: 15px 0;
         width: 100%;
 
