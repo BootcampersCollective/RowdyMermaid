@@ -7,7 +7,6 @@ const taproomEvents = {
     ctrl.$onInit = function() {};
   },
   template: `
-		<h1>This is the TAPROOM EVENTS page.</h1>
 	`,
 };
 

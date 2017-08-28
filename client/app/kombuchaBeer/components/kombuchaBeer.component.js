@@ -40,7 +40,6 @@ const kombuchaBeer = {
         };
     },
     template: `
-    <h1>This is the BEER page.</h1>
     <aside class="beer-gallery">
       <div ng-repeat="image in $ctrl.galleryImages" class="img-container">
         <div class="img" ng-style="{backgroundImage: 'url({{image.src}})'}"></div>
