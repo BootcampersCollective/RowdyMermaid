@@ -1,5 +1,4 @@
 .container-main {
-
   .container-top {
     display: flex;
     flex-direction: column;
@@ -17,25 +16,14 @@
       }
 
       .container-menu {
-        height: 150px;
-        width: 100%;
         background-color: #31b0d5;
+        height: 150px;
+        padding: 15px 0;
+        width: 100%;
 
         @include breakpoint($bp-768) {
-          width: 100vw;
           height: auto;
-        }
-
-        .logo{
-          text-align: Left;
-          margin: 0.5em;
-        }
-      }
-
-      .menu-bar a{
-        @include hover-text-color-transition();
-        &:hover{
-          color: $gray;
+          width: 100vw;
         }
       }
     }
@@ -43,7 +31,7 @@
     .container-right {
       flex: 0 0 auto;
 
-      .image-wrapper{
+      .image-wrapper {
         width: 44.53%;
         height: auto;
         margin: 0 auto;
@@ -51,7 +39,7 @@
 
       @include breakpoint($bp-768) {
         flex: 1 0 auto;
-        /*height: 93vh;*/ 
+        /*height: 93vh;*/
         /* setting the hieght causes body to overlap the footer making the links non-funcitonal */
         overflow-y: scroll;
       }
@@ -60,6 +48,6 @@
 
   .container-footer {
     flex: 0 0 5vh;
-    background-color: #B99967;
+    background-color: #b99967;
   }
 }
