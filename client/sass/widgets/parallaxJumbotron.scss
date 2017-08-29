@@ -1,19 +1,24 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:200');
+
 .parallax-container {
   .image {
-    height: 100vh;
+    height: 60vh;
     background-attachment: fixed;
-    background-position: center;
+    background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+    z-index: -1;
   }
 
   .title {
+    font-family: 'Raleway', sans-serif;
+    font-size: 4rem;
     position: absolute;
     left: 0;
-    top: 50vh;
+    top: 45vh;
     width: 100vw;
     text-align: center;
-    color: #000;
+    color: white;
   }
 }
 

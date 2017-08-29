@@ -6,7 +6,7 @@ const bodyComponent = {
 
 	},
 	template: `<div class="container-body">
-    <div>Body</div>
+    <!--<div>Body</div>-->
     <ui-view></ui-view>
 </div>`
 };

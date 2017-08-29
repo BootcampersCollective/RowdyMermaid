@@ -3,13 +3,16 @@ const about = {
     controller: function () {
         let ctrl = this;
 
-        ctrl.imageurl = "client/assets/Images/winterPineTrees.jpg";
+        ctrl.imageUrl = "/images/winterPineTrees.jpg";
         ctrl.title = "ABOUT US";
 
         ctrl.$onInit = function () {};
     },
     template:   `
-        <parallax-jumbotron image-url="{{$ctrl.imageurl}}" title={{$ctrl.title}} ></parallax-jumbotron>
+        <parallax-jumbotron image-url="$ctrl.imageUrl" title="$ctrl.title"></parallax-jumbotron>
+        <div style="background-color: black; height: 50vh; width: 100vw;">
+            <h1 style="text-align: center; color: white;">Hi I'm just a test div</h1>
+        </div>
     `
 };
 
