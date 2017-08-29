@@ -1,1 +1,28 @@
+#menu-bar {
+  margin: auto;
+  max-width: 95%;
+  overflow: hidden;
 
+  #nav-logo {
+    float: left;
+  }
+
+  #nav-links {
+    padding-top: 15px;
+
+    #user-links {
+      float: right;
+      max-width: 20%;
+    }
+
+    #page-links {
+      margin: auto;
+      text-align: center;
+    }
+
+    @include hover-text-color-transition();
+    a:hover {
+      color: $gray;
+    }
+  }
+}

@@ -1,57 +1,38 @@
 .container-main {
-
   .container-top {
     display: flex;
     flex-direction: column;
     height: 92.9vh;
-    .container-left {
+    .container-header {
       flex: 0 0 auto;
       flex-direction: column;
-      // align-items: center;
       display: flex;
 
       @include breakpoint($bp-768) {
-        flex: 0 0 200px;
+        flex: 0 0 12%;
         height: 50vh;
         justify-content: stretch;
       }
 
       .container-menu {
-        height: 150px;
+        // background-color: #31b0d5;
+        height: 12%;
+        padding: 15px 0;
         width: 100%;
-        background-color: #31b0d5;
 
         @include breakpoint($bp-768) {
-          width: 100vw;
           height: auto;
-        }
-
-        .logo{
-          text-align: Left;
-          margin: 0.5em;
-        }
-      }
-
-      .menu-bar a{
-        @include hover-text-color-transition();
-        &:hover{
-          color: $gray;
+          width: 100vw;
         }
       }
     }
 
-    .container-right {
+    .container-body {
       flex: 0 0 auto;
-
-      .image-wrapper{
-        width: 44.53%;
-        height: auto;
-        margin: 0 auto;
-      }
 
       @include breakpoint($bp-768) {
         flex: 1 0 auto;
-        /*height: 93vh;*/ 
+        /*height: 93vh;*/
         /* setting the hieght causes body to overlap the footer making the links non-funcitonal */
         overflow-y: scroll;
       }
@@ -60,6 +41,6 @@
 
   .container-footer {
     flex: 0 0 5vh;
-    background-color: #B99967;
+    background-color: #b99967;
   }
 }

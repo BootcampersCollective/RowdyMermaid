@@ -5,10 +5,11 @@ const bodyComponent = {
 	controller: function () {
 
 	},
-	template: `<div class="container-body">
-    <!--<div>Body</div>-->
-    <ui-view></ui-view>
-</div>`
+
+	template: `
+	<div class="container-body">
+    	<ui-view></ui-view>
+	</div>`
 };
 
 angular.module('RowdyMermaid-site.layout')

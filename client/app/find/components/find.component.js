@@ -8,7 +8,6 @@ const find = {
 
     },
     template: `
-    <h1>This is the FIND page.</h1>
     `
 };
 
