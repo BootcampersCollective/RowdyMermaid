@@ -10,7 +10,7 @@ const about = {
     },
     template:   `
         <parallax-jumbotron image-url="$ctrl.imageUrl" title="$ctrl.title"></parallax-jumbotron>
-        <div style="background-color: black; height: 50vh; width: 100vw;">
+        <div style="position: absolute; background-color: black; height: 50vh; width: 100vw;">
             <h1 style="text-align: center; color: white;">Hi I'm just a test div</h1>
         </div>
     `

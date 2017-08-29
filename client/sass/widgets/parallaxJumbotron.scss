@@ -12,13 +12,15 @@
 
   .title {
     font-family: 'Raleway', sans-serif;
+    overflow-y: scroll;
     font-size: 4rem;
     position: absolute;
     left: 0;
-    top: 45vh;
+    top: 35vh;
     width: 100vw;
     text-align: center;
     color: white;
+    //margin-bottom: 25vh;
   }
 }
 
