@@ -15,7 +15,7 @@ const taproomNews = {
     ];
 
     ctrl.imageUrl = '/images/stickersColorAndBW.jpg';
-    ctrl.title = 'NEWS';
+    ctrl.title = 'MERMAID UPDATES';
   },
   template: `
     <parallax-jumbotron image-url="$ctrl.imageUrl" title="$ctrl.title"></parallax-jumbotron>
