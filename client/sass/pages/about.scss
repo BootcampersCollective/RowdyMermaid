@@ -1,0 +1,25 @@
+.container {
+  display: flex;
+  width: 100%;
+  height: 600px;
+  background-color: #030303;
+  color: #fffcfc;
+}
+
+.container {
+  .text {
+    width: 50%;
+    font-size: 1.6em;
+    padding: 3% 3%;
+  }
+}
+
+.container {
+  .image {
+    width: 50%;
+    overflow: hidden;
+    background-image: url("/images/closeUpBottles.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+}

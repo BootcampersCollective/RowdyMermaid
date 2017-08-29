@@ -10,7 +10,6 @@ const store = {
 
 	},
 	template: `
-		<h1>This is the STORE page.</h1>
 	`
 };
 

@@ -10,7 +10,6 @@ const social = {
 
 	},
 	template: `
-		<h1>This is the SOCIAL MEDIA page.</h1>
 	`
 };
 
