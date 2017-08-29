@@ -1,9 +1,11 @@
 .container-footer {
   background-color: rgba(239,239,239,1);
+
   .copyright-text {
     color: black;
     display: flex;
     justify-content: space-around;
+    clear: both;
   }
   .footer-links{
   	max-width: 200px;
@@ -23,17 +25,30 @@
 }
 
 .contact {
-  padding: 5em;
   font-family: yantramanav;
+  
   .contactForm {
     h2 {
       text-transform: uppercase;
     }
-    width: 60vw;
+    input {
+      width: 100%;
+    }
+    textarea {
+      width: 100%;
+      height: 100%;
+    }
+    width: 55%;
+    margin: 0 2.5%;
+    display: inline-block;
+    float: left;
   }
   .contactSectionRight {
     text-align: center;
-    width: 40vw;
+    width: 35%;
+    margin: 0 2.5%;
+    display: inline-block;
+    float: left;
     .contactHours {
       text-transform: uppercase;
       table {
