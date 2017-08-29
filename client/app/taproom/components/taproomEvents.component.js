@@ -4,19 +4,18 @@ const taproomEvents = {
     let ctrl = this;
     ctrl.taproomEvents = null;
 
+    ctrl.imageUrl = '/images/chessBoard.jpg';
+    ctrl.title = 'EVENTS';
+
     ctrl.$onInit = function() {};
   },
   template: `
-    <div id="events-parallax">
-      <div id="parallax-text">
-        <h1>Events</h1>
-      </div>
-    </div>
+    <parallax-jumbotron image-url="$ctrl.imageUrl" title="$ctrl.title"></parallax-jumbotron>
 
     <div>
-      Calendar will go in this div.
+    Calendar will go in this div.
     </div>
-	`,
+  `,
 };
 
 angular
