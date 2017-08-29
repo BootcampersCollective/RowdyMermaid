@@ -1,1 +1,29 @@
+.siteName {
+    text-align: center;
+    width: 50vw;
+    margin: auto;
+    font-family: yantramanav;
+    font-style: normal;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.5em;
+    img {
+        width: 200px;
+        margin-bottom: 20px;
+    }
+    h3 {
 
+        font-size: 3em;
+        line-height: 50px;
+        color: #3b3b3b;
+        margin: 0;
+    }
+    h4 {
+        font-size: 1.125em;
+    }
+}
+
+.image-wrapper {
+  height: auto;
+  text-align: center;
+}

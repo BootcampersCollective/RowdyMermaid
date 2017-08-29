@@ -1,29 +1,32 @@
 .container-main {
-
   .container-top {
     display: flex;
     flex-direction: column;
     height: 92.9vh;
-    .container-left {
+    .container-header {
       flex: 0 0 auto;
       flex-direction: column;
-      // align-items: center;
       display: flex;
 
       @include breakpoint($bp-768) {
-        flex: 0 0 200px;
+        flex: 0 0 12%;
         height: 50vh;
         justify-content: stretch;
       }
 
       .container-menu {
-        height: 150px;
+        // background-color: #31b0d5;
+        height: 12%;
+        padding: 15px 0;
         width: 100%;
+<<<<<<< HEAD
         background-color: $white;
+=======
+>>>>>>> 6d065f7a8051c931c8e0c47de11a2714a36c8655
 
         @include breakpoint($bp-768) {
-          width: 100vw;
           height: auto;
+          width: 100vw;
         }
 
       }
@@ -39,12 +42,13 @@
 
 		}
 
-    .container-right {
+    .container-body {
       flex: 0 0 auto;
 
       @include breakpoint($bp-768) {
         flex: 1 0 auto;
-        height: 93vh;
+        /*height: 93vh;*/
+        /* setting the hieght causes body to overlap the footer making the links non-funcitonal */
         overflow-y: scroll;
       }
     }
@@ -52,7 +56,7 @@
 
   .container-footer {
     flex: 0 0 5vh;
-    background-color: #B99967;
+    background-color: #b99967;
   }
  
 }

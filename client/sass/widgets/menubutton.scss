@@ -1,3 +1,16 @@
 .menu-button {
-    display: inline;
+  display: inline;
+
+  span {
+    padding: 0 10px;
+  }
+
+  .icon {
+    span {
+      display: inline-block;
+      height: 0;
+      overflow: hidden;
+      width: 0;
+    }
+  }
 }

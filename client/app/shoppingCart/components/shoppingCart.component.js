@@ -10,7 +10,6 @@ const shoppingCart = {
 
 	},
 	template: `
-		<h1>This is the Shopping Cart.</h1>
 
 	`
 };
