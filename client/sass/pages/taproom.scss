@@ -1,17 +1,1 @@
-#events-parallax {
-  background-image: url('/images/bothHatStyles.jpg');
-  height: 500px;
-  margin: 0 auto;
 
-  background-attachment: fixed;
-  background-position: bottom;
-  background-repeat: no-repeat;
-  background-size: cover;
-
-  #parallax-text {
-    text-align: center;
-    padding-top: 10%;
-    margin: 0 auto;
-    color: $white;
-  }
-}
