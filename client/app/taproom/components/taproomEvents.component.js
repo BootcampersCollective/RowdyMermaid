@@ -7,6 +7,15 @@ const taproomEvents = {
     ctrl.$onInit = function() {};
   },
   template: `
+    <div id="events-parallax">
+      <div id="parallax-text">
+        <h1>Events</h1>
+      </div>
+    </div>
+
+    <div>
+      Calendar will go in this div.
+    </div>
 	`,
 };
 
