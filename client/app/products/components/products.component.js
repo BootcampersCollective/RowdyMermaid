@@ -15,6 +15,7 @@ const products = {
     <section>
       <h2>Flavors</h2>
       <div>SAVORY PEACH</div>
+      <div>SUMMERBERRY</div>
     </section>
   `
 };
