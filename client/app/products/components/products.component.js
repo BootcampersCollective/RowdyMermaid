@@ -16,6 +16,8 @@ const products = {
       <h2>Flavors</h2>
       <div>SAVORY PEACH</div>
       <div>SUMMERBERRY</div>
+      <div>ESSENCE</div>
+
     </section>
   `
 };
