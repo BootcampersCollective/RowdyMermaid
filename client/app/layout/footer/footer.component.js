@@ -4,12 +4,7 @@ const footerComponent = {
 		let ctrl = this;
 
 	},
-
-<<<<<<< HEAD
 	template:`<div><a href = "/contact">Contact</a></div>
-
-=======
-	template:`
 	<section class="contact">
 		<div class="contactForm">
 			<h2>Contact</h2>
@@ -87,7 +82,7 @@ const footerComponent = {
 			</a>
 		</div>
 	</footer>
->>>>>>> 6d065f7a8051c931c8e0c47de11a2714a36c8655
+
 	`
 };
 

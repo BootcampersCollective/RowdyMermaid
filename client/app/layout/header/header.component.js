@@ -1,35 +1,21 @@
-/*function backgroundSelector () {
-	if (state.name === "/"){
-		return "container-menu-transparent"
-	}
-    else{
-		return "container-menu"
-	}
-}*/
-
 const headerComponent = {
-<<<<<<< HEAD
 	bindings: {},
-	controller: function () {
-
+	controller: /*@ngInject*/function ($state, $rootScope) {
+		let ctrl = this;
+		ctrl.home = false;
+		$rootScope.$on("$stateChangeSuccess", function(evt, toState, toParams, fromState, fromParams) {
+			if(toState.name === 'app.home'){
+			ctrl.home = true;
+} else {
+	ctrl.home = false;
+}
 	},
-	template: `
-<div>Header</div>
-    <rowdy-menu-bar></rowdy-menu-bar>
-</div>`
-=======
-  bindings: {},
-  controller: function() {},
-  template: `
-    <div class="container-menu">
+	template: `<div class="container-menu" ng-style="{transparent: $ctrl.home}">
       <rowdy-menu-bar></rowdy-menu-bar>
     </div>
   `,
->>>>>>> 6d065f7a8051c931c8e0c47de11a2714a36c8655
 };
 
 angular
   .module('RowdyMermaid-site.layout')
   .component('headerComponent', headerComponent);
-
-headerComponent.$inject = [];

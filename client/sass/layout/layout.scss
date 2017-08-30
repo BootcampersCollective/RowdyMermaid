@@ -19,10 +19,9 @@
         height: 12%;
         padding: 15px 0;
         width: 100%;
-<<<<<<< HEAD
+
         background-color: $white;
-=======
->>>>>>> 6d065f7a8051c931c8e0c47de11a2714a36c8655
+
 
         @include breakpoint($bp-768) {
           height: auto;
