@@ -5,8 +5,8 @@
     height: 92.9vh;
     .container-header {
       flex: 0 0 auto;
-      flex-direction: column;
-      display: flex;
+      height: auto;
+      width: 100%;
 
       @include breakpoint($bp-768) {
         flex: 0 0 12%;
