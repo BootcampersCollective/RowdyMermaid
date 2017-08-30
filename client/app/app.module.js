@@ -15,4 +15,5 @@ angular.module('RowdyMermaid-site', [
   'RowdyMermaid-site.taproomEvents',
   'RowdyMermaid-site.widgets',
   'RowdyMermaid-site.kombuchaBeer',
+  'RowdyMermaid-site.kombucha',
 ]);
