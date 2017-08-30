@@ -33,13 +33,20 @@ const kombuchaBeer = {
     bindings: {},
     controller: function () {
         let ctrl = this;
+
         ctrl.galleryImages = galleryImages;
+
+        ctrl.title = "IT'S TIME TO GET ROWDY";
+
+        ctrl.imageUrl = '/images/twoBeersOnWood.jpg';
 
         ctrl.$onInit = function () {
 
         };
     },
     template: `
+    <parallax-jumbotron class="beerParralax" image-url="$ctrl.imageUrl" title="$ctrl.title"></parallax-jumbotron>
+
     <aside class="beer-gallery">
       <div ng-repeat="image in $ctrl.galleryImages" class="img-container">
         <div class="img" ng-style="{backgroundImage: 'url({{image.src}})'}"></div>
