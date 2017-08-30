@@ -20,7 +20,10 @@ const home = {
 		<h3>Rowdy Mermaid Kombucha</h3>
 		<h4>Boulder, Colorado</h4>
 	</div>
-
+	<div class="viewFlavors">
+		<h3>Wild Landscape Inspired Sustainaby Sourced 100% Wind Energy Produced Living Adaptogenic Kombucha</h3>
+		<a href="/kombucha">View All Flavors</>
+	</div>
 	`
 
 };
