@@ -23,6 +23,16 @@
     }
 }
 
+.marketImages{
+  margin:auto;
+  width:50%;
+
+  @include breakpoint($bp-768) {
+    margin:auto;
+    width:100%;
+  }
+}
+
 .image-wrapper {
   height: auto;
   text-align: center;
@@ -58,4 +68,3 @@
         color: white;
     }
 }
-

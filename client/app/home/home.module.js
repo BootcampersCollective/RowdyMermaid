@@ -1,1 +1,3 @@
-angular.module('RowdyMermaid-site.home', []);
+angular.module('RowdyMermaid-site.home', [
+  'jkAngularCarousel'
+]);

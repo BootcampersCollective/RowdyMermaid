@@ -1,5 +1,6 @@
 angular.module('RowdyMermaid-site', [
   'ui.router',
+  'jkAngularCarousel',
   'RowdyMermaid-site.about',
   'RowdyMermaid-site.base',
   'RowdyMermaid-site.common',
