@@ -22,41 +22,39 @@
 
         background-color: $white;
 
-
         @include breakpoint($bp-768) {
           height: auto;
           width: 100vw;
         }
 
+        &.transparent {
+          height: 150px;
+          width: 100%;
+          background-color: transparent;
+
+          @include breakpoint($bp-768) {
+            width: 100vw;
+            height: auto;
+          }
+        }
       }
-	  .container-menu-transparent {
-        height: 150px;
-        width: 100%;
-        background-color: transparent;
+
+      .container-body {
+        flex: 0 0 auto;
 
         @include breakpoint($bp-768) {
-          width: 100vw;
-          height: auto;
+          flex: 1 0 auto;
+          /*height: 93vh;*/
+          /* setting the hieght causes body to overlap the footer making the links non-funcitonal */
+          overflow-y: scroll;
         }
-
-		}
-
-    .container-body {
-      flex: 0 0 auto;
-
-      @include breakpoint($bp-768) {
-        flex: 1 0 auto;
-        /*height: 93vh;*/
-        /* setting the hieght causes body to overlap the footer making the links non-funcitonal */
-        overflow-y: scroll;
       }
     }
-  }
 
-  .container-footer {
-    flex: 0 0 5vh;
-    background-color: #b99967;
+    .container-footer {
+      flex: 0 0 5vh;
+      background-color: #b99967;
+    }
+
   }
- 
-}
 }
