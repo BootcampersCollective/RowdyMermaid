@@ -23,29 +23,41 @@ function rowdyMenuBar() {
   function link(scope, element, attrs) {
     scope.menuButtons = [
       {
-        name: 'Home',
-        sref: 'app.home',
+        name: 'Products',
+        // sref: 'app.products',
+        subNav: [
+          {
+            name: 'Beer',
+            sref: 'app'
+          },
+          {
+            name: 'Kombucha',
+            sref: 'app'
+          }
+        ]
       },
       {
         name: 'About',
         sref: 'app.about',
       },
       {
-        name: 'Products',
-        sref: 'app.products',
-      },
-      {
         name: 'Taproom',
-        sref: 'app.taproom',
+        // sref: 'app.taproom',
+        subNav: [
+          {
+            name: 'News',
+            sref: 'app'
+          },
+          {
+            name: 'Event',
+            sref: 'app'
+          }
+        ]
       },
       {
-        name: 'Find',
-        sref: 'app.find',
-      },
-      {
-        name: 'Social',
-        sref: 'app.social',
-      },
+        name: 'Store',
+        sref: 'app.store',
+      }
     ];
 
     //pulled out log in and cart buttons because they need to be in a different div

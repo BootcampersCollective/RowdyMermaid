@@ -1,7 +1,7 @@
 function taproomNewsRoute($stateProvider) {
   $stateProvider.state({
     name: 'app.taproomNews',
-    url: 'news',
+    url: 'taproom-news',
     component: 'taproomNews',
   });
 }

@@ -5,12 +5,12 @@
     height: 100%;
     .container-header {
       flex: 0 0 auto;
-      flex-direction: column;
-      display: flex;
+      height: 80px;
+      width: 100%;
 
       @include breakpoint($bp-768) {
         flex: 0 0 12%;
-        height: 50vh;
+        // height: 50vh;
         justify-content: stretch;
       }
 

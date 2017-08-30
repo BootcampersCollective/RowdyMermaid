@@ -12,17 +12,22 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-bottom: 200px;
 
     img,
     div {
-      width: 49%;
+      width: 48%;
       height: 25%;
       margin: 0;
     }
 
+    p {
+      width: 48%;
+    }
+
     .kombucha-name {
       letter-spacing: 1px;
-      font-size: 1.4em;
+      font-size: 1.3em;
     }
 
     .kombucha-description {

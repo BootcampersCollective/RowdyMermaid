@@ -2,7 +2,7 @@ function kombuchaBeerRoute($stateProvider) {
 	$stateProvider
 		.state({
 			name: 'app.kombuchaBeer',
-			url: 'kombuchaBeer',
+			url: 'beer',
 			component: 'kombuchaBeer'
 		});
 }
