@@ -10,7 +10,7 @@
 
       @include breakpoint($bp-768) {
         flex: 0 0 12%;
-        height: 50vh;
+        // height: 50vh;
         justify-content: stretch;
       }
 
