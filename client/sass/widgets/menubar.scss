@@ -27,6 +27,11 @@
       width: 60%;
       display: flex;
       justify-content: space-between;
+      text-align: center;
+
+      .menu-button-style{
+        width: 25%;
+      }
     }
 
     @include hover-text-color-transition();

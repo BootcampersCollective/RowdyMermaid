@@ -5,15 +5,14 @@ const rowdyMenuBar = {
 		ctrl.menuButtons = [
 			{
 				name: 'Products',
-				// sref: 'app.products',
 				subNav: [
 					{
 						name: 'Beer',
-						sref: 'app'
+						sref: 'app.products'
 					},
 					{
 						name: 'Kombucha',
-						sref: 'app'
+						sref: 'app.products'
 					}
 				]
 			},
@@ -23,15 +22,14 @@ const rowdyMenuBar = {
 			},
 			{
 				name: 'Taproom',
-				// sref: 'app.taproom',
 				subNav: [
 					{
 						name: 'News',
-						sref: 'app'
+						sref: 'app.taproomNews'
 					},
 					{
-						name: 'Event',
-						sref: 'app'
+						name: 'Events',
+						sref: 'app.taproomEvents'
 					}
 				]
 			},
@@ -64,7 +62,7 @@ const rowdyMenuBar = {
             <rowdy-menu-button data="button" ng-repeat="button in $ctrl.iconButtons">
         </div>
         <div id="page-links">
-            <rowdy-menu-button data="button" ng-repeat="button in $ctrl.menuButtons">
+            <rowdy-menu-button data="button" ng-repeat="button in $ctrl.menuButtons" class="menu-button-style">
         </div>
     </div>
 </nav>`
