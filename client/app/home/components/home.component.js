@@ -20,6 +20,7 @@ const home = {
 		<h3>Rowdy Mermaid Kombucha</h3>
 		<h4>Boulder, Colorado</h4>
 	</div>
+	<parallax-jumbotron></parallax-jumbotron>
 
 	`
 
