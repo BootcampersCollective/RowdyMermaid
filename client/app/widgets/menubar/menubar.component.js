@@ -8,11 +8,11 @@ const rowdyMenuBar = {
 				subNav: [
 					{
 						name: 'Beer',
-						sref: 'app.products'
+						sref: 'app.kombuchaBeer'
 					},
 					{
 						name: 'Kombucha',
-						sref: 'app.products'
+						sref: 'app.kombucha'
 					}
 				]
 			},
