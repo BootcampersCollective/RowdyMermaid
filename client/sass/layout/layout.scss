@@ -5,7 +5,7 @@
     height: 100%;
     .container-header {
       flex: 0 0 auto;
-      height: auto;
+      height: 80px;
       width: 100%;
 
       @include breakpoint($bp-768) {
