@@ -3,6 +3,7 @@
    flex-direction: column;
    padding: 2em;
    margin: 0;
+   font-family: yantramanav;
 
    .row {
       display: flex;
@@ -26,7 +27,13 @@
    }
 
    h3 {
-      font-size: 28px;
+      font-size: 2em;
+      margin-top: 0.5em;
+      margin-left: 0;
+   }
+
+   p {
+      font-size: 1.2em;
    }
 
    /* Display img and h3 on same line on large screens */
@@ -36,12 +43,24 @@
       }
 
       h3 {
-         font-size: 42px;
+         font-size: 3em;
+         margin-top: 0;
+         margin-right: 0.5em;
       }
    }
 
    @include breakpoint($bp-640) {
       padding: 5em;
+   }
+
+   @include breakpoint($bp-1024) {
+      p {
+         font-size: 1.6em;
+      }
+
+      h3 {
+         font-size: 3.4em;
+      }
    }
 }
 
