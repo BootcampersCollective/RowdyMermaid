@@ -7,6 +7,9 @@ function calendar() {
         <button class="fa fa-arrow-left"></button>
         <span>{{ currDate.format("MMMM YYYY") }}</span>
         <button class="fa fa-arrow-right"></button>
+        <div id="cal-weekDays">
+          <span ng-repeat="day in dayNames">{{ day }}</span>
+        </div>
       </div>
     `
   };
