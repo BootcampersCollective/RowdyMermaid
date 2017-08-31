@@ -12,10 +12,8 @@ const taproomEvents = {
   template: `
     <parallax-jumbotron image-url="$ctrl.imageUrl" title="$ctrl.title"></parallax-jumbotron>
 
-    <div>
-    Calendar will go in this div.
-    </div>
-  `,
+    <calendar></calendar>
+  `
 };
 
 angular
