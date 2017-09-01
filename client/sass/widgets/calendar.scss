@@ -1,14 +1,38 @@
 #cal-container {
+  border: 1px solid $black;
   display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: 100vh;
-  text-align: center;
+  flex-flow: column;
+  max-width: 80%;
+  margin: 20px auto;
 
   #cal-header {
+    border-bottom: 2px solid $black;
+    div {
+      float: left;
+      width: 80%;
+      margin: auto;
+      background-color: blue;
+      color: white;
+      text-align: center;
+      line-height: 46px;
+    }
+
+    button {
+      float: left;
+      width: 10%;
+      line-height: 40px;
+    }
   }
 
   #cal-weekDays {
+    border: 2px solid $black;
+    background-color: red;
+    justify-content: space-between;
+
+    .day-name {
+      color: white;
+      float: left;
+    }
   }
 
   .selected {

@@ -8,17 +8,17 @@ function calendar() {
       <div id="cal-container">
         <div id="cal-header">
           <button class="fa fa-angle-left" ng-click="prevMonth()"></button>
-          <span>{{ titleMonth.format("MMMM YYYY") }}</span>
+          <div>{{ titleMonth.format("MMMM YYYY") }}</div>
           <button class="fa fa-angle-right" ng-click="nextMonth()"></button>
         </div>
         <div id="cal-weekDays">
-          <span ng-repeat="day in dayNames">{{ day }}</span>
+          <div class="day-name" ng-repeat="day in dayNames">{{ day }}</div>
         </div>
         <div>
-          <div ng-repeat='week in weeksInMonth'>
-            <div ng-click="select(day)" ng-repeat="day in week.daysInWeek"
-                 ng-class='{"is-today": day.isToday, "inactive-month": !day.isCurrentMonth, selected: day.date.isSame(selected) }'>
-              {{ day.dayName }} {{ day.day }} {{ day.isCurrentMonth }} {{ day.isToday }} {{ day.date }}
+          <div class="day-container" ng-repeat='week in weeksInMonth'>
+            <div class="day" ng-click="select(day)" ng-repeat="day in week.daysInWeek"
+                ng-class='{"is-today": day.isToday, "inactive-month": !day.isCurrentMonth, selected: day.date.isSame(selected) }'>
+              {{ day.dayName }} {{ day.day }}
             </div>
           </div>
         </div>
@@ -71,12 +71,12 @@ function calendar() {
 
     // Moves to the next month and builds the calendar for that month.
     scope.nextMonth = () => {
-      let nextMonth = scope.titleMonth.clone();
+      let nMonth = scope.titleMonth.clone();
 
       _buildMonth(
         scope,
-        nextMonth
-          .month(nextMonth.month() + 1)
+        nMonth
+          .month(nMonth.month() + 1)
           .date(1)
           .day(0),
         scope.titleMonth.month(scope.titleMonth.month() + 1)
@@ -85,12 +85,12 @@ function calendar() {
 
     // Moves to the previous month and builds the calendar for that month.
     scope.prevMonth = () => {
-      let prevMonth = scope.titleMonth.clone();
+      let pMonth = scope.titleMonth.clone();
 
       _buildMonth(
         scope,
-        prevMonth
-          .month(prevMonth.month() - 1)
+        pMonth
+          .month(pMonth.month() - 1)
           .date(1)
           .day(0),
         scope.titleMonth.month(scope.titleMonth.month() - 1)
