@@ -16,7 +16,8 @@ function calendar() {
         </div>
         <div>
           <div ng-repeat='week in weeksInMonth'>
-            <div ng-click="select(day)" ng-repeat='day in week.daysInWeek'>
+            <div ng-click="select(day)" ng-repeat="day in week.daysInWeek"
+                 ng-class='{"is-today": day.isToday, "inactive-month": !day.isCurrentMonth, selected: day.date.isSame(selected) }'>
               {{ day.dayName }} {{ day.day }} {{ day.isCurrentMonth }} {{ day.isToday }} {{ day.date }}
             </div>
           </div>
@@ -37,7 +38,7 @@ function calendar() {
       'Saturday'
     ];
 
-    // Initialize currently selected as the current date's month.
+    // Initialize currently selected as the current date.
     scope.selected = moment();
 
     // This is used as the month/year display for the calendar title. Needs to
@@ -123,34 +124,34 @@ function _buildMonth(scope, begMonth, currMonth) {
     // the current week. Pass in a copy of 'month' so that it can be manipulated
     // without changing the month in this function.
     scope.weeksInMonth.push({
-      daysInWeek: buildWeekDays(month.clone())
+      daysInWeek: buildWeekDays(month.clone(), currMonth)
     });
     // Move to the next week in the current month.
     month.add(1, 'w');
     // Continue looping while in the same month.
   } while (mIdx === month.month());
+}
 
-  // Builds each of the days for the week in the month passed in.
-  function buildWeekDays(weekBeg) {
-    const NUM_DAYS_IN_WEEK = 7;
+// Builds each of the days for the week in the month passed in.
+function buildWeekDays(weekDay, currMonth) {
+  const NUM_DAYS_IN_WEEK = 7;
 
-    let daysInWeek = [];
-    for (let i = 0; i < NUM_DAYS_IN_WEEK; ++i) {
-      // Pushes an object to the array where each day contains information
-      // needed for the calendar day.
-      daysInWeek.push({
-        dayName: weekBeg.format('dd').substring(0, 2),
-        day: weekBeg.date(),
-        isCurrentMonth: weekBeg.month() === currMonth.month(),
-        isToday: weekBeg.isSame(currMonth, 'day'),
-        date: weekBeg.format('DD MMM YYYY')
-      });
-      // Move to the next day in the week.
-      weekBeg.add(1, 'd');
-    }
-    // Return the array of days to the calling routine.
-    return daysInWeek;
+  let daysInWeek = [];
+  for (let i = 0; i < NUM_DAYS_IN_WEEK; ++i) {
+    // Pushes an object to the array where each day contains information
+    // needed for the calendar day.
+    daysInWeek.push({
+      dayName: weekDay.format('dd').substring(0, 2),
+      day: weekDay.date(),
+      isCurrentMonth: weekDay.month() === currMonth.month(),
+      isToday: weekDay.isSame(currMonth, 'day'),
+      date: moment(weekDay)
+    });
+    // Move to the next day in the week.
+    weekDay.add(1, 'd');
   }
+  // Return the array of days to the calling routine.
+  return daysInWeek;
 }
 
 angular.module('RowdyMermaid-site.widgets').directive('calendar', calendar);
