@@ -30,9 +30,10 @@ const about = {
     },
     template:   `
       <parallax-jumbotron image-url="$ctrl.imageUrl" title="$ctrl.title"></parallax-jumbotron>
+      <modal-component></modal-component>
       <div class="story">
         <div class="video">
-          <img src="images/allSwagBottleBackground.jpg">
+          <iframe src="https://player.vimeo.com/video/99582247?title=0&byline=0&portrait=0" width="770" height="433" style="width: 100%; height: 100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
         </div>
         <div class="our-story-container">
           <div class="container story-container">
