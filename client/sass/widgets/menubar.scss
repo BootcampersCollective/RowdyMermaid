@@ -15,6 +15,7 @@
     padding-top: 15px;
     flex-direction: row-reverse;
     justify-content: space-between;
+    // position: relative;
 
     #user-links {
       width: 10%;
@@ -37,6 +38,31 @@
     @include hover-text-color-transition();
     a:hover {
       color: $gray;
+    }
+
+    .cart{
+      width: 26.04%;
+      min-width: 500px;
+      height: 100vh;
+      position: absolute;
+      z-index: 13;
+      top: 0;
+      right: -100%;
+      background-color: $white;
+      padding: 1.5em;
+      text-align: left;
+      @include position-transition;
+
+      .header{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+
+    .cart.slide-in{
+      box-shadow: 0px -45px 25px rgba(0, 0, 0, .25);
+      right: 0;
     }
   }
 }

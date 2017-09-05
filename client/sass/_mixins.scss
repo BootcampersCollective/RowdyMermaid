@@ -16,3 +16,11 @@
   -o-transition: all .25s ease;
   transition: all .25s ease;
 }
+
+@mixin position-transition(){
+  -webkit-transition: all .5s cubic-bezier(.3,.21,.37,.92);
+  -moz-transition: all .5s cubic-bezier(.3,.21,.37,.92);
+  -ms-transition: all .5s cubic-bezier(.3,.21,.37,.92);
+  -o-transition: all .5s cubic-bezier(.3,.21,.37,.92);
+  transition: all .5s cubic-bezier(.3,.21,.37,.92);
+}

@@ -49,7 +49,8 @@ const rowdyMenuBar = {
 			{
 				name: 'Shopping Cart',
 				sref: 'app.shoppingCart',
-				iconClass: 'fa-shopping-cart'
+				iconClass: 'fa-shopping-cart',
+				hasCart: true,
 			}
 		];
 	},
