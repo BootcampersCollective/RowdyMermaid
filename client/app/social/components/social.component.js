@@ -8,20 +8,27 @@ const social = {
       ctrl.photos = []
       $http.get('https://api.instagram.com/v1/users/self/media/recent?access_token=178658361.21142ff.89b92ce099f54e98ab9e05a14087e6c1').then(function(res) {
         for (var i = 0; i < res.data.data.length; i++) {
-          ctrl.photos.push(res.data.data[i].link+"embed/")
+          ctrl.photos.push(res.data.data[i].images.standard_resolution.url)
         }
+        console.log(res.data.data)
         console.log(ctrl.photos)
       });
     };
 
   },
   template: `<h1>this is where pictures will go</h1>
+  <md-content class="md-padding" layout-xs="column" layout="row">
+    <div flex-xs flex-gt-xs="50" layout="column">
 	<div class ="pictures" ng-repeat = "photo in $ctrl.photos">
-		<iframe src={{photo}} height="375"></iframe>
-		</div>
+    <md-card>
+           <img ng-src="{{photo}}" class="md-card-image" alt=>
 
-		<a class="twitter-timeline" href="https://twitter.com/TwitterDev/timelines/539487832448843776">National Park Tweets - Curated tweets by TwitterDev</a>
-		 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>`
+    </md-card>
+           		</div>
+            </div>
+</md-content>
+    <a class="twitter-timeline" href="https://twitter.com/rowdymermaid">Tweets by rowdymermaid</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+     `
 
 };
 
