@@ -13,6 +13,7 @@ const social = {
         console.log(res.data.data)
         console.log(ctrl.photos)
       });
+
     };
 
   },
@@ -22,7 +23,8 @@ const social = {
            <img ng-src="{{photo}}" class="md-card-image" alt=>
            		</div>
 
-    <a class="twitter-timeline" href="https://twitter.com/rowdymermaid">Tweets by rowdymermaid</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+  <a class="twitter-timeline" href="https://twitter.com/rowdymermaid">Tweets by rowdymermaid</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
      `
 
 };
