@@ -1,12 +1,13 @@
 const social = {
   bindings: {},
-  controller: function($http) {
+  controller: function($http, service) {
     let ctrl = this;
     ctrl.social = null;
 
     ctrl.$onInit = function() {
       ctrl.photos = []
-      $http.get('https://api.instagram.com/v1/users/self/media/recent?access_token=1264789626.971ecd9.3cc1498dc3e24f0c8274f8699a9538bb').then(function(res) {
+      service.getInstagram()
+      .then(function(res) {
         for (var i = 0; i < res.data.data.length; i++) {
           ctrl.photos.push(res.data.data[i].images.standard_resolution.url)
         }
@@ -30,4 +31,4 @@ const social = {
 };
 
 angular.module('RowdyMermaid-site.social').component('social', social);
-social.$inject = ['$http'];
+social.$inject = ['$http','apiService'];
