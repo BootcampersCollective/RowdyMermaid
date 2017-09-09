@@ -34,7 +34,7 @@ function apiService($q, $http) {
     function getInstagram(){
       return $http({
         method:'GET',
-        url: 'https://api.instagram.com/v1/users/self/media/recent?access_token=1264789626.971ecd9.3cc1498dc3e24f0c8274f8699a9538bb'
+        url: '/api/insta',
       })
 
     }
