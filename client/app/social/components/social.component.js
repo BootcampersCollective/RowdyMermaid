@@ -19,13 +19,18 @@ const social = {
 
   },
   template: `<h1>this is where pictures will go</h1>
+  <div class="social">
   <aside class="instagram">
    <div ng-repeat = "photo in $ctrl.photos" class ="instagram-container" >
             <div class="img" ng-style="{backgroundImage: 'url({{photo}})'}"></div>
             <div class="overlay"></div>
     </div>
   </aside>
-  <a class="twitter-timeline" href="https://twitter.com/rowdymermaid">Tweets by rowdymermaid</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+  <div class = "twitter">
+    <a class="twitter-timeline" data-height="100%" href="https://twitter.com/rowdymermaid">Tweets by rowdymermaid</a>
+   </div>
+ </div>
+
 
      `
 
