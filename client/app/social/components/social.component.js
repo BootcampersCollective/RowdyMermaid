@@ -5,15 +5,16 @@ const social = {
     ctrl.social = null;
 
     ctrl.$onInit = function() {
-      ctrl.photos = []
-      ctrl.links=[]
+      ctrl.instagrams = []
       apiService.getInstagram()
       .then(function(res) {
         console.log(res.data)
         for (var i = 0; i < res.data.length; i++) {
-          ctrl.photos.push(res.data[i].images.standard_resolution.url)
+          ctrl.instagrams.push({photo:res.data[i].images.standard_resolution.url,
+          link:res.data[i].link})
         }
       });
+      console.log(ctrl.instagrams)
 
     };
 
@@ -21,9 +22,16 @@ const social = {
   template: `<h1>this is where pictures will go</h1>
   <div class="social">
   <aside class="instagram">
-   <div ng-repeat = "photo in $ctrl.photos" class ="instagram-container" >
-            <div class="img" ng-style="{backgroundImage: 'url({{photo}})'}"></div>
-            <div class="overlay"></div>
+   <div ng-repeat = "insta in $ctrl.instagrams" class ="instagram-container" >
+            <div class="img" ng-style="{backgroundImage: 'url({{insta.photo}})'}"></div>
+            <div class="overlay">
+              <div class="text">
+                <a href="{{insta.link}}" target="_blank">
+                <img class ="instaLink" src="https://assets.ifttt.com/images/channels/28/icons/on_color_large.png" >
+                </a>
+            </div>
+
+              </div>
     </div>
   </aside>
   <div class = "twitter">

@@ -10,16 +10,12 @@
       cursor: pointer;
       overflow: hidden;
       background-color: black;
-
       /*because it contains absolutely positioned divs*/
       position: relative;
-
-      /*display 1 image per row on small screens*/
+      /*display 4 images per row on small screens*/
       width: 25%;
-
       /*fallback for no flexbox */
       float: left;
-
       .img{
          position: absolute;
          top: 0;
@@ -32,7 +28,6 @@
          /*zoom transition*/
          transition: transform 0.66s ease-out;
       }
-
       /*to darken image on hover*/
       .overlay{
          position: absolute;
@@ -44,20 +39,30 @@
          opacity: 0;
          transition: opacity 0.2s ease;
       }
-
       /*consider adding this on focus as well if images are focus-able*/
       &:hover{
          .overlay{ opacity: 0.4 }
 
          .img{ transform: scale(1.2) }
       }
-
       /*force 1:1 aspect ratio*/;
       &:before{
          content: "";
          display: block;
          margin-top: 100%;
-      };
+      }
+      .text {
+        color: white;
+        font-size: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+      }
+      .instaLink{
+        width:100%;
+      }
 
    }
 }
