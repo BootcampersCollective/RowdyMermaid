@@ -73,3 +73,17 @@
   width: 50%;
   margin: 0 1.5rem;
 }
+
+@media only screen and (max-width: 500px) {
+      .social{
+        flex-direction: column;
+     }
+     .instagram{
+       width: 90%;
+     }
+     .twitter{
+       padding-top: 2.5%;
+       width: 90%;
+     }
+
+}

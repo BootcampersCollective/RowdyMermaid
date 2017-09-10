@@ -19,7 +19,7 @@ const social = {
     };
 
   },
-  template: `<h1>this is where pictures will go</h1>
+  template: `
   <div class="social">
   <aside class="instagram">
    <div ng-repeat = "insta in $ctrl.instagrams" class ="instagram-container" >
@@ -35,7 +35,7 @@ const social = {
     </div>
   </aside>
   <div class = "twitter">
-    <a class="twitter-timeline" data-height="100%" href="https://twitter.com/rowdymermaid">Tweets by rowdymermaid</a>
+    <a class="twitter-timeline" data-height="110%" href="https://twitter.com/rowdymermaid">Tweets by rowdymermaid</a>
    </div>
  </div>
 
