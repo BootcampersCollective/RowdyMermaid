@@ -25,12 +25,25 @@ const about = {
             src: 'images/bottlesAllFlavors.jpg'
           }
         ]
+        ctrl.modalState = false;
+        ctrl.modalTitle = 'This is the title',
+        ctrl.modalText = 'Passing the text for my modal, this has to work'
+        ctrl.changeState = function(){
+          ctrl.modalState = !ctrl.modalState
+          console.log(ctrl.modalState);
+        }
 
         ctrl.$onInit = function () {};
     },
     template:   `
       <parallax-jumbotron image-url="$ctrl.imageUrl" title="$ctrl.title"></parallax-jumbotron>
-      <modal-component></modal-component>
+      <modal-component
+        ng-if="$ctrl.modalState"
+        isShowing="$ctrl.changeState"
+        title="$ctrl.modalTitle"
+        text="$ctrl.modalText"
+      >
+      </modal-component>
       <div class="story">
         <div class="video">
           <iframe src="https://player.vimeo.com/video/99582247?title=0&byline=0&portrait=0" width="770" height="433" style="width: 100%; height: 100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
@@ -45,7 +58,7 @@ const about = {
               <p>
                 In spring of 2013, I lost my office job in a corporate downsizing that turned out to be one of the most fortunate events of my life. I had been brewing kombucha in my garage for over two years and secretly dreaming about an exit strategy from corporate culture. This seemed to be the universe helping me towards that door. We were living in Boulder, the healthiest city in the country, but both my wife and i had been so busy with work that the things that make us most happy—gardening, hiking, experimenting with new recipes, tastes and experiences—were increasingly falling to the wayside. ...
               </p>
-              <button>continue reading</button>
+              <button ng-click="$ctrl.changeState()">continue reading</button>
             </article>
           </div>
         </div>
