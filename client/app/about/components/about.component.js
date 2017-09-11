@@ -4,7 +4,7 @@ const about = {
         let ctrl = this;
 
         ctrl.imageUrl = "/images/winterPineTrees.jpg";
-        ctrl.title = "ABOUT US";
+        ctrl.headerText = "ABOUT US";
         ctrl.images = [
           {
             src: 'images/bottlesAllFlavors2.jpg'
@@ -29,7 +29,7 @@ const about = {
         ctrl.$onInit = function () {};
     },
     template:   `
-      <parallax-jumbotron image-url="$ctrl.imageUrl" title="$ctrl.title"></parallax-jumbotron>
+      <parallax-jumbotron image-url="$ctrl.imageUrl" header-text="$ctrl.headerText"></parallax-jumbotron>
       <modal-component></modal-component>
       <div class="story">
         <div class="video">
