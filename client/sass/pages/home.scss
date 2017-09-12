@@ -26,6 +26,9 @@
 .image-wrapper {
   height: auto;
   text-align: center;
+  img {
+  }
+
 }
 
 .viewFlavors {
@@ -46,7 +49,7 @@
         cursor: pointer;
         border: 3px solid #3b3b3b;
         font-size: 12px;
-        font-family: Yantramanav;
+        font-family: Yantramanav, serif;
         font-weight: 400;
         text-transform: uppercase;
         line-height: 22px;

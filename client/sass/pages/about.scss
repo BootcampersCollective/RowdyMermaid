@@ -97,4 +97,46 @@
     background-repeat: no-repeat;
     background-position: center center;
   }
+
+  .kombucha-tap{
+    width: 80%;
+    margin: 2.5em auto 1.5em;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+
+    .kombucha-tap-image, .kombucha-tap-article{
+      width: 45%;
+    }
+
+    .kombucha-tap-image{
+      img{
+        width: 100%;
+      }
+    }
+
+    .kombucha-tap-article{
+      line-height: 1.7;
+      font-size: 19px;
+
+      h1{
+        text-align: left;
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  @media (max-width: 767px){
+    .kombucha-tap{
+      flex-direction: column;
+
+      .kombucha-tap-image, .kombucha-tap-article{
+        width: 100%;
+      }
+    }
+  }
+}
+
+.kombucha-tap-section{
+  margin-bottom: 8em;
 }
