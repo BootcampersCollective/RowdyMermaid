@@ -38,35 +38,36 @@ const rowdyMenuBar = {
 				sref: 'app.store'
 			}
 		];
-
-		//pulled out log in and cart buttons because they need to be in a different div
-		ctrl.iconButtons = [
-			{
-				name: 'Log In',
-				sref: 'app.login',
-				iconClass: 'fa-user'
-			},
-			{
-				name: 'Shopping Cart',
-				sref: 'app.shoppingCart',
-				iconClass: 'fa-shopping-cart',
-				hasCart: true,
-			}
-		];
 	},
-	template: `<nav id="menu-bar">
-    <div id="nav-logo">
-        <a ui-sref="app.home"><img src="images/rowdyMermaidWordyLogo.png" alt="Rowdy Mermaid Logo"></a>
-    </div>
-    <div id="nav-links">
-        <div id="user-links">
-            <rowdy-menu-button data="button" ng-repeat="button in $ctrl.iconButtons">
-        </div>
-        <div id="page-links">
-            <rowdy-menu-button data="button" ng-repeat="button in $ctrl.menuButtons" class="menu-button-style">
-        </div>
-    </div>
-</nav>`
+	template: `
+		<nav id="menu-bar">
+	    <div id="nav-logo">
+	        <a ui-sref="app.home"><img src="images/rowdyMermaidWordyLogo.png" alt="Rowdy Mermaid Logo"></a>
+	    </div>
+	    <div id="nav-links">
+	        <div id="user-links">
+							<a><i class="fa fa-user"></i></a>
+							<a ng-click="className='slide-in'">
+								<i class="fa fa-shopping-cart"></i>
+								<span ng-mouseover="$ctrl.isShowing = true">{{$ctrl.data.name}}</span>
+							</a>
+	        </div>
+	        <div id="page-links">
+	            <rowdy-menu-button data="button" ng-repeat="button in $ctrl.menuButtons" class="menu-button-style">
+	        </div>
+	    </div>
+			<div class="cart" ng-class="className">
+				<div class="header">
+					<i class="fa fa-times" aria-hidden="true" ng-click="className=''"></i>
+					<h2>Your Shopping Cart</h2>
+				</div>
+				<hr>
+
+
+				<a ui-sref="app.store" ng-click="className=''">Continue shopping</a>
+			</div>
+	</nav>
+	`
 };
 
 angular

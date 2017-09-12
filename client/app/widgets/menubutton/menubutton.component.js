@@ -4,7 +4,7 @@ const rowdyMenuButton = {
 	},
 	controller: function () {
 		let ctrl = this;
-		ctrl.isShowing = false;
+		// ctrl.isShowing = false;
 
 		ctrl.$onInit = function () {
 			// console.log('ctrl.button', ctrl.button);
@@ -33,16 +33,6 @@ const rowdyMenuButton = {
 						<a ui-sref="{{subNav.sref}}">{{subNav.name}}</a>
 				</div>
       </div>
-			<div class="cart" ng-class="className" ng-mouseleave="className=''">
-				<div class="header">
-					<i class="fa fa-times" aria-hidden="true"></i>
-					<h2>Your shopping cart</h2>
-				</div>
-				<hr>
-
-
-				<a ui-sref="app.store">Continue shopping</a>
-			</div>
     `
 };
 
