@@ -6,16 +6,24 @@ const contactForm = {
     ctrl.$onInit = function() {};
   },
   template: `
-		<div class="contactForm">
-			<h2>Contact</h2>
-			<form>
-				Name<br>
-				<input type="text" placeholder="Name"><br>
-				Email<br>
-				<input type="email" placeholder="Email Address"><br>
-				Message<br>
-				<textarea type="text"></textarea><br>
-				<button class="submit">Submit</button>
+		<div class="contact-form">
+			<div class="contact-form-header">Contact</div>
+      <form>
+        <div>
+          <label for="contact-name">Name</label>
+          <input id="contact-name" type="text" name="contact-name" placeholder="Name">
+        </div>
+        <div>
+          <label for="email-address">Email</label>
+          <input id="email-address" type="email" name="email-address" placeholder="Email Address">
+        </div>
+        <div>
+          <label for="email-message" for="email-message">Message</label>
+          <textarea id="email-message" type="text" name="email-message"></textarea>
+        </div>
+        <div>
+          <button class="submit">Submit</button>
+        </div>
 			</form>
 		</div>
 	`

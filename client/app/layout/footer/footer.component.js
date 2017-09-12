@@ -14,35 +14,35 @@ const footerComponent = {
 
       <div class="footer-right">
         <div class="contactHours">
-          <h2>Hours</h2>
+          <div class="hours-header">Hours</div>
           <table>
             <tbody>
               <tr>
-                <td>Sun<span>day</span></td>
+                <td>Sunday</td>
                 <td>11:00am - 5:00pm</td>
               </tr>
               <tr>
-                <td>Mon<span>day</span></td>
+                <td>Monday</td>
                 <td>Closed</td>
               </tr>
               <tr>
-                <td>Tue<span>sday</span></td>
+                <td>Tuesday</td>
                 <td>Closed</td>
               </tr>
               <tr>
-                <td>Wed<span>nesday</span></td>
+                <td>Wednesday</td>
                 <td>11:00am - 7:00pm</td>
               </tr>
               <tr>
-                <td>Thur<span>sday</span></td>
+                <td>Thursday</td>
                 <td>11:00am - 7:00pm</td>
               </tr>
               <tr>
-                <td>Fri<span>day</span></td>
+                <td>Friday</td>
                 <td>11:00am - 8:00pm</td>
               </tr>
               <tr>
-                <td>Sat<span>urday</span></td>
+                <td>Saturday</td>
                 <td>11:00am - 8:00pm</td>
               </tr>
             </tbody>
