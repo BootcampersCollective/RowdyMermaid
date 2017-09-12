@@ -45,7 +45,7 @@
 
       p{
         margin-top: 5px;
-        font-size: 19px;
+        font-size: 1rem;
         line-height: 1.7;
       }
 
@@ -85,15 +85,17 @@
   display: flex;
 
   .text {
+    font-family: Raleway, sans-serif;
+    line-height: 2rem;
     width: 50%;
-    font-size: 1.6em;
+    font-size: 1rem;
     padding: 3% 3%;
   }
 
   .image {
     width: 50%;
     overflow: hidden;
-    background-image: url("/images/closeUpBottles.jpg");
+    background-image: url("/images/kombuchaOnTap.jpg");
     background-repeat: no-repeat;
     background-position: center center;
   }
