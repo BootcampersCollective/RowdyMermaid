@@ -4,6 +4,8 @@ const taproomNews = {
     let ctrl = this;
     ctrl.taproomNews = null;
 
+    ctrl.$onInit = function() {};
+
     ctrl.onTap = [
       'Strawberry',
       'Lavender',
@@ -12,9 +14,12 @@ const taproomNews = {
       'Wild Kombucha Beer',
     ];
 
-    ctrl.$onInit = function() {};
+    ctrl.imageUrl = '/images/stickersColorAndBW.jpg';
+    ctrl.title = 'MERMAID UPDATES';
   },
   template: `
+    <parallax-jumbotron image-url="$ctrl.imageUrl" title="$ctrl.title"></parallax-jumbotron>
+
     <div id="news-ontap-container">
       <div id="tap-flavors">
         <h1>KOMBUCHA ON TAP</h1>
