@@ -50,6 +50,23 @@ const about = {
           </div>
         </div>
       </div>
+
+      <div class="container kombucha-tap-section">
+        <div class="kombucha-tap">
+          <div class="kombucha-tap-image">
+            <img src="images/kombuchaOnTap.jpg">
+          </div>
+          <div class="kombucha-tap-article">
+            <h1>kombucha on tap</h1>
+            <article>
+              Imagine riding your bicycle along the winding Boulder bike path on a beautifully sunny afternoon and happening upon a tasting room serving up nutritious, delicious kombucha on tap served by our team of intelligent and passionate locals. That was the founding concept for Rowdy Mermiad Kombucha. When we opened our doors in 2014, we were the fifth kombucha tasting room in the world. We are happy to be part of this growing national health-conscious trend. <br /><br />
+
+              We may be available in stores across the U.S. but Boulder is our heart. Come and visit us when you are in town. We love to talk SCOBY.
+            </article>
+          </div>
+        </div>
+      </div>
+
       <div class="container">
           <span class="text">
               Seitan tattooed occupy kinfolk raw denim brunch, vinyl photo booth pork belly. Austin vegan before they sold out edison bulb next level cronut unicorn ugh. Tousled XOXO gochujang edison bulb thundercats disrupt. Chillwave cloud bread everyday carry venmo distillery. Poutine yr schlitz artisan. Try-hard truffaut craft beer raclette blog marfa keffiyeh kombucha poutine YOLO retro celiac hell of banh mi. Man braid bushwick ramps meh hoodie. Gluten-free art party gentrify hot chicken. Activated charcoal intelligentsia ennui meditation. Single-origin coffee blue bottle XOXO, helvetica fixie four loko jean shorts small batch. Taxidermy brooklyn man bun kitsch franzen vaporware.
