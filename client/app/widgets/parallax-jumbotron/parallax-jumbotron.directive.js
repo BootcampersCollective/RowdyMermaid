@@ -1,7 +1,7 @@
 const parallaxJumbotron = {
     bindings: {
         imageUrl: '<',
-        title: '<'
+        headerText: '<'
     },
     controller: function() {
       let ctrl = this;
@@ -12,8 +12,7 @@ const parallaxJumbotron = {
     template: `
         <div class="parallax-container">
             <div class="image" style="background-image: url({{$ctrl.imageUrl}})"></div>
-            <div class="title">{{$ctrl.title}}</div>
-
+            <div class="title">{{$ctrl.headerText}}</div>
     `
 };
 

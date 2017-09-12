@@ -5,12 +5,12 @@ const taproomEvents = {
     ctrl.taproomEvents = null;
 
     ctrl.imageUrl = '/images/chessBoard.jpg';
-    ctrl.title = 'EVENTS';
+    ctrl.headerText = 'EVENTS';
 
     ctrl.$onInit = function() {};
   },
   template: `
-    <parallax-jumbotron image-url="$ctrl.imageUrl" title="$ctrl.title"></parallax-jumbotron>
+    <parallax-jumbotron image-url="$ctrl.imageUrl" header-text="$ctrl.headerText"></parallax-jumbotron>
 
     <div>
     Calendar will go in this div.
