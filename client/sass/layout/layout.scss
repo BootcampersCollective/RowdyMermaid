@@ -8,7 +8,7 @@
       height: 80px;
       width: 100%;
       position: fixed;
-      background-color: white;
+      background-color: $light-gray;
       z-index: 4;
 
       @include breakpoint($bp-768) {
@@ -41,7 +41,7 @@
     }
   }
 
-  .gallery{
+  .gallery {
     width: 100%;
     height: auto;
     background-color: $light-gray;
@@ -49,7 +49,7 @@
     padding: 1.5em 0;
     text-transform: uppercase;
 
-    .gallery-images{
+    .gallery-images {
       width: 80%;
       height: auto;
       margin: 4em auto 1em;
@@ -58,33 +58,33 @@
       flex-wrap: wrap;
       justify-content: space-between;
 
-      .image-holder{
+      .image-holder {
         width: 31.62%;
         height: auto;
         margin-bottom: 3em;
 
-        img{
+        img {
           width: 100%;
         }
       }
     }
 
     @media (max-width: $bp-900) {
-      .gallery-images{
+      .gallery-images {
         width: 96%;
       }
     }
 
     @media (max-width: $bp-480) {
-      .gallery-images{
-        .image-holder{
+      .gallery-images {
+        .image-holder {
           width: 100%;
           margin-bottom: 1em;
         }
       }
     }
 
-    button{
+    button {
       width: 111.42px;
       height: 40;
       border: 2px solid $black;
@@ -93,17 +93,15 @@
       font-size: 14px;
       background-color: $light-gray;
       margin-bottom: 3em;
-      @include hover-text-color-transition()
-
-      &:hover{
+      @include hover-text-color-transition();
+      &:hover {
         background-color: $black;
-        color: $white
+        color: $white;
       }
     }
   }
 
   .container-footer {
     flex: 0 0 5vh;
-    background-color: #b99967;
   }
 }
