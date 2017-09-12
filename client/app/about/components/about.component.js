@@ -54,7 +54,7 @@ const about = {
       <div class="container kombucha-tap-section">
         <div class="kombucha-tap">
           <div class="kombucha-tap-image">
-            <img src="images/essenceIngredients.jpg">
+            <img src="images/kombuchaOnTap.jpg">
           </div>
           <div class="kombucha-tap-article">
             <h1>kombucha on tap</h1>
