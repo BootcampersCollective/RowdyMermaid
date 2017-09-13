@@ -31,8 +31,8 @@
             letter-spacing: 2px;
             text-transform: uppercase;
             &:hover {
-              color: $white;
               background-color: $black;
+              color: $white;
             }
           }
 
@@ -66,13 +66,18 @@
 
           input,
           textarea {
-            border: none;
+            border: 1px inset;
             font-size: 20px;
             font-weight: 100;
             letter-spacing: 0;
             line-height: 35px;
-            outline: none;
             width: 100%;
+
+            &:focus {
+              outline: none;
+              border-color: $gray;
+              box-shadow: 0 0 10px $gray;
+            }
           }
 
           input,
