@@ -1,0 +1,35 @@
+.store-products {
+  width: 90%;
+  margin: 0 auto;
+  font-family: yantramanav;
+  font-size: 1.2em;
+  font-weight: 100;
+  p {
+    margin: 0;
+    margin-top: 0.2em;
+  }
+  .products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 100px;
+    margin-top: 100px;
+
+    img {
+      width: 30vw;
+      height: 30vw;
+      margin: 0;
+      //border-radius: 20px;
+    }
+
+    p {
+      width: 48%;
+    }
+
+    .product-name .product-price {
+      letter-spacing: 1px;
+      font-size: 1.3em;
+    }
+
+  }
+}
