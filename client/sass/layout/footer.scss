@@ -1,64 +1,72 @@
 .container-footer {
   background-color: $light-gray;
+  font-family: 'yantramanav';
 
-  .copyright-text {
-    color: $black;
+  .footer-top {
     display: flex;
-    justify-content: space-around;
-    clear: both;
-  }
-  .footer-links {
-    max-width: 200px;
-    margin: 0 auto;
-    padding: 10px 0;
-    display: flex;
-    justify-content: space-between;
-    color: $white;
-  }
-}
+    justify-content: space-evenly;
 
-.container-footer {
-  .link-to-top {
-    color: $white;
-    text-decoration: none;
-  }
-}
+    .footer-left {
+      width: 35%;
+    }
 
-.contact {
-  font-family: yantramanav;
-
-  .contactForm {
-    h2 {
-      text-transform: uppercase;
-    }
-    input {
-      width: 100%;
-    }
-    textarea {
-      width: 100%;
-      height: 100%;
-    }
-    width: 55%;
-    margin: 0 2.5%;
-    display: inline-block;
-    float: left;
-  }
-  .contactSectionRight {
-    text-align: center;
-    width: 35%;
-    margin: 0 2.5%;
-    display: inline-block;
-    float: left;
-    .contactHours {
-      text-transform: uppercase;
-      table {
-        margin: auto;
-      }
-    }
-    .contactAddress {
-      h4 {
+    .footer-right {
+      .contactHours {
         text-transform: uppercase;
+
+        .hours-header {
+          font-size: 50px;
+          margin: 20px 0 5px 0;
+          text-align: center;
+        }
+
+        table {
+          margin: auto;
+
+          tr {
+            td {
+              padding: 0 10px;
+            }
+
+            td:last-child {
+              text-align: center;
+            }
+          }
+        }
       }
+
+      .contactAddress {
+        text-align: center;
+        h4 {
+          margin: 25px 0 5px 0;
+          text-transform: uppercase;
+        }
+
+        p {
+          margin: 5px;
+        }
+      }
+    }
+  }
+
+  .footer-bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 40px 10px 0 10px;
+
+    .copyright-text {
+    }
+
+    .footer-links {
+      a {
+        padding: 0 10px;
+      }
+    }
+
+    .link-to-top {
+      cursor: pointer;
+      text-decoration: none;
     }
   }
 }
