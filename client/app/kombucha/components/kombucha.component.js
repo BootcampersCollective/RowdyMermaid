@@ -64,6 +64,18 @@ const kombucha = {
         };
     },
     template: `
+      <div id="tiled-gallery" md-force-height="'100px'">
+        <md-grid-list md-cols="4" md-gutter="1em" md-row-height="4:3">
+          <md-grid-tile><img src="images/livingGingerProduct.jpg"></md-grid-tile>
+          <md-grid-tile md-colsan="2"><img src="images/inHandRowdyBelly.jpg"></md-grid-tile>
+          <md-grid-tile><img src="images/flowerGrowProduct.jpg"></md-grid-tile>
+          <md-grid-tile><img src="images/rowdyBellyProduct.jpg"></md-grid-tile>
+          <md-grid-tile><img src="images/summerberryProduct.jpg"></md-grid-tile>
+          <md-grid-tile><img src="images/essenceProduct.jpg"></md-grid-tile>
+          <md-grid-tile><img src="images/savoryPeachProduct.jpg"></md-grid-tile>
+          <md-grid-tile><img src="images/gingergrassProduct.jpg"></md-grid-tile>
+        </md-grid-list>
+      </div>
       <section class='kombucha-products'>
         <article ng-repeat='flavor in $ctrl.flavors' class='kombucha-flavor'>
           <img class='ingredient-image' src='{{flavor.ingredientImgSrc}}' />
