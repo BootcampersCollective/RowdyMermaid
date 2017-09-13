@@ -35,8 +35,8 @@
       @include breakpoint($bp-768) {
         flex: 1 0 auto;
         /*height: 93vh;*/
-        /* setting the hieght causes body to overlap the footer making the links non-funcitonal */
-        overflow-y: scroll;
+        /* setting the height causes body to overlap the footer making the links non-funcitonal */
+        // overflow-y: scroll;
       }
     }
   }
