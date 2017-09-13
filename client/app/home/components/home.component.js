@@ -24,10 +24,8 @@ const home = {
 		<h4>Boulder, Colorado</h4>
 	</div>
 	<div class="marketImages">
-		<img src="images/citrus.jpg">
-	</div>
-	<div class="marketImages">
-		// Holder for Image Carousel
+		<img class="home-citrus-bottles" id="citrus" src="images/citrus.jpg">
+		<img class="home-citrus-bottles" id="bottles"src="images/autumnHaze.jpg">
 	</div>
 	<div class="viewFlavors">
 		<h3>Wild Landscape Inspired Sustainaby Sourced 100% Wind Energy Produced Living Adaptogenic Kombucha</h3>
