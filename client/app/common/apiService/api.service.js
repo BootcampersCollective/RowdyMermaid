@@ -4,6 +4,7 @@ function apiService($q, $http) {
     const service = {
         getMenu: getMenu,
         getEvents: getEvents,
+        getProducts: getProducts,
         setSomething: setSomething,
     };
     return service;
@@ -19,6 +20,13 @@ function apiService($q, $http) {
         return $http({
             method: 'GET',
             url: '/api/events'
+        });
+    }
+
+    function getProducts() {
+        return $http({
+            method: 'GET',
+            url: '/api/products'
         });
     }
 

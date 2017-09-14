@@ -1,25 +1,11 @@
-const products = [
-    {
-        name: 'Rowdy Mermaid Trucker Hat',
-		price: 20,
-        productImgSrc: 'images/livingGingerProduct.jpg'
-    },
-    {
-        name: 'Rowdy Mermaid T-Shirt',
-        price: 20,
-        productImgSrc: 'images/livingGingerProduct.jpg'
-    }
 
-]
 
 
 const store = {
 	bindings: {},
-	controller: function () {
+	controller: /*@ngInject*/ function(apiService) {
 		let ctrl = this;
-		ctrl.store = null;
-
-		ctrl.products = products;
+		ctrl.products = null;
 
 		ctrl.buyNow = function () {
 			console.log("buy now")
@@ -32,7 +18,15 @@ const store = {
 
 
 		ctrl.$onInit = function () {
-
+            apiService
+                .getProducts()
+                .then(function(res) {
+                    console.log('getProducts res', res);
+                    ctrl.products = res.data;
+                })
+                .catch(function(err) {
+                    console.log('getProducts Error', err);
+                });
 		};
 
 	},
@@ -50,5 +44,3 @@ const store = {
 
 angular.module('RowdyMermaid-site.store')
 	.component('store', store);
-
-store.$inject = [];
