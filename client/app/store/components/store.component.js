@@ -26,7 +26,7 @@ const store = {
 
 		};
 
-		ctrl.shoppingCart = function() {
+		ctrl.addToCart = function() {
 			console.log("add to shopping cart")
 		};
 
