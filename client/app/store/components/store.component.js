@@ -27,7 +27,7 @@ const store = {
 		};
 
 		ctrl.shoppingCart = function() {
-
+			console.log("add to shopping cart")
 		};
 
 
@@ -42,8 +42,8 @@ const store = {
           <img class='product-image' src='{{product.productImgSrc}}' />
           <p class='product-name'>{{product.name}} &#36{{product.price}}</p>
         </article>
-       	<md-button md-ink-ripple="false" class="md-raised md-primary" ng-click="buyNow()">Buy Now</md-button>
-        <md-button md-ink-ripple="false" class="md-raised md-warn" ng-click="addToCart()">Add to Cart</md-button>
+       	<md-button md-ink-ripple="false" class="md-raised md-primary" ng-click="$ctrl.buyNow()">Buy Now</md-button>
+        <md-button md-ink-ripple="false" class="md-raised md-warn" ng-click="$ctrl.addToCart()">Add to Cart</md-button>
       </section>
 	`
 };
