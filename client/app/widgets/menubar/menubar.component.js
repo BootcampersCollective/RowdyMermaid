@@ -2,6 +2,7 @@ const rowdyMenuBar = {
 	bindings: {},
 	controller: function () {
 		let ctrl = this;
+
 		ctrl.menuButtons = [
 			{
 				name: 'Products',
@@ -65,6 +66,19 @@ const rowdyMenuBar = {
 
 
 				<a ui-sref="app.store" ng-click="className=''">Continue shopping</a>
+				<!--TODO Add script to onit function that is called in the form.-->
+				<form action="/your-server-side-code" method="POST">
+					<script
+						src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+						data-key="pk_test_6pRNASCoBOKtIshFeQd4XMUh"
+						data-amount="999"
+						data-name="Stripe.com"
+						data-description="Widget"
+						data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
+						data-locale="auto"
+						data-zip-code="true">
+					  </script>
+				</form>
 			</div>
 	</nav>
 	`
