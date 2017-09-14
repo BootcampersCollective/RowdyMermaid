@@ -36,7 +36,7 @@ const kombuchaBeer = {
 
         ctrl.galleryImages = galleryImages;
 
-        ctrl.title = "IT'S TIME TO GET ROWDY";
+        ctrl.headerText = "IT'S TIME TO GET ROWDY";
 
         ctrl.imageUrl = '/images/twoBeersOnWood.jpg';
 
@@ -45,7 +45,7 @@ const kombuchaBeer = {
         };
     },
     template: `
-    <parallax-jumbotron class="beerParralax" image-url="$ctrl.imageUrl" title="$ctrl.title"></parallax-jumbotron>
+    <parallax-jumbotron class="beerParralax" image-url="$ctrl.imageUrl" header-text="$ctrl.headerText"></parallax-jumbotron>
 
     <article class="beer-info">
       <div class="row">

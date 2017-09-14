@@ -5,7 +5,7 @@ const social = {
 		ctrl.social = null;
 
         ctrl.imageUrl = "/images/closeUpSticker.jpg";
-        ctrl.title = "SOCIAL FEED";
+        ctrl.headerText = "SOCIAL FEED";
 
 		ctrl.$onInit = function () {
 
@@ -13,7 +13,7 @@ const social = {
 
 	},
 	template: `
-	<parallax-jumbotron image-url="$ctrl.imageUrl" title="$ctrl.title"></parallax-jumbotron>
+	<parallax-jumbotron image-url="$ctrl.imageUrl" header-text="$ctrl.headerText"></parallax-jumbotron>
 	`
 };
 

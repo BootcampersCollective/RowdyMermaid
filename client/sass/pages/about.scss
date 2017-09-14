@@ -45,7 +45,7 @@
 
       p{
         margin-top: 5px;
-        font-size: 19px;
+        font-size: 1rem;
         line-height: 1.7;
       }
 
@@ -85,16 +85,60 @@
   display: flex;
 
   .text {
+    font-family: Raleway, sans-serif;
+    line-height: 2rem;
     width: 50%;
-    font-size: 1.6em;
+    font-size: 1rem;
     padding: 3% 3%;
   }
 
   .image {
     width: 50%;
     overflow: hidden;
-    background-image: url("/images/closeUpBottles.jpg");
+    background-image: url("/images/kombuchaOnTap.jpg");
     background-repeat: no-repeat;
     background-position: center center;
   }
+
+  .kombucha-tap{
+    width: 80%;
+    margin: 2.5em auto 1.5em;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+
+    .kombucha-tap-image, .kombucha-tap-article{
+      width: 45%;
+    }
+
+    .kombucha-tap-image{
+      img{
+        width: 100%;
+      }
+    }
+
+    .kombucha-tap-article{
+      line-height: 1.7;
+      font-size: 19px;
+
+      h1{
+        text-align: left;
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  @media (max-width: 767px){
+    .kombucha-tap{
+      flex-direction: column;
+
+      .kombucha-tap-image, .kombucha-tap-article{
+        width: 100%;
+      }
+    }
+  }
+}
+
+.kombucha-tap-section{
+  margin-bottom: 8em;
 }

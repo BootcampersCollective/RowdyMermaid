@@ -15,10 +15,10 @@ const taproomNews = {
     ];
 
     ctrl.imageUrl = '/images/stickersColorAndBW.jpg';
-    ctrl.title = 'MERMAID UPDATES';
+    ctrl.headerText = 'MERMAID UPDATES';
   },
   template: `
-    <parallax-jumbotron image-url="$ctrl.imageUrl" title="$ctrl.title"></parallax-jumbotron>
+    <parallax-jumbotron image-url="$ctrl.imageUrl" header-text="$ctrl.headerText"></parallax-jumbotron>
 
     <div id="news-ontap-container">
       <div id="tap-flavors">
