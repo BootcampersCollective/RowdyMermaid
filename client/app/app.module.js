@@ -1,5 +1,6 @@
 angular.module('RowdyMermaid-site', [
   'ui.router',
+  'ngMaterial',
   'RowdyMermaid-site.about',
   'RowdyMermaid-site.base',
   'RowdyMermaid-site.common',

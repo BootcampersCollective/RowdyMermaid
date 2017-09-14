@@ -11,6 +11,9 @@ const VENDOR_SCRIPTS = [
 	'node_modules/angular-animate/angular-animate.js',
 	'node_modules/angular-aria/angular-aria.js',
 	'node_modules/angular-sanitize/angular-sanitize.js',
+	'node_modules/angular-material/angular-material.js',
+    'node_modules/angular-material/angular-material-mocks.js'
+
 ];
 const CLIENT_SCRIPTS_PATH = ['client/app/**/*.module.js', 'client/app/**/*.js'];
 const SERVER_SCRIPTS_PATH = ['server/**/*.js'];

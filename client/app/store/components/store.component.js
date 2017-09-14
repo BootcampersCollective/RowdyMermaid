@@ -21,19 +21,29 @@ const store = {
 
 		ctrl.products = products;
 
+		ctrl.buyNow = function () {
+			console.log("buy now")
+
+		};
+
+		ctrl.shoppingCart = function() {
+
+		};
+
+
 		ctrl.$onInit = function () {
 
 		};
 
 	},
 	template: `
-	<section class='store-products'>
-        <article ng-repeat='product in $ctrl.products' class='products'>
+	<section ng-repeat='product in $ctrl.products' class='store-products'>
+        <article class='products'>
           <img class='product-image' src='{{product.productImgSrc}}' />
           <p class='product-name'>{{product.name}} &#36{{product.price}}</p>
-          <button>Buy Now</button>
-          <button>Add to Cart</button>
         </article>
+       	<md-button md-ink-ripple="false" class="md-raised md-primary" ng-click="buyNow()">Buy Now</md-button>
+        <md-button md-ink-ripple="false" class="md-raised md-warn" ng-click="addToCart()">Add to Cart</md-button>
       </section>
 	`
 };

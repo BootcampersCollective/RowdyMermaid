@@ -81,6 +81,10 @@ angular-aria@1.6.4:
   version "1.6.4"
   resolved "https://registry.yarnpkg.com/angular-aria/-/angular-aria-1.6.4.tgz#c8683666ace196668f68e7220811bdcfc9e106e4"
 
+angular-material@^1.1.5:
+  version "1.1.5"
+  resolved "https://registry.yarnpkg.com/angular-material/-/angular-material-1.1.5.tgz#a5450cd8205e15a7691edc389476094cf86d592b"
+
 angular-sanitize@1.6.4:
   version "1.6.4"
   resolved "https://registry.yarnpkg.com/angular-sanitize/-/angular-sanitize-1.6.4.tgz#60a37ea96fb0d4a322a3ccb64ee4a5cf3b154f0c"
