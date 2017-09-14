@@ -1,12 +1,18 @@
 [
   {
-    name: 'Rowdy Mermaid Trucker Hat',
-    price: 20,
-    productImgSrc: 'images/livingGingerProduct.jpg'
+    "id": "truckerHat",
+    "data": {
+      "name": "Rowdy Mermaid Trucker Hat",
+      "price": 20,
+      "productImgSrc": "images/livingGingerProduct.jpg"
+    }
   },
   {
-    name: 'Rowdy Mermaid T-Shirt',
-    price: 20,
-    productImgSrc: 'images/livingGingerProduct.jpg'
+    "id": "truckerHat",
+    "data": {
+      "name": "Rowdy Mermaid T-Shirt",
+      "price": 20,
+      "productImgSrc": "images/livingGingerProduct.jpg"
+    }
   }
 ]
