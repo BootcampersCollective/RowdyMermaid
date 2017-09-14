@@ -37,7 +37,7 @@ const home = {
 		</div>
 		<div class="viewFlavors">
 			<h3>Wild Landscape Inspired Sustainaby Sourced 100% Wind Energy Produced Living Adaptogenic Kombucha</h3>
-			<a href="/kombucha">View All Flavors</>
+			<a href="/kombucha">View All Flavors</a>
 		</div>
 	</div>
 	<parallax-jumbotron image-url="$ctrl.imageUrl"></parallax-jumbotron>
