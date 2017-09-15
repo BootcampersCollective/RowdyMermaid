@@ -18,6 +18,10 @@ const store = {
                 });
 		};
 
+		ctrl.openCart = function() {
+		    // open cart
+        }
+
         ctrl.addToCart = function(id, data) {
             // initialize variables
             let stringifiedShoppingCart;
@@ -61,21 +65,12 @@ const store = {
             console.log(JSON.parse(localStorage.RowdyShoppingCart));
         };
 
-        // some functions just for testing
-        ctrl.logLocalStorage = function() {
-            console.log(JSON.parse(localStorage.RowdyShoppingCart));
-        };
-
-        ctrl.clearCart = function() {
-            localStorage.removeItem("RowdyShoppingCart");
-            console.log("Cart has been cleared");
-        }
-
         ctrl.buyNow = function (id, data) {
             // add item to cart
-            addToCart(id, data);
+            ctrl.addToCart(id, data);
 
             //TODO open cart
+            ctrl.openCart()
         };
 	},
 	template: `
@@ -86,9 +81,6 @@ const store = {
         </article>
        	<md-button md-ink-ripple="false" class="md-raised md-primary" ng-click="$ctrl.buyNow(product.id, product.data)">Buy Now</md-button>
         <md-button md-ink-ripple="false" class="md-raised md-warn" ng-click="$ctrl.addToCart(product.id, product.data)">Add to Cart</md-button>
-        <md-button md-ink-ripple="false" class="md-raised md-warn" ng-click="$ctrl.logLocalStorage()">Console log localStorage</md-button>
-        
-        <md-button md-ink-ripple="false" class="md-raised md-warn" ng-click="$ctrl.clearCart()">Clear Cart</md-button>
       </section>
 	`
 };
