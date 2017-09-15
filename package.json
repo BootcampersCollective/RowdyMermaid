@@ -25,6 +25,7 @@
     "jquery": "^3.2.1",
     "mongoose": "^4.10.0",
     "morgan": "^1.8.1",
+    "nodemailer": "^4.1.0",
     "request": "^2.81.0"
   },
   "devDependencies": {
