@@ -1,33 +1,93 @@
-.siteName {
-    text-align: center;
-    width: 50vw;
-    margin: auto;
-    font-family: yantramanav;
-    font-style: normal;
-    text-transform: uppercase;
-    font-weight: 600;
-    letter-spacing: 0.5em;
-    img {
-        width: 200px;
-        margin-bottom: 20px;
+// animation for background images on home page
+// TO DO - fix first pass of animation. It is happening in background as evident by overscrolling up on the page while whatching above the nav bar. after first pass then it shows as expected?
+// TO DO - have each image alternate animation style toggling between a growing option and a shrinking option
+@keyframes kenburns {
+    0% {
+        opacity: 1;
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
     }
-    h3 {
+    21% {
+        opacity: 1;
+    }
+    25% {
+        opacity: 0;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+    96% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+}
 
-        font-size: 3em;
-        line-height: 50px;
-        color: #3b3b3b;
-        margin: 0;
+@-webkit-keyframes kenburns {
+    0% {
+        opacity: 1;
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
     }
-    h4 {
-        font-size: 1.125em;
+    21% {
+        opacity: 1;
+    }
+    25% {
+        opacity: 0;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+    96% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+}
+// the selectors for each img element to separate when each image gets shown this is where the kenburns animation written above gets applied to
+// each image's animation is currently 6 seconds with a 1 second transition to the next
+.picOne {
+    -webkit-animation: kenburns 28s ease-in-out infinite;
+    animation: kenburns 28s ease-in-out infinite;
+}
+.picTwo {
+    -webkit-animation: kenburns 28s ease-in-out 7s infinite;
+    animation: kenburns 28s ease-in-out 7s infinite;
+}
+.picThree {
+    -webkit-animation: kenburns 28s ease-in-out 14s infinite;
+    animation: kenburns 28s ease-in-out 14s infinite;
+}
+.picFour {
+    -webkit-animation: kenburns 28s ease-in-out 21s infinite;
+    animation: kenburns 28s ease-in-out 21s infinite;
+}
+
+// containter for the animated images
+.homeBackgrounds{
+    position: relative;
+    margin-top: 83px;
+    .homeBackground {
+        position: fixed;
+        margin: 0;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        z-index: -1;
+        overflow: hidden;
     }
 }
 
 .marketImages{
-  vertical-align: baseline;
-  width: 50vw;
-  display: inline-block;
-  text-align: center;
+    vertical-align: baseline;
+    width: 50vw;
+    display: inline-block;
+    text-align: center;
 
 
   @include breakpoint($bp-768) {
@@ -41,40 +101,73 @@
 }
 
 .image-wrapper {
-  height: auto;
-  text-align: center;
-  img {
+    height: 100vh;
+    text-align: center;
+    img {
+        margin-top: 10vh;
+    }
   }
 
-}
-
-.viewFlavors {
+.homeContainer {
+    background-color: #fff;
+    color: #3b3b3b;
     text-align: center;
-    width: 60vw;
-    margin: auto;
-    h3 {
-        color: rgb(10,8,8);
-        font-family: Skranji, cursive, serif;
-        font-size: 20px;
-        letter-spacing: 0.25em;
-        word-spacing: 0.15em;
-        line-height: 24px;
-        font-weight: 700;
-        margin-bottom: 60px;
-    }
-    a {
-        cursor: pointer;
-        border: 3px solid #3b3b3b;
-        font-size: 12px;
-        font-family: Yantramanav, serif;
-        font-weight: 400;
+    padding: 50px;
+    .siteName {
+        width: 50vw;
+        margin: auto;
+        padding: 20px;
+        font-family: yantramanav;
+        font-style: normal;
         text-transform: uppercase;
-        line-height: 22px;
-        letter-spacing: 2px;
-        padding: 8px 20px;
+        font-weight: 600;
+        letter-spacing: 0.5em;
+        img {
+            width: 200px;
+            margin-bottom: 20px;
+        }
+        h3 {
+            font-size: 3em;
+            line-height: 50px;
+            margin: 0;
+        }
+        h4 {
+            font-size: 1.125em;
+        }
     }
-    a:hover {
-        background-color: #3b3b3b;
-        color: white;
+    .lineDivider {
+        margin: auto;
+        border-top: 1px solid #ddd;
+        margin-bottom: 40px;
+        width: 770px;
+    }
+    .viewFlavors {
+        width: 60vw;
+        margin: auto;
+        h3 {
+            font-family: Skranji, cursive, serif;
+            font-size: 20px;
+            letter-spacing: 0.25em;
+            word-spacing: 0.15em;
+            line-height: 24px;
+            font-weight: 700;
+            margin-bottom: 60px;
+        }
+        a {
+            cursor: pointer;
+            border: 3px solid #3b3b3b;
+            background-color: #fff;
+            font-size: 12px;
+            font-family: Yantramanav;
+            font-weight: 400;
+            text-transform: uppercase;
+            line-height: 22px;
+            letter-spacing: 2px;
+            padding: 8px 20px;
+        }
+        a:hover {
+            background-color: #3b3b3b;
+            color: white;
+        }
     }
 }
