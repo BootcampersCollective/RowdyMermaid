@@ -14,6 +14,7 @@ app.use(express.static('public'));
 
 // setup the logger
 app.use(morgan('dev'));
+app.use(bodyParser.json());
 
 // make our database connection
 mongoose.Promise = global.Promise;

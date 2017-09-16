@@ -3,23 +3,25 @@ const contactForm = {
   controller: /*@ngInject*/ function($scope, apiService) {
     let ctrl = this;
     ctrl.sendEmail = sendEmail;
+    ctrl.success = false;
 
-    ctrl.$onInit = function() {};
-    ctrl.resetData = {
-      name: '',
-      email: '',
-      message: ''
+    ctrl.$onInit = function() {
+      ctrl.resetData = {
+        name: '',
+        email: '',
+        message: ''
+      };
     };
 
     function sendEmail() {
       apiService
         .sendEmail($scope.emailData)
         .then(function(res) {
-          alert('Message Sent!');
+          ctrl.name = res.data.name;
+          ctrl.success = true;
         })
-        .then(function(data, status) {
-          console.log('Data: ', data);
-          console.log('Status: ', status);
+        .catch(function(err) {
+          console.log('ERR', err);
         });
       $scope.emailData = angular.copy(ctrl.resetData);
     }
@@ -27,42 +29,44 @@ const contactForm = {
   template: `
 		<div class="contact-form">
 			<div class="contact-form-header">Contact</div>
-      <form name="contactForm" ng-submit="$ctrl.sendEmail()">
-        <ul>
-          <li>
-            <label for="contact-name">Name</label>
-            <input id="contact-name"
-                   type="text"
-                   name="contact-name"
-                   placeholder="Name"
-                   ng-model="emailData.name"
-                   required
-            />
-          </li>
-          <li>
-            <label for="email-address">Email</label>
-            <input id="email-address"
-                   type="email"
-                   name="email-address"
-                   placeholder="Email Address"
-                   ng-model="emailData.email"
-                   required
-            />
-          </li>
-          <li>
-            <label for="email-message">Message</label>
-            <textarea id="email-message"
-                      type="text"
-                      name="email-message"
-                      placeholder="Message"
-                      ng-model="emailData.message"
-                      required
-            ></textarea>
-          </li>
-          <li>
-            <button type="submit">Send!</button>
-          </li>
-        </ul>
+      <form name="contactForm" ng-submit="$ctrl.sendEmail()" novalidate>
+        <div>
+          <label for="cf-name">Name</label>
+          <input
+            id="cf-name"
+            type="text"
+            name="name"
+            ng-model="emailData.name"
+            placeholder="Name"
+            required
+          />
+        </div>
+        <div>
+          <label for="cf-email">Email</label>
+          <input
+            id="cf-email"
+            type="email"
+            name="email"
+            data-ng-model="emailData.email"
+            placeholder="Email Address"
+            required
+          />
+        </div>
+        <div>
+          <label for="cf-message">Message</label>
+          <textarea
+            id="cf-message"
+            type="text"
+            name="message"
+            data-ng-model="emailData.message"
+            placeholder="Message"
+            required
+          ></textarea>
+        </div>
+        <div>
+          <button type="submit">Send!</button>
+          <span class="msg-sent" ng-if="$ctrl.success">Message sent!</span>
+        </div>
 			</form>
 		</div>
 	`

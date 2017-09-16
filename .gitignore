@@ -1,4 +1,5 @@
 .DS_Store
+.vscode
 
 # Logs
 logs
@@ -61,3 +62,5 @@ package-lock.json
 *.iml
 .sass-cache
 public
+
+emailAuth.js

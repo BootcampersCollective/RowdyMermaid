@@ -23,6 +23,16 @@ function apiService($q, $http) {
     });
   }
 
+  function sendEmail(emailData) {
+    console.log(emailData);
+    return $http({
+      method: 'POST',
+      url: '/api/email',
+      data: emailData,
+      config: 'Content-Type: application/json;'
+    });
+  }
+
   function setSomething() {}
 
   function internalFunction() {}
