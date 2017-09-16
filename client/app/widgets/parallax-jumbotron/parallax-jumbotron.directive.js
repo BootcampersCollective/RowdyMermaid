@@ -2,12 +2,14 @@ const parallaxJumbotron = {
     bindings: {
         imageUrl: '<',
         headerText: '<',
-        // isHome: '<'
     },
-    controller: function() {
+    controller: function($location) {
         let ctrl = this;
         ctrl.isHome = true;
-        // console.log($ctrl.isHome);
+        var url = $location.url();
+        if (url !== '/') {
+            ctrl.isHome = false;
+        }
         ctrl.reviews = [
             {
                 review:'"You don\'t have to drink beer or wine any more to have fun. Come and try the healthy drink Kombucha. It\'s yummy plus you can enjoy GREAT entertainment like the Samsara Sisters!!"',
@@ -53,3 +55,5 @@ const parallaxJumbotron = {
 angular
     .module('RowdyMermaid-site.widgets')
     .component('parallaxJumbotron', parallaxJumbotron);
+
+parallaxJumbotron.$inject = ['$location'];
