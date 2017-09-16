@@ -7,6 +7,7 @@ const home = {
 		ctrl.title = 'Rowdy Mermaid Kombucha';
 		ctrl.imageUrl = 'images/inHandRowdyBelly.jpg';
 		ctrl.topImage= 'images/fallMountains.jpg';
+		ctrl.isHome= true;
 
 		ctrl.$onInit = function () {
 			console.log('init Home');
@@ -40,7 +41,8 @@ const home = {
 			<a href="/kombucha">View All Flavors</a>
 		</div>
 	</div>
-	<parallax-jumbotron image-url="$ctrl.imageUrl"></parallax-jumbotron>
+	<parallax-jumbotron image-url="$ctrl.imageUrl" is-home="$ctrl.isHome"></parallax-jumbotron>
+	
 	`
 
 };
