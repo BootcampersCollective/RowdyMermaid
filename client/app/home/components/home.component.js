@@ -41,8 +41,7 @@ const home = {
 			<a href="/kombucha">View All Flavors</a>
 		</div>
 	</div>
-	<parallax-jumbotron image-url="$ctrl.imageUrl" is-home="$ctrl.isHome"></parallax-jumbotron>
-	
+	<parallax-jumbotron image-url="$ctrl.imageUrl"></parallax-jumbotron>
 	`
 
 };
