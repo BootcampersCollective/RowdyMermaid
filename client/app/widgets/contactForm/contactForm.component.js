@@ -1,11 +1,12 @@
 const contactForm = {
   bindings: {},
-  controller: /*@ngInject*/ function($scope, apiService) {
+  controller: /*@ngInject*/ function($scope, $timeout, apiService) {
     let ctrl = this;
     ctrl.sendEmail = sendEmail;
-    ctrl.success = false;
 
     ctrl.$onInit = function() {
+      ctrl.success = false;
+
       ctrl.resetData = {
         name: '',
         email: '',
@@ -13,19 +14,20 @@ const contactForm = {
       };
     };
 
-    function sendEmail(isValid) {
-      if (isValid) {
-        apiService
-          .sendEmail($scope.emailData)
-          .then(function(res) {
-            ctrl.name = res.data.name;
-            ctrl.success = true;
-          })
-          .catch(function(err) {
-            console.log('ERR', err);
-          });
-        $scope.emailData = angular.copy(ctrl.resetData);
-      }
+    function sendEmail() {
+      apiService
+        .sendEmail($scope.emailData)
+        .then(function(res) {
+          ctrl.success = true;
+
+          $timeout(function() {
+            ctrl.success = false;
+          }, 4000);
+        })
+        .catch(function(err) {
+          console.log('ERR', err);
+        });
+      $scope.emailData = angular.copy(ctrl.resetData);
     }
   },
   template: `
@@ -97,7 +99,7 @@ const contactForm = {
           >
             Send!
           </button>
-          <span class="msg-sent" ng-if="$ctrl.success">Message sent!</span>
+          <span ng-show="$ctrl.success" class="msg-sent">Message sent!</span>
         </div>
 			</form>
 		</div>

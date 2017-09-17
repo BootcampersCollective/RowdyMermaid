@@ -28,7 +28,7 @@ module.exports = {
           data.message
       })
       .then(function() {
-        res.json(data);
+        res.sendStatus(200);
       })
       .catch(function(err) {
         console.log(err);
