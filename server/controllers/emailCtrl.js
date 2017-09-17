@@ -1,13 +1,17 @@
 module.exports = {
   post: (req, res) => {
-    const nodemailer = require('nodemailer');
-    EA = require('../emailAuth');
+    const nodemailer = require('nodemailer'),
+      xoath2 = require('xoauth2'),
+      EA = require('../emailAuth');
 
     let transporter = nodemailer.createTransport({
       service: 'Gmail',
       auth: {
+        type: 'OAuth2',
         user: EA.EMAIL_AUTH.USER,
-        pass: EA.EMAIL_AUTH.PASS
+        clientId: EA.EMAIL_AUTH.CLIENT_ID,
+        clientSecret: EA.EMAIL_AUTH.CLIENT_SECRET,
+        refreshToken: EA.EMAIL_AUTH.REFRESH_TOKEN
       }
     });
 
