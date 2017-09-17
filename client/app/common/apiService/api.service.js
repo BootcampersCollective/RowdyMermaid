@@ -24,7 +24,6 @@ function apiService($q, $http) {
   }
 
   function sendEmail(emailData) {
-    console.log(emailData);
     return $http({
       method: 'POST',
       url: '/api/email',

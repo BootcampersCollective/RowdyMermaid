@@ -13,23 +13,25 @@ const contactForm = {
       };
     };
 
-    function sendEmail() {
-      apiService
-        .sendEmail($scope.emailData)
-        .then(function(res) {
-          ctrl.name = res.data.name;
-          ctrl.success = true;
-        })
-        .catch(function(err) {
-          console.log('ERR', err);
-        });
-      $scope.emailData = angular.copy(ctrl.resetData);
+    function sendEmail(isValid) {
+      if (isValid) {
+        apiService
+          .sendEmail($scope.emailData)
+          .then(function(res) {
+            ctrl.name = res.data.name;
+            ctrl.success = true;
+          })
+          .catch(function(err) {
+            console.log('ERR', err);
+          });
+        $scope.emailData = angular.copy(ctrl.resetData);
+      }
     }
   },
   template: `
 		<div class="contact-form">
 			<div class="contact-form-header">Contact</div>
-      <form name="contactForm" ng-submit="$ctrl.sendEmail()" novalidate>
+      <form name="contactForm" ng-submit="$ctrl.sendEmail(contactForm.$valid)" novalidate>
         <div>
           <label for="cf-name">Name</label>
           <input
@@ -37,9 +39,17 @@ const contactForm = {
             type="text"
             name="name"
             ng-model="emailData.name"
+            ng-minLength="3"
+            ng-class="{'has-error': contactForm.name.$invalid && !contactForm.name.$pristine}"
             placeholder="Name"
             required
           />
+          <span
+            class="error-text"
+            ng-show="contactForm.name.$invalid && !contactForm.name.$pristine"
+          >
+            Required! (3 character minimum)
+          </span>
         </div>
         <div>
           <label for="cf-email">Email</label>
@@ -48,9 +58,16 @@ const contactForm = {
             type="email"
             name="email"
             data-ng-model="emailData.email"
-            placeholder="Email Address"
+            ng-class="{'has-error': contactForm.email.$invalid && !contactForm.email.$pristine}"
+            placeholder="Email"
             required
           />
+          <span
+            class="error-text"
+            ng-show="contactForm.email.$invalid && !contactForm.email.$pristine"
+          >
+            Required! (e.g. username@email)
+          </span>
         </div>
         <div>
           <label for="cf-message">Message</label>
@@ -58,13 +75,28 @@ const contactForm = {
             id="cf-message"
             type="text"
             name="message"
-            data-ng-model="emailData.message"
+            ng-model="emailData.message"
+            ng-minLength="10"
+            ng-class="{'has-error': contactForm.message.$invalid && !contactForm.message.$pristine}"
             placeholder="Message"
             required
           ></textarea>
+          <span
+            class="error-text"
+            ng-show="contactForm.message.$invalid && !contactForm.message.$pristine"
+          >
+            Required! (10 character minimum)
+          </span>
         </div>
         <div>
-          <button type="submit">Send!</button>
+          <button
+            type="submit"
+            ng-disabled="contactForm.$invalid"
+            ng-class="contactForm.$invalid ? 'submit-disabled' : 'submit-enabled'"
+            ng-click="contactForm.$setPristine()"
+          >
+            Send!
+          </button>
           <span class="msg-sent" ng-if="$ctrl.success">Message sent!</span>
         </div>
 			</form>

@@ -17,14 +17,13 @@
 
       button {
         border: 3px solid $black;
-        background-color: $white;
         font-size: 16px;
         font-weight: 400;
         line-height: 22px;
         letter-spacing: 2px;
         text-transform: uppercase;
 
-        &:hover {
+        &:not([disabled]):hover {
           background-color: $black;
           color: $white;
         }
@@ -79,5 +78,21 @@
 
   .has-error {
     border-color: red;
+    box-shadow: 0 0 10px red;
+  }
+
+  .submit-enabled {
+    background-color: $white;
+  }
+
+  .submit-disabled {
+    border: 3px solid $gray;
+    background-color: $white;
+    color: $gray;
+    cursor: not-allowed;
+  }
+
+  .error-text {
+    color: red;
   }
 }
