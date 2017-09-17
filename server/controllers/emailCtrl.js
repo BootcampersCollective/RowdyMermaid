@@ -18,7 +18,7 @@ module.exports = {
       .sendMail({
         from: EA.EMAIL_AUTH.EMAIL,
         to: EA.EMAIL_AUTH.EMAIL,
-        subject: 'Rowdy Murphy: ' + data.name,
+        subject: 'Rowdy Mermaid: ' + data.name,
         text:
           '\nFrom: ' +
           data.name +

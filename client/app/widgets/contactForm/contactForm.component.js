@@ -23,11 +23,11 @@ const contactForm = {
           $timeout(function() {
             ctrl.success = false;
           }, 4000);
+          $scope.emailData = angular.copy(ctrl.resetData);
         })
         .catch(function(err) {
           console.log('ERR', err);
         });
-      $scope.emailData = angular.copy(ctrl.resetData);
     }
   },
   template: `

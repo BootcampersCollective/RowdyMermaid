@@ -72,13 +72,13 @@
   }
 
   .msg-sent {
-    color: green;
+    color: $success-green;
     font-size: 20px;
   }
 
   .has-error {
-    border-color: red;
-    box-shadow: 0 0 10px red;
+    border-color: $error-red;
+    box-shadow: 0 0 10px $error-red;
   }
 
   .submit-enabled {
@@ -93,6 +93,6 @@
   }
 
   .error-text {
-    color: red;
+    color: $error-red;
   }
 }
