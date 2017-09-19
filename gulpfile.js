@@ -5,6 +5,7 @@ let plugins = require('gulp-load-plugins')();
 // File paths
 const VENDOR_SCRIPTS = [
   'node_modules/angular/angular.js',
+  'node_modules/angular-animate/angular-animate.js',
   'node_modules/@uirouter/angularjs/release/angular-ui-router.js',
   'node_modules/@uirouter/angularjs/release/resolveService.js',
   'node_modules/@uirouter/angularjs/release/stateEvents.js',

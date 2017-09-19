@@ -8,7 +8,7 @@ module.exports = {
       service: 'Gmail',
       auth: {
         type: 'OAuth2',
-        user: EA.EMAIL_AUTH.USER,
+        user: EA.EMAIL_AUTH.EMAIL,
         clientId: EA.EMAIL_AUTH.CLIENT_ID,
         clientSecret: EA.EMAIL_AUTH.CLIENT_SECRET,
         refreshToken: EA.EMAIL_AUTH.REFRESH_TOKEN
@@ -16,7 +16,6 @@ module.exports = {
     });
 
     let data = req.body;
-    console.log('req.body', data);
 
     transporter
       .sendMail({

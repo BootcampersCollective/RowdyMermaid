@@ -19,11 +19,11 @@ const contactForm = {
         .sendEmail($scope.emailData)
         .then(function(res) {
           ctrl.success = true;
+          $scope.emailData = angular.copy(ctrl.resetData);
 
           $timeout(function() {
             ctrl.success = false;
           }, 4000);
-          $scope.emailData = angular.copy(ctrl.resetData);
         })
         .catch(function(err) {
           console.log('ERR', err);
@@ -31,8 +31,8 @@ const contactForm = {
     }
   },
   template: `
-		<div class="contact-form">
-			<div class="contact-form-header">Contact</div>
+    <div class="contact-form">
+      <div class="contact-form-header">Contact</div>
       <form name="contactForm" ng-submit="$ctrl.sendEmail(contactForm.$valid)" novalidate>
         <div>
           <label for="cf-name">Name</label>
@@ -99,11 +99,11 @@ const contactForm = {
           >
             Send!
           </button>
-          <span ng-show="$ctrl.success" class="msg-sent">Message sent!</span>
+          <span ng-show="$ctrl.success" class="msg-sent animate-show animate-hide">Message sent!</span>
         </div>
-			</form>
-		</div>
-	`
+      </form>
+    </div>
+  `
 };
 
 angular
