@@ -7,7 +7,6 @@ angular.module('RowdyMermaid-site', [
   'RowdyMermaid-site.home',
   'RowdyMermaid-site.layout',
   'RowdyMermaid-site.login',
-  'RowdyMermaid-site.products',
   'RowdyMermaid-site.social',
   'RowdyMermaid-site.shoppingCart',
   'RowdyMermaid-site.store',
