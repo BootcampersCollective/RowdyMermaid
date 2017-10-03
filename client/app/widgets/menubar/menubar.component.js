@@ -1,45 +1,36 @@
 const rowdyMenuBar = {
-	bindings: {},
-	controller: function () {
-		let ctrl = this;
-		ctrl.menuButtons = [
-			{
-				name: 'Products',
-				subNav: [
-					{
-						name: 'Beer',
-						sref: 'app.kombuchaBeer'
-					},
-					{
-						name: 'Kombucha',
-						sref: 'app.kombucha'
-					}
-				]
-			},
-			{
-				name: 'About',
-				sref: 'app.about'
-			},
-			{
-				name: 'Taproom',
-				subNav: [
-					{
-						name: 'News',
-						sref: 'app.taproomNews'
-					},
-					{
-						name: 'Events',
-						sref: 'app.taproomEvents'
-					}
-				]
-			},
-			{
-				name: 'Store',
-				sref: 'app.store'
-			}
-		];
-	},
-	template: `
+  bindings: {},
+  controller: function() {
+    let ctrl = this;
+    ctrl.menuButtons = [
+      {
+        name: 'Kombucha',
+        sref: 'app.kombucha'
+      },
+      {
+        name: 'About',
+        sref: 'app.about'
+      },
+      {
+        name: 'Taproom',
+        subNav: [
+          {
+            name: 'News',
+            sref: 'app.taproomNews'
+          },
+          {
+            name: 'Events',
+            sref: 'app.taproomEvents'
+          }
+        ]
+      },
+      {
+        name: 'Store',
+        sref: 'app.store'
+      }
+    ];
+  },
+  template: `
 		<nav id="menu-bar">
 	    <div id="nav-logo">
 	        <a ui-sref="app.home"><img src="images/rowdyMermaidWordyLogo.png" alt="Rowdy Mermaid Logo"></a>
@@ -71,5 +62,5 @@ const rowdyMenuBar = {
 };
 
 angular
-	.module('RowdyMermaid-site.widgets')
-	.component('rowdyMenuBar', rowdyMenuBar);
+  .module('RowdyMermaid-site.widgets')
+  .component('rowdyMenuBar', rowdyMenuBar);

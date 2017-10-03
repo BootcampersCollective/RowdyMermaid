@@ -7,13 +7,11 @@ angular.module('RowdyMermaid-site', [
   'RowdyMermaid-site.home',
   'RowdyMermaid-site.layout',
   'RowdyMermaid-site.login',
-  'RowdyMermaid-site.products',
   'RowdyMermaid-site.social',
   'RowdyMermaid-site.shoppingCart',
   'RowdyMermaid-site.store',
   'RowdyMermaid-site.taproomNews',
   'RowdyMermaid-site.taproomEvents',
   'RowdyMermaid-site.widgets',
-  'RowdyMermaid-site.kombuchaBeer',
-  'RowdyMermaid-site.kombucha',
+  'RowdyMermaid-site.kombucha'
 ]);
