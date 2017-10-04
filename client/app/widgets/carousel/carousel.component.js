@@ -1,6 +1,6 @@
 const carousel = {
   bindings: {},
-  controller: /*ngInject*/ function() {
+  controller: /*@ngInject*/ function($interval) {
     let ctrl = this;
     ctrl.setCurrentIndex = setCurrentIndex;
     ctrl.isCurrentIndex = isCurrentIndex;
@@ -11,10 +11,10 @@ const carousel = {
     ctrl.onInit = function() {};
 
     ctrl.slides = [
-      { image: 'images/autumnHaze.jpg', val: 0 },
-      { image: 'images/blackAndWhiteTaps.jpg', val: 1 },
-      { image: 'images/rowdySwag.jpg', val: 2 },
-      { image: 'images/summerberry.jpg', val: 3 }
+      'images/autumnHaze.jpg',
+      'images/blackAndWhiteTaps.jpg',
+      'images/rowdySwag.jpg',
+      'images/summerberry.jpg'
     ];
 
     function setCurrentIndex(index) {
@@ -22,8 +22,6 @@ const carousel = {
     }
 
     function isCurrentIndex(index) {
-      console.log('index:', index);
-      console.log('currentIndex:', ctrl.currentIndex);
       return ctrl.currentIndex === index;
     }
 
@@ -36,21 +34,25 @@ const carousel = {
       ctrl.currentIndex =
         ctrl.currentIndex < ctrl.slides.length - 1 ? ++ctrl.currentIndex : 0;
     }
+
+    $interval(ctrl.nextSlide, 5000);
   },
   template: `
     <div class="carousel-container">
-      <img ng-repeat="slide in $ctrl.slides" ng-hide="!$ctrl.isCurrentIndex($index)" ng-src={{slide.image}}></img>
-      <button class="arrow prev" ng-click="$ctrl.prevSlide()">Prev</button>
-      <button class="arrow next" ng-click="$ctrl.nextSlide()">Next</button>
+      <img
+        ng-repeat="slide in $ctrl.slides"
+        ng-show="$ctrl.isCurrentIndex($index)"
+        ng-src={{slide}}
+      />
+      <!-- <button class="arrow prev" ng-click="$ctrl.prevslide()">prev</button> -->
+      <!-- <button class="arrow next" ng-click="$ctrl.nextslide()">next</button> -->
 
       <nav class="nav">
         <ul class="dot-wrapper">
-          <li class="dot" ng-repeat="slide in $ctrl.slides">
-            <button
+          <li class="dot" ng-repeat="slide in $ctrl.slides"
               ng-class="{'active': $ctrl.isCurrentIndex($index)}"
-              ng-click="$ctrl.setCurrentIndex($index)">
-              {{$ctrl.slide.val}}
-            </button>
+              ng-click="$ctrl.setCurrentIndex($index)"
+          >
           </li>
         </ul>
       </nav>
