@@ -1,6 +1,21 @@
 .carousel-container {
   border: 2px solid black;
+  display: flex;
+  align-content: center;
+  justify-content: center;
 
-  .slide {
+  .img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: 700px;
+    width: 80%;
+  }
+
+  img {
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%;
   }
 }

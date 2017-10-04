@@ -2,6 +2,13 @@ const home = {
   bindings: {},
   controller: function() {
     let ctrl = this;
+    ctrl.slides = [
+      'images/bottlesCloseup.jpg',
+      'images/bottlesDarkBackground.jpg',
+      'images/bottlesAllFlavors.jpg',
+      'images/bottlesCloseUpWhiteBackground.jpg',
+      'images/closeUpBottles3.jpg'
+    ];
     ctrl.title = 'Rowdy Mermaid Kombucha';
     ctrl.imageUrl = 'images/inHandRowdyBelly.jpg';
     ctrl.topImage = 'images/fallMountains.jpg';
@@ -13,7 +20,7 @@ const home = {
     ctrl.$postLink = function() {};
   },
   template: `
-    <carousel></carousel>
+    <carousel slides="$ctrl.slides"></carousel>
 	`
 };
 
