@@ -64,7 +64,7 @@ const carousel = {
 
       <nav class="nav">
         <ul class="dot-wrapper">
-          <li class="dot" ng-repeat="slide in $ctrl.slides"
+          <span class="md-icon-radio-button-check" ng-repeat="slide in $ctrl.slides"
               ng-class="{'active': $ctrl.isCurrentIndex($index)}"
               ng-click="$ctrl.goToSlide($index)"
           >
