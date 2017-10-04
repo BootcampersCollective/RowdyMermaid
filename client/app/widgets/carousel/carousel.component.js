@@ -38,7 +38,7 @@ const carousel = {
     }
 
     function stopSlides() {
-      $interval.cancel(ctrl.scroll);
+      $interval.cancel(scroll);
     }
 
     function goToSlide(index) {
@@ -46,7 +46,7 @@ const carousel = {
       ctrl.setCurrentIndex(index);
 
       $timeout(function() {
-        ctrl.startSlides = false;
+        ctrl.startSlides();
       }, 5000);
     }
 
