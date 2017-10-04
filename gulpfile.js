@@ -9,7 +9,6 @@ const VENDOR_SCRIPTS = [
   'node_modules/@uirouter/angularjs/release/angular-ui-router.js',
   'node_modules/@uirouter/angularjs/release/resolveService.js',
   'node_modules/@uirouter/angularjs/release/stateEvents.js',
-  'node_modules/angular-animate/angular-animate.js',
   'node_modules/angular-aria/angular-aria.js',
   'node_modules/angular-sanitize/angular-sanitize.js'
 ];

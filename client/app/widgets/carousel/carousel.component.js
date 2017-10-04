@@ -56,21 +56,20 @@ const carousel = {
     <div class="carousel-container">
       <div class="img-container">
         <img
+          class="animate-show animate-hide"
           ng-repeat="slide in $ctrl.slides"
           ng-show="$ctrl.isCurrentIndex($index)"
           ng-src={{slide}}
         />
       </div>
 
-      <nav class="nav">
-        <ul class="dot-wrapper">
-          <span class="md-icon-radio-button-check" ng-repeat="slide in $ctrl.slides"
-              ng-class="{'active': $ctrl.isCurrentIndex($index)}"
-              ng-click="$ctrl.goToSlide($index)"
-          >
-          </li>
-        </ul>
-      </nav>
+      <div class="nav-wrapper">
+        <span class="fa-circle-o" ng-repeat="slide in $ctrl.slides"
+            ng-class="{'fa-circle': $ctrl.isCurrentIndex($index)}"
+            ng-click="$ctrl.goToSlide($index)"
+        >
+        </span>
+      </div>
     </div>
   `
 };
