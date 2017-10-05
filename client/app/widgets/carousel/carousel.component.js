@@ -17,7 +17,7 @@ const carousel = {
     };
 
     ctrl.$onDestroy = function() {
-      $interval.stop(ctrl.scroll);
+      $interval.cancel(scroll);
     };
 
     function setCurrentIndex(index) {
@@ -34,6 +34,7 @@ const carousel = {
     }
 
     function startSlides() {
+      ctrl.stopSlides();
       scroll = $interval(ctrl.nextSlide, 5000);
     }
 

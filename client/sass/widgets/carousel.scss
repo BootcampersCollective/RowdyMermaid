@@ -1,45 +1,43 @@
 .carousel-container {
-  margin: auto;
   display: flex;
   flex-direction: column;
-  align-content: center;
-  justify-content: center;
+  margin: auto;
+  padding: 20px 0;
 
   .img-container {
-    width: 800px;
+    background-color: $black;
+    border: 2px solid $black;
     height: 400px;
-    border: 2px solid black;
+    margin: auto;
     overflow: hidden;
+    width: 800px;
   }
 
   img {
-    width: 100%;
     height: 100%;
+    width: 100%;
   }
 
   .nav-wrapper {
     text-align: center;
-    span {
-    }
   }
 
   .animate-show,
   .animate-hide {
-    -webkit-transition: all linear 1s;
-    -moz-transition: all linear 1s;
-    -ms-transition: all linear 1s;
-    -o-transition: all linear 1s;
-    transition: all linear 1s;
+    -moz-transition: all 0.5s linear;
+    -ms-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    -webkit-transition: all 0.5s linear;
+    transition: all 0.5s linear;
   }
 
   .animate-show.ng-hide-remove,
   .animate-hide.ng-hide-add.ng-hide-add-active {
-    opacity: 0;
+    width: 0;
   }
 
   .animate-hide.ng-hide-add,
   .animate-show.ng-hide-remove.ng-hide-remove-active {
-    opacity: 1;
-    display: inline !important;
+    width: 100%;
   }
 }
