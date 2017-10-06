@@ -11,8 +11,11 @@ const home = {
 		ctrl.$postLink = function () {};
 	},
 	template: `
-	<div><h1>Nothing to see here cuz its broken fool!</h1></div>
-	<header header-image="'images/headerLogoCropped.png'"></header>
+	<div class="home-container">
+		<div style="height: 80px;"></div>
+		<header header-image="'images/headerLogoCropped.png'"></header>
+		<header header-image="'images/taglineBanner.png'"></header>
+	</div>
 	`
 
 };
