@@ -4,10 +4,6 @@ const home = {
 	},
 	controller: function () {
 		let ctrl = this;
-		ctrl.title = 'Rowdy Mermaid Kombucha';
-		ctrl.imageUrl = 'images/inHandRowdyBelly.jpg';
-		ctrl.topImage = 'images/fallMountains.jpg';
-		ctrl.isHome= true;
 
 		ctrl.$onInit = function () {
 			console.log('init Home');
