@@ -7,7 +7,6 @@ const home = {
 		ctrl.title = 'Rowdy Mermaid Kombucha';
 		ctrl.imageUrl = 'images/inHandRowdyBelly.jpg';
 		ctrl.topImage = 'images/fallMountains.jpg';
-		ctrl.headerImage ='images/headerLogo.png';
 		ctrl.isHome= true;
 
 		ctrl.$onInit = function () {
@@ -17,8 +16,7 @@ const home = {
 	},
 	template: `
 	<div><h1>Nothing to see here cuz its broken fool!</h1></div>
-	<header header-image="$ctrl.headerImage"></header>
-	<parallax-jumbotron image-url="$ctrl.imageUrl"></parallax-jumbotron>
+	<header header-image="'images/headerLogoCropped.png'"></header>
 	`
 
 };

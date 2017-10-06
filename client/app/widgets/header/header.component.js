@@ -11,7 +11,7 @@ const header = {
     },
     template: `
     <div class="header-container">
-        <div class="image" style="background-image: url({{$ctrl.headerImage}})"></div>
+        <div class="image"><img src="{{$ctrl.headerImage}}"></div>
     </div>
     `
 };
