@@ -12,7 +12,7 @@ const home = {
 	},
 	template: `
 	<div class="home-container">
-		<div style="height: 80px;"></div>
+		<div style="height: 80px;"></div> // in place to account for the navbar
 		<header header-image="'images/headerLogoCropped.png'"></header>
 		<header header-image="'images/taglineBanner.png'"></header>
 	</div>
