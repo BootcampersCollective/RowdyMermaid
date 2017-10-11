@@ -8,11 +8,7 @@
 
 const copyBlock = {
     bindings: {
-        blockTitle: '<',
-        subhead: '<',
-        copyBody: '<',
-        bullets: '<',
-        instance: '<'
+        copy: '<'
     },
     controller: function () {
         let ctrl = this;
@@ -22,20 +18,20 @@ const copyBlock = {
         }
     },
     template: `
-    <div class="copyblockContainer">
-        <div *ngIf="$ctrl.blockTitle">
-            <h1>{{$ctrl.blockTitle}}</h1>
+    <div ng-repeat="copy in $ctrl.copy" class="copyblockContainer">
+        <div ng-if="copy.blockTitle" class="blockTitle">
+            <h1>{{copy.blockTitle}}</h1>
         </div>
-        <div *ngIf="$ctrl.subhead">
-            <h3 class="subhead">{{$ctrl.subhead}}</h3>
+        <div ng-if="copy.subhead">
+            <h3 class="subhead">{{copy.subhead}}</h3>
         </div>
-        <div>
-            <div ng-repeat="copy in $ctrl.copyBody[$ctrl.instance]"><p>{{copy}}</p>
+        <div ng-if="copy.copyBody" class="copyBody">
+            <div ng-repeat="paragraph in copy.copyBody"><p>{{paragraph}}</p>
             </div>
         </div>
-        <div *ngIf="$ctrl.bullets">
+        <div ng-if="copy.bullets">
             <ul>
-                <li ng-repeat="bullet in $ctrl.bullets">{{bullet}}</li>
+                <li ng-repeat="bullet in copy.bullets">{{bullet}}</li>
             </ul>
         </div>
     </div>
