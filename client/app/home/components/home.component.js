@@ -48,7 +48,7 @@ const home = {
       <ui-carousel
         slides="$ctrl.carouselImages"
         slides-to-show="4"
-        slides-to-scroll="4"
+        slides-to-scroll="1"
         initial-slide="0"
       >
         <carousel-item>
