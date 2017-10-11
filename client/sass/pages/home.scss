@@ -1,17 +1,32 @@
 .home-container {
   .home-carousel {
-    max-width: 90%;
     margin: auto;
+    max-width: 85%;
     padding-top: 80px;
+
     .ui-carousel {
+      margin-top: 50px;
       text-align: center;
-      margin: 50px;
-      padding: 50px 0 !important;
     }
 
     img {
-      width: 50%;
       height: 50%;
+      width: 50%;
+    }
+  }
+
+  .flavor-button {
+    text-align: center;
+    margin-bottom: 50px;
+
+    button {
+      background-color: $white;
+      border: 2px solid $black;
+      box-shadow: 0 0 10px $gray;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 22px;
+      letter-spacing: 2px;
     }
   }
 }

@@ -5,7 +5,7 @@ const home = {
 
     ctrl.$onInit = function() {
       console.log('init Home');
-      ctrl.slides = [
+      ctrl.carouselImages = [
         'images/autumnHaze.jpg',
         'images/livingGinger.jpg',
         'images/rowdyBelly.jpg',
@@ -25,7 +25,7 @@ const home = {
 
       <div class="home-carousel">
         <ui-carousel
-          slides="$ctrl.slides"
+          slides="$ctrl.carouselImages"
           slides-to-show="4"
           slides-to-scroll="4"
           initial-slide="0"
@@ -34,6 +34,10 @@ const home = {
           <img ng-src={{item}}>
           </carousel-item>
         </ui-carousel>
+
+        <div class="flavor-button">
+          <button ui-sref="app.kombucha">See All Flavors</button>
+        </div>
       </div>
 
       <header header-image="'images/closeUpBottles.jpg'"></header>
