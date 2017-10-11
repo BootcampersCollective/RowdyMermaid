@@ -4,6 +4,16 @@ const home = {
     let ctrl = this;
 
     ctrl.$onInit = function() {
+      ctrl.carouselImages = [
+          'images/autumnHaze.jpg',
+          'images/livingGinger.jpg',
+          'images/rowdyBelly.jpg',
+          'images/summerberry.jpg',
+          'images/autumnHaze.jpg',
+          'images/livingGinger.jpg',
+          'images/rowdyBelly.jpg',
+          'images/summerberry.jpg'
+        ];
       ctrl.carouselReviews = [
         {
           quote:
@@ -31,15 +41,28 @@ const home = {
   },
   template: `
     <div class="home-container">
-    <div style="height: 80px;"></div> // in place to account for the navbar
+    <div style="height: 80px;"></div> <!--in place to account for the navbar-->
     <header header-image="'images/headerLogoCropped.png'"></header>
     <header header-image="'images/taglineBanner.png'"></header>
-    <h1 style="text-align: center">Placeholder for carousel</h1>
-    <header header-image="'images/closeUpBottles.jpg'"></header>
+    <div class="home-carousel">
+      <ui-carousel
+        slides="$ctrl.carouselImages"
+        slides-to-show="4"
+        slides-to-scroll="4"
+        initial-slide="0"
+      >
+        <carousel-item>
+        <img ng-src={{item}}>
+        </carousel-item>
+      </ui-carousel>
+
+      <div class="flavor-button">
+        <button ui-sref="app.kombucha">See All Flavors</button>
+      </div>
+    </div>
     <carousel slides="$ctrl.carouselReviews"></carousel>
     <header header-image="'images/flatirons.png'"></header>
-    </div>
-  `
+    `
 };
 
 angular.module('RowdyMermaid-site.home').component('home', home);
