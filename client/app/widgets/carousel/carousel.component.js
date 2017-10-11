@@ -61,6 +61,8 @@ const carousel = {
   template: `
     <div class="carousel-container">
       <div class="review-container">
+         <h1>REVIEWS</h1>
+         <h2>LISTEN TO THE BUZZ</h2>
         <div
           class="animate-show animate-hide"
           ng-repeat="slide in $ctrl.slides"
