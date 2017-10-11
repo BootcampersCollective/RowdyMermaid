@@ -1,0 +1,42 @@
+.carousel-container {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  padding: 20px 0;
+
+  .review-container {
+    align-items: center;
+    display: flex;
+    height: 400px;
+    justify-content: center;
+    margin: auto;
+    padding: 0 30px;
+    width: 900px;
+
+    .review-quote {
+      padding: 0 30px;
+
+      p {
+        text-align: center;
+        line-height: 40px;
+      }
+    }
+
+    .review-rating {
+      text-align: center;
+      .fa.fa-star {
+        padding: 0 20px;
+        font-size: 50px;
+      }
+    }
+
+    .review-author {
+      text-align: center;
+    }
+  }
+
+  .nav-wrapper {
+    text-align: center;
+    margin-top: -80px;
+  }
+}
