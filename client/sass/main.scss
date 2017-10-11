@@ -19,8 +19,8 @@
 @import 'pages/taproom';
 @import 'pages/kombucha';
 
-@import 'widgets/carousel.scss';
-@import 'widgets/contactForm.scss';
+@import 'widgets/carousel';
+@import 'widgets/contactForm';
 @import 'widgets/menubar';
 @import 'widgets/menubutton';
 @import 'widgets/parallaxJumbotron';
@@ -31,6 +31,7 @@
 
 body {
   margin: 0;
+  font-family: 'Montserrat', sans-serif;
 }
 
 a {
