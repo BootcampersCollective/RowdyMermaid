@@ -5,15 +5,15 @@ const home = {
 
     ctrl.$onInit = function() {
       ctrl.carouselImages = [
-          'images/autumnHaze.jpg',
-          'images/livingGinger.jpg',
-          'images/rowdyBelly.jpg',
-          'images/summerberry.jpg',
-          'images/autumnHaze.jpg',
-          'images/livingGinger.jpg',
-          'images/rowdyBelly.jpg',
-          'images/summerberry.jpg'
-        ];
+        'images/autumnHaze.jpg',
+        'images/livingGinger.jpg',
+        'images/rowdyBelly.jpg',
+        'images/summerberry.jpg',
+        'images/autumnHaze.jpg',
+        'images/livingGinger.jpg',
+        'images/rowdyBelly.jpg',
+        'images/summerberry.jpg'
+      ];
       ctrl.carouselReviews = [
         {
           quote:
@@ -60,9 +60,11 @@ const home = {
         <button ui-sref="app.kombucha">See All Flavors</button>
       </div>
     </div>
+
+    <header header-image="'images/closeUpBottles.jpg'"></header>
     <carousel slides="$ctrl.carouselReviews"></carousel>
     <header header-image="'images/flatirons.png'"></header>
-    `
+  `
 };
 
 angular.module('RowdyMermaid-site.home').component('home', home);
