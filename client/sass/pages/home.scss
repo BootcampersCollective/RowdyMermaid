@@ -108,6 +108,13 @@
     }
   }
 
+.home-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+}
+
 .homeContainer {
     background-color: #fff;
     color: #3b3b3b;

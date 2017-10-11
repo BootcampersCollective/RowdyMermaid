@@ -17,6 +17,7 @@
       padding: 0 30px;
 
       p {
+        text-align: center;
         line-height: 40px;
       }
     }
@@ -36,25 +37,6 @@
 
   .nav-wrapper {
     text-align: center;
-    margin-top: -20px;
-  }
-
-  .animate-show,
-  .animate-hide {
-    // -moz-transition: all 0.5s ease-in-out;
-    // -ms-transition: all 0.5s ease-in-out;
-    // -o-transition: all 0.5s ease-in-out;
-    // -webkit-transition: all 0.5s ease-in-out;
-    // transition: all 0.5s ease-in-out;
-  }
-
-  .animate-show.ng-hide-remove,
-  .animate-hide.ng-hide-add.ng-hide-add-active {
-    opacity: 0;
-  }
-
-  .animate-hide.ng-hide-add,
-  .animate-show.ng-hide-remove.ng-hide-remove-active {
-    opacity: 100%;
+    margin-top: -80px;
   }
 }
