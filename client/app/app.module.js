@@ -13,5 +13,6 @@ angular.module('RowdyMermaid-site', [
   'RowdyMermaid-site.taproomNews',
   'RowdyMermaid-site.taproomEvents',
   'RowdyMermaid-site.widgets',
-  'RowdyMermaid-site.kombucha'
+  'RowdyMermaid-site.kombucha',
+  'RowdyMermaid-site.flavorprofile'
 ]);
