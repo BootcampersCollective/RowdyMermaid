@@ -4,40 +4,57 @@
   margin: auto;
   padding: 20px 0;
 
-  .img-container {
-    background-color: $black;
-    border: 2px solid $black;
+  .review-container {
+    align-items: center;
+    display: flex;
     height: 400px;
+    justify-content: center;
     margin: auto;
-    overflow: hidden;
-    width: 800px;
-  }
+    padding: 0 30px;
+    width: 900px;
 
-  img {
-    height: 100%;
-    width: 100%;
+    .review-quote {
+      padding: 0 30px;
+
+      p {
+        line-height: 40px;
+      }
+    }
+
+    .review-rating {
+      text-align: center;
+      .fa.fa-star {
+        padding: 0 20px;
+        font-size: 50px;
+      }
+    }
+
+    .review-author {
+      text-align: center;
+    }
   }
 
   .nav-wrapper {
     text-align: center;
+    margin-top: -20px;
   }
 
   .animate-show,
   .animate-hide {
-    -moz-transition: all 0.5s linear;
-    -ms-transition: all 0.5s linear;
-    -o-transition: all 0.5s linear;
-    -webkit-transition: all 0.5s linear;
-    transition: all 0.5s linear;
+    // -moz-transition: all 0.5s ease-in-out;
+    // -ms-transition: all 0.5s ease-in-out;
+    // -o-transition: all 0.5s ease-in-out;
+    // -webkit-transition: all 0.5s ease-in-out;
+    // transition: all 0.5s ease-in-out;
   }
 
   .animate-show.ng-hide-remove,
   .animate-hide.ng-hide-add.ng-hide-add-active {
-    width: 0;
+    opacity: 0;
   }
 
   .animate-hide.ng-hide-add,
   .animate-show.ng-hide-remove.ng-hide-remove-active {
-    width: 100%;
+    opacity: 100%;
   }
 }
