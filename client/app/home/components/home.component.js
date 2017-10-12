@@ -43,12 +43,12 @@ const home = {
     <div class="home-container">
     <div style="height: 80px;"></div> <!--in place to account for the navbar-->
     <header header-image="'images/headerLogoCropped.png'"></header>
-    <header header-image="'images/taglineBanner.png'"></header>
+    <header class="snowmeltLogo" header-image="'images/taglineBanner.png'"></header>
     <div class="home-carousel">
       <ui-carousel
         slides="$ctrl.carouselImages"
         slides-to-show="4"
-        slides-to-scroll="4"
+        slides-to-scroll="1"
         initial-slide="0"
       >
         <carousel-item>
