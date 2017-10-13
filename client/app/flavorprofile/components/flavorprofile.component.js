@@ -9,14 +9,37 @@ const flavorprofile = {
         };
     },
     template: `
-      <div class='flavorContainer'>
-          <div>
-              <img src='images/summerberry.jpg'></img>
+      <div class='flavorPage'>
+          <div class='flavorprofileTitle'>
+              <h1>No 1</h1>
+              <h1>LIVING GINGER</h1>
+              <h2>adaptogenic</h2>
           </div>
-          <div>
-              <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ultrices arcu ut neque commodo, quis blandit diam posuere. In pharetra, augue vitae faucibus sodales, erat neque tempor dui, in scelerisque ipsum justo feugiat nisi. Quisque sit amet erat consequat, convallis lacus eu, porttitor orci. Fusce feugiat nibh ac luctus commodo. Ut at vulputate magna. Maecenas tincidunt, nulla at congue consectetur, sem elit dapibus ante, quis dictum dui sapien at tortor. Aenean eu mattis erat. Nam varius nunc odio, tempus lobortis leo efficitur vitae. Duis nisi mi, maximus et ante in, eleifend pulvinar felis. Curabitur faucibus justo nec tincidunt ultrices. Maecenas molestie tempor urna posuere tincidunt. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas eros enim, porttitor quis leo nec, feugiat hendrerit magna. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Phasellus volutpat accumsan lorem id commodo. Morbi nec blandit augue.
-              </p>
+          <div class='flavorContainer'>
+              <div class='flavorImage'>
+                  <img src='images/livingginger.jpg'></img>
+              </div>
+              <div class='flavorDescription'>
+                    <h2>No 1</h2>
+                    <h2>LIVING GINGER</h2>
+                    <h3>adaptogenic</h3>
+
+                    <p>Inspired by water and all its delights, RM Kombucha will turn you on your tail. Take our Living Ginger for example. Not only is it oh-so-gingery with overtones of lemon and a subtle spiciness from the rare Tasmanian Pepperberry. It is also said to have made one z couple sell their possessions, move to the Maldives and open a “Dive-in” theater. Drink with care.</p>
+
+                    <h4>FILTERED COLORADO SNOWMELT</h4>
+                    <h4>FRESH GINGER</h4>
+                    <h4>TASMANIAN PEPPERBERRY</h4>
+                    <h4>WILDCRAFTED CHAGA</h4>
+                    <h4>HIMALAYAN SALT</h4>
+                    <h4>No GMOs – Gluten Free – Dolphin Safe – Contains Living Probiotics</h4>
+
+                    <p class='probioticsPhrase'>OUR CRAFT BREWED KOMBUCHA CONTAINS LIVING PROBIOTICS AND TRACE AMOUNTS OF ALCOHOL. WE REGULARLY TEST FOR QUALITY AND SAFETY TO ENSURE YOU ARE DRINKING THE PUREST KOMBUCHA AVAILABLE.</h4>
+                    <span>
+                        <img src='images/logosquare.png'></img>
+                        <img src='images/Organic.png'></img>
+                        <img src='images/madeInColorado@2x.png'></img>
+                    </span>
+              </div>
           </div>
       </div>
     `
