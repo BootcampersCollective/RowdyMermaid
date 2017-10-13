@@ -6,12 +6,22 @@ const flavorprofile = {
         ctrl.flavors = flavors;
 
         ctrl.$onInit = function () {
+            ctrl.carouselImages = [
+                'images/autumnHaze.jpg',
+                'images/livingGinger.jpg',
+                'images/rowdyBelly.jpg',
+                'images/summerberry.jpg',
+                'images/autumnHaze.jpg',
+                'images/livingGinger.jpg',
+                'images/rowdyBelly.jpg',
+                'images/summerberry.jpg'
+              ];
         };
     },
     template: `
       <div class='flavorPage'>
           <div class='flavorprofileTitle'>
-              <h1>No 1</h1>
+              <h1>N<sup>o</sup> 1</h1>
               <h1>LIVING GINGER</h1>
               <h2>adaptogenic</h2>
           </div>
@@ -20,7 +30,7 @@ const flavorprofile = {
                   <img src='images/livingginger.jpg'></img>
               </div>
               <div class='flavorDescription'>
-                    <h2>No 1</h2>
+                    <h2>N<sup>o</sup> 1</h2>
                     <h2>LIVING GINGER</h2>
                     <h3>adaptogenic</h3>
 
@@ -41,6 +51,16 @@ const flavorprofile = {
                     </span>
               </div>
           </div>
+          <ui-carousel class="flavorCarousel"
+            slides="$ctrl.carouselImages"
+            slides-to-show="4"
+            slides-to-scroll="1"
+            initial-slide="0"
+          >
+            <carousel-item>
+            <img class="carouselImage" ng-src={{item}}>
+            </carousel-item>
+          </ui-carousel>
       </div>
     `
 };
