@@ -1,180 +1,46 @@
-// animation for background images on home page
-// TO DO - fix first pass of animation. It is happening in background as evident by overscrolling up on the page while whatching above the nav bar. after first pass then it shows as expected?
-// TO DO - have each image alternate animation style toggling between a growing option and a shrinking option
-@keyframes kenburns {
-    0% {
-        opacity: 1;
-        -webkit-transform: scale(1.2);
-        transform: scale(1.2);
-    }
-    21% {
-        opacity: 1;
-    }
-    25% {
-        opacity: 0;
-        -webkit-transform: scale(1);
-        transform: scale(1);
-    }
-    96% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-        -webkit-transform: scale(1.2);
-        transform: scale(1.2);
-    }
-}
-
-@-webkit-keyframes kenburns {
-    0% {
-        opacity: 1;
-        -webkit-transform: scale(1.2);
-        transform: scale(1.2);
-    }
-    21% {
-        opacity: 1;
-    }
-    25% {
-        opacity: 0;
-        -webkit-transform: scale(1);
-        transform: scale(1);
-    }
-    96% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-        -webkit-transform: scale(1.2);
-        transform: scale(1.2);
-    }
-}
-// the selectors for each img element to separate when each image gets shown this is where the kenburns animation written above gets applied to
-// each image's animation is currently 6 seconds with a 1 second transition to the next
-.picOne {
-    -webkit-animation: kenburns 28s ease-in-out infinite;
-    animation: kenburns 28s ease-in-out infinite;
-}
-.picTwo {
-    -webkit-animation: kenburns 28s ease-in-out 7s infinite;
-    animation: kenburns 28s ease-in-out 7s infinite;
-}
-.picThree {
-    -webkit-animation: kenburns 28s ease-in-out 14s infinite;
-    animation: kenburns 28s ease-in-out 14s infinite;
-}
-.picFour {
-    -webkit-animation: kenburns 28s ease-in-out 21s infinite;
-    animation: kenburns 28s ease-in-out 21s infinite;
-}
-
-// containter for the animated images
-.homeBackgrounds{
-    position: relative;
-    margin-top: 83px;
-    .homeBackground {
-        position: fixed;
-        margin: 0;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100vh;
-        z-index: -1;
-        overflow: hidden;
-    }
-}
-
-.marketImages{
-    vertical-align: baseline;
-    width: 50vw;
-    display: inline-block;
-    text-align: center;
-
-
-  @include breakpoint($bp-768) {
-    margin:auto;
-    width:100%;
-  }
-  img {
-    width: 48vw;
-    border-radius: 20px;
-  }
-}
-
-.image-wrapper {
-    height: 100vh;
-    text-align: center;
-    img {
-        margin-top: 10vh;
-    }
-  }
-
 .home-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: stretch;
-}
+  .snowmeltLogo {
+      padding-top: 50px;
+      margin-bottom: -50px;
+  }
+  .home-carousel {
+    margin: auto;
+    max-width: 85%;
+    padding-top: 80px;
 
-.homeContainer {
-    background-color: #fff;
-    color: #3b3b3b;
+    .ui-carousel {
+      margin-top: 50px;
+      text-align: center;
+    }
+    .carousel-btn {
+      z-index: 0;
+  }
+
+    img {
+      height: 50%;
+      width: 50%;
+    }
+  }
+
+  .flavor-button {
     text-align: center;
-    padding: 50px;
-    .siteName {
-        width: 50vw;
-        margin: auto;
-        padding: 20px;
-        font-family: yantramanav;
-        font-style: normal;
-        text-transform: uppercase;
-        font-weight: 600;
-        letter-spacing: 0.5em;
-        img {
-            width: 200px;
-            margin-bottom: 20px;
-        }
-        h3 {
-            font-size: 3em;
-            line-height: 50px;
-            margin: 0;
-        }
-        h4 {
-            font-size: 1.125em;
-        }
+    margin-bottom: 50px;
+
+    button {
+      margin-top: 20px;
+      background-color: $white;
+      border: 2px solid $black;
+      box-shadow: 0 0 20px $gray;
+      font-size: 30px;
+      font-weight: 400;
+      line-height: 54px;
+      letter-spacing: 3px;
     }
-    .lineDivider {
-        margin: auto;
-        border-top: 1px solid #ddd;
-        margin-bottom: 40px;
-        width: 770px;
+    button:hover {
+      transition: .5s;
+      background-color: $gray;
+      color: $white;
+      border: 2px solid $gray;
     }
-    .viewFlavors {
-        width: 60vw;
-        margin: auto;
-        h3 {
-            font-family: Skranji, cursive, serif;
-            font-size: 20px;
-            letter-spacing: 0.25em;
-            word-spacing: 0.15em;
-            line-height: 24px;
-            font-weight: 700;
-            margin-bottom: 60px;
-        }
-        a {
-            cursor: pointer;
-            border: 3px solid #3b3b3b;
-            background-color: #fff;
-            font-size: 12px;
-            font-family: Yantramanav;
-            font-weight: 400;
-            text-transform: uppercase;
-            line-height: 22px;
-            letter-spacing: 2px;
-            padding: 8px 20px;
-        }
-        a:hover {
-            background-color: #3b3b3b;
-            color: white;
-        }
-    }
+  }
 }

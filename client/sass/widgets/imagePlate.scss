@@ -1,0 +1,19 @@
+.imagePlateContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  .imageplateVisual {
+    height: 100vh;
+    width: 80vw;
+  }
+  .imageplateHeadline {
+    align-self: flex-end;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 6rem;
+  }
+  .bottomRight {
+    position: absolute;
+    bottom: 80px;
+    right: 18vw;
+  }
+}

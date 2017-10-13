@@ -9,7 +9,6 @@ const VENDOR_SCRIPTS = [
   'node_modules/@uirouter/angularjs/release/angular-ui-router.js',
   'node_modules/@uirouter/angularjs/release/resolveService.js',
   'node_modules/@uirouter/angularjs/release/stateEvents.js',
-  'node_modules/angular-animate/angular-animate.js',
   'node_modules/angular-aria/angular-aria.js',
   'node_modules/angular-sanitize/angular-sanitize.js'
 ];
@@ -118,6 +117,19 @@ gulp.task('serverScripts', function() {
   return gulp.src(SERVER_SCRIPTS_PATH).pipe(plugins.livereload());
 });
 
+// UI Carousel scipt and css
+gulp.task('copyUICarousel', function() {
+  gulp
+    .src('client/assets/ui-carousel/ui-carousel.min.js')
+    .pipe(gulp.dest('public/scripts'));
+  gulp
+    .src('client/assets/ui-carousel/ui-carousel.min.css')
+    .pipe(gulp.dest('public/styles/ui-carousel'));
+  gulp
+    .src('client/assets/ui-carousel/fonts/*')
+    .pipe(gulp.dest('public/styles/ui-carousel/fonts'));
+});
+
 // gulp.task('server', function () {
 // 	console.log('---Starting Watch task---');
 // 	require('./server/server.js');
@@ -140,6 +152,7 @@ gulp.task(
     'styles',
     'vendorScripts',
     'clientScripts',
+    'copyUICarousel',
     'serve'
   ],
   function() {

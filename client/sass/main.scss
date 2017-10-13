@@ -20,16 +20,20 @@
 @import 'pages/kombucha';
 @import 'pages/flavorprofile';
 
-@import 'widgets/contactForm.scss';
+@import 'widgets/carousel';
+@import 'widgets/contactForm';
 @import 'widgets/menubar';
 @import 'widgets/menubutton';
 @import 'widgets/parallaxJumbotron';
 @import 'widgets/header';
+@import 'widgets/imagePlate';
+@import 'widgets/copyBlock';
 
 @import '../../node_modules/font-awesome/scss/font-awesome.scss';
 
 body {
   margin: 0;
+  font-family: 'Montserrat', sans-serif;
 }
 
 a {

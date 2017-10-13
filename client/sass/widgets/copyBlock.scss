@@ -1,0 +1,26 @@
+.copyblockContainer {
+  font-family: 'Montserrat', sans-serif;
+  width: 95%;
+  height: auto;
+  ul {
+    position: relative;
+    left: 2%;
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+  }
+  .blockTitle {
+    position: relative;
+    left: 5%;
+  }
+  .subhead {
+    position: relative;
+    left: 2%;
+    width: 90%;
+    font-family: 'Montserrat', sans-serif;
+  }
+  .copyBody {
+    position: relative;
+    left: 2%;
+  }
+}
