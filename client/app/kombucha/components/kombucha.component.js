@@ -51,7 +51,7 @@ const kombucha = {
     template: `
       <div class='kombucha-products'>
         <div ng-repeat='flavor in $ctrl.flavors' class='kombucha-flavor'>
-          <a href='{{flavor.flavorProfile}}'><img class='product-image' src='{{flavor.productImgSrc}}' /></a>
+          <a href='/flavorprofile'><img class='product-image' src='{{flavor.productImgSrc}}' /></a>
         </div>
       </div>
     `
