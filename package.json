@@ -2,7 +2,8 @@
   "name": "official_bootcampers_website",
   "version": "1.0.0",
   "description": "Bootcampers Collective website",
-  "repository": "https://github.com/BootcampersCollective/OfficialBCWebsite.git",
+  "repository":
+    "https://github.com/BootcampersCollective/OfficialBCWebsite.git",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -42,6 +43,7 @@
     "gulp-livereload": "^3.8.1",
     "gulp-load-plugins": "^1.5.0",
     "gulp-ng-annotate": "^2.0.0",
+    "gulp-plumber": "^1.1.0",
     "gulp-sass": "^3.1.0",
     "gulp-sourcemaps": "^2.6.0",
     "gulp-strip-json-comments": "^2.1.0",
