@@ -5,15 +5,15 @@ const home = {
 
     ctrl.$onInit = function() {
       ctrl.carouselImages = [
-          'images/autumnHaze.jpg',
-          'images/livingGinger.jpg',
-          'images/rowdyBelly.jpg',
-          'images/summerberry.jpg',
-          'images/autumnHaze.jpg',
-          'images/livingGinger.jpg',
-          'images/rowdyBelly.jpg',
-          'images/summerberry.jpg'
-        ];
+        'images/autumnHaze.jpg',
+        'images/livingGinger.jpg',
+        'images/rowdyBelly.jpg',
+        'images/summerberry.jpg',
+        'images/autumnHaze.jpg',
+        'images/livingGinger.jpg',
+        'images/rowdyBelly.jpg',
+        'images/summerberry.jpg'
+      ];
       ctrl.carouselReviews = [
         {
           quote:
@@ -41,7 +41,6 @@ const home = {
   },
   template: `
     <div class="home-container">
-    <div style="height: 80px;"></div> <!--in place to account for the navbar-->
     <header header-image="'images/headerLogoCropped.png'"></header>
     <header class="snowmeltLogo" header-image="'images/taglineBanner.png'"></header>
     <div class="home-carousel">
