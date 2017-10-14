@@ -22,6 +22,13 @@ const FONT_PATH = [
 ];
 const INDEX_PATH = 'client/assets/index.html';
 
+function onError(err) {
+  plugins.util.log(
+    plugins.util.colors.red('\nError (' + err.plugin + '): ' + err.message)
+  );
+  this.emit('end');
+}
+
 // Lint
 gulp.task('lint', function() {
   gulp
@@ -40,8 +47,12 @@ gulp.task('copyImages', function() {
   console.log('---Starting Copy Images task---');
   return gulp
     .src([IMAGE_PATH])
+    .pipe(
+      plugins.plumber({
+        errorHandler: onError
+      })
+    )
     .pipe(gulp.dest('public/images'))
-    .on('error', plugins.util.log)
     .pipe(plugins.livereload());
 });
 
@@ -49,8 +60,12 @@ gulp.task('copyFonts', function() {
   console.log('---Starting Copy Fonts task---');
   return gulp
     .src(FONT_PATH)
+    .pipe(
+      plugins.plumber({
+        errorHandler: onError
+      })
+    )
     .pipe(gulp.dest('public/fonts'))
-    .on('error', plugins.util.log)
     .pipe(plugins.livereload());
 });
 
@@ -59,8 +74,12 @@ gulp.task('copyIndex', function() {
   console.log('---Starting Copy Index task---');
   return gulp
     .src([INDEX_PATH])
+    .pipe(
+      plugins.plumber({
+        errorHandler: onError
+      })
+    )
     .pipe(gulp.dest('public'))
-    .on('error', plugins.util.log)
     .pipe(plugins.livereload());
 });
 
@@ -69,6 +88,11 @@ gulp.task('styles', function() {
   console.log('---Starting Styles task---');
   return gulp
     .src('client/sass/main.scss')
+    .pipe(
+      plugins.plumber({
+        errorHandler: onError
+      })
+    )
     .pipe(plugins.sourcemaps.init())
     .pipe(plugins.autoprefixer())
     .pipe(
@@ -78,7 +102,6 @@ gulp.task('styles', function() {
     )
     .pipe(plugins.sourcemaps.write())
     .pipe(gulp.dest('public/styles'))
-    .on('error', plugins.util.log)
     .pipe(plugins.livereload());
 });
 
