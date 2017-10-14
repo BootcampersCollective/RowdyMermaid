@@ -1,5 +1,7 @@
 let gulp = require('gulp');
 let del = require('del');
+let bs = require('browser-sync').create();
+let rs = require('gulp-run-sequence');
 let plugins = require('gulp-load-plugins')();
 
 // File paths
@@ -29,20 +31,8 @@ function onError(err) {
   this.emit('end');
 }
 
-// Lint
-gulp.task('lint', function() {
-  gulp
-    .src(CLIENT_SCRIPTS_PATH)
-    .pipe(plugins.jshint())
-    .on('error', plugins.util.log);
-});
-
-// Images
-gulp.task('images', function() {
-  console.log('---Starting Images task---');
-});
-
-// Assets
+// ===============================================
+// ASSETS
 gulp.task('copyImages', function() {
   console.log('---Starting Copy Images task---');
   return gulp
@@ -52,8 +42,7 @@ gulp.task('copyImages', function() {
         errorHandler: onError
       })
     )
-    .pipe(gulp.dest('public/images'))
-    .pipe(plugins.livereload());
+    .pipe(gulp.dest('public/images'));
 });
 
 gulp.task('copyFonts', function() {
@@ -65,8 +54,7 @@ gulp.task('copyFonts', function() {
         errorHandler: onError
       })
     )
-    .pipe(gulp.dest('public/fonts'))
-    .pipe(plugins.livereload());
+    .pipe(gulp.dest('public/fonts'));
 });
 
 // Index
@@ -79,11 +67,26 @@ gulp.task('copyIndex', function() {
         errorHandler: onError
       })
     )
-    .pipe(gulp.dest('public'))
-    .pipe(plugins.livereload());
+    .pipe(gulp.dest('public'));
 });
 
-// Styles
+// UI Carousel scipt and css
+gulp.task('copyUICarousel', function() {
+  gulp
+    .src('client/assets/ui-carousel/ui-carousel.min.js')
+    .pipe(gulp.dest('public/scripts'));
+  gulp
+    .src('client/assets/ui-carousel/ui-carousel.min.css')
+    .pipe(gulp.dest('public/styles/ui-carousel'));
+  gulp
+    .src('client/assets/ui-carousel/fonts/*')
+    .pipe(gulp.dest('public/styles/ui-carousel/fonts'));
+});
+// END ASSETS
+// ===============================================
+
+// ===============================================
+// STYLES
 gulp.task('styles', function() {
   console.log('---Starting Styles task---');
   return gulp
@@ -102,10 +105,25 @@ gulp.task('styles', function() {
     )
     .pipe(plugins.sourcemaps.write())
     .pipe(gulp.dest('public/styles'))
-    .pipe(plugins.livereload());
+    .pipe(bs.stream());
+});
+// END STYLES
+// ===============================================
+
+// ===============================================
+// SCRIPTS
+// Lint
+gulp.task('lint', function() {
+  gulp
+    .src(CLIENT_SCRIPTS_PATH)
+    .pipe(
+      plugins.plumber({
+        errorHandler: onError
+      })
+    )
+    .pipe(plugins.jshint());
 });
 
-// Vendor Scripts
 gulp.task('vendorScripts', function() {
   console.log('---Starting Vendor Scripts task---');
   return gulp
@@ -115,7 +133,6 @@ gulp.task('vendorScripts', function() {
     .pipe(gulp.dest('public/scripts'));
 });
 
-// Client Scripts
 gulp.task('clientScripts', ['lint'], function() {
   console.log('---Starting Client Scripts task---');
   return gulp
@@ -130,80 +147,103 @@ gulp.task('clientScripts', ['lint'], function() {
     .pipe(plugins.concat('bundle.js'))
     .pipe(plugins.uglify())
     .pipe(plugins.sourcemaps.write())
-    .pipe(gulp.dest('public/scripts'))
-    .pipe(plugins.livereload());
-});
-
-// Server Scripts
-gulp.task('serverScripts', function() {
-  console.log('---Starting Server Scripts task---');
-  return gulp.src(SERVER_SCRIPTS_PATH).pipe(plugins.livereload());
-});
-
-// UI Carousel scipt and css
-gulp.task('copyUICarousel', function() {
-  gulp
-    .src('client/assets/ui-carousel/ui-carousel.min.js')
     .pipe(gulp.dest('public/scripts'));
-  gulp
-    .src('client/assets/ui-carousel/ui-carousel.min.css')
-    .pipe(gulp.dest('public/styles/ui-carousel'));
-  gulp
-    .src('client/assets/ui-carousel/fonts/*')
-    .pipe(gulp.dest('public/styles/ui-carousel/fonts'));
 });
-
-// gulp.task('server', function () {
-// 	console.log('---Starting Watch task---');
-// 	require('./server/server.js');
-// 	livereload.listen();
-// });
+// END SCRIPTS
+// ===============================================
 
 gulp.task('clean', function() {
   return del.sync(['public/']);
 });
 
-// Default
-gulp.task(
-  'default',
-  [
-    'lint',
-    'clean',
-    'copyFonts',
-    'copyImages',
-    'copyIndex',
-    'styles',
-    'vendorScripts',
-    'clientScripts',
-    'copyUICarousel',
-    'serve'
-  ],
-  function() {
-    console.log('---Starting Default task---');
-  }
-);
+// ===============================================
+// SERVER
+gulp.task('server', function(cb) {
+  let serverStarted = false;
+  return plugins
+    .nodemon({
+      script: './server/server.js',
+      ext: './server/**/*.js',
+      env: {
+        NODE_ENV: 'development'
+      },
+      watch: [SERVER_SCRIPTS_PATH]
+    })
+    .on('start', function() {
+      if (!serverStarted) {
+        console.log('---- Server initial start ----');
+        serverStarted = true;
+        cb();
+      }
+    })
+    .on('restart', function() {
+      console.log('---- Server restart ----');
+      bs.reload();
+    })
+    .once('quit', function() {
+      console.log('---- Server exiting ----');
+      process.exit();
+    });
+});
+// END SERVER
+// ===============================================
 
-// // Watch
-// gulp.task('watch', function () {
-// 	console.log('---Starting Watch task---');
-// 	gulp.watch([STYLE_PATH], ['styles']);
-// 	gulp.watch(CLIENT_SCRIPTS_PATH, ['clientScripts']);
-// 	gulp.watch([INDEX_PATH], ['copyIndex']);
-// });
+// ===============================================
+// BROWSER SYNC
+gulp.task('browser-sync', ['server'], function() {
+  bs.init(null, {
+    proxy: 'http://localhost:3000',
+    port: 3001,
+    notify: false,
+    reloadDelay: 1500
+  });
+});
+// END BROWSER SYNC
+// ===============================================
 
-// Serve
-gulp.task('serve', function() {
-  // browserSync.init({
-  // 	proxy: 'localhost:3000'
-  // });
-  // gulp.watch('*.html').on('change', browserSync.reload);
-
-  console.log('---Starting Serve task---');
-  require('./server/server.js');
-  plugins.livereload.listen();
+// ===============================================
+// WATCH
+gulp.task('watch', ['browser-sync'], function() {
   gulp.watch(INDEX_PATH, ['copyIndex']);
   gulp.watch(IMAGE_PATH, ['copyImage']);
-  gulp.watch(CLIENT_SCRIPTS_PATH, ['clientScripts']);
+  gulp
+    .watch(CLIENT_SCRIPTS_PATH, ['clientScripts-watch'])
+    .on('change', bs.reload);
   gulp.watch(STYLE_PATH, ['styles']);
-  gulp.watch(SERVER_SCRIPTS_PATH, ['serverScripts']);
 });
+
+gulp.task('clientScripts-watch', ['clientScripts'], function(done) {
+  bs.reload();
+});
+// END WATCH
+// ===============================================
+
+// ===============================================
+// RUN SEQUENCE
+gulp.task('run-seq', function(cb) {
+  rs(
+    'clean',
+    [
+      'lint',
+      'copyFonts',
+      'copyImages',
+      'copyIndex',
+      'copyUICarousel',
+      'styles',
+      'vendorScripts',
+      'clientScripts'
+    ],
+    'watch',
+    cb
+  );
+});
+// END RUN SEQUENCE
+// ===============================================
+
+// ===============================================
+// DEFAULT
+gulp.task('default', ['run-seq'], function() {
+  console.log('---Starting Default task---');
+});
+// END DEFAULT
+// ===============================================
