@@ -39,17 +39,17 @@
     "gulp-babel": "^7.0.0",
     "gulp-concat": "^2.6.1",
     "gulp-jshint": "^2.0.4",
-    "gulp-livereload": "^3.8.1",
     "gulp-load-plugins": "^1.5.0",
     "gulp-ng-annotate": "^2.0.0",
+    "gulp-nodemon": "^2.2.1",
+    "gulp-plumber": "^1.1.0",
+    "gulp-run-sequence": "^0.3.2",
     "gulp-sass": "^3.1.0",
     "gulp-sourcemaps": "^2.6.0",
     "gulp-strip-json-comments": "^2.1.0",
     "gulp-uglify": "^3.0.0",
     "gulp-util": "^3.0.8",
     "jshint": "^2.9.5",
-    "livereload": "^0.6.2",
-    "node-sass": "^4.5.3",
-    "nodemon": "^1.11.0"
+    "node-sass": "^4.5.3"
   }
 }
