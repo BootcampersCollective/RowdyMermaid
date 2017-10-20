@@ -2,6 +2,7 @@ const thingCtrl = require('./thingCtrl'),
   menuCtrl = require('./menuCtrl'),
   eventsCtrl = require('./eventsCtrl'),
   emailCtrl = require('./emailCtrl'),
+  instagramCtrl = require('./instagramCtrl'),
   path = require('path');
 
 module.exports = app => {
@@ -17,6 +18,7 @@ module.exports = app => {
   app.post('/api/things/:id', thingCtrl.upsert); // update
   app.get('/api/menu', menuCtrl.get); // get menu
   app.get('/api/events', eventsCtrl.get); // get FB events
+  app.get('/api/instagram', instagramCtrl.get);
   app.post('/api/email', emailCtrl.post); // send email from contact form
   app.get('*', function(req, res) {
     res.sendFile(path.resolve(__dirname + '/../../public/index.html'));

@@ -43,4 +43,92 @@
       border: 2px solid $gray;
     }
   }
+  .social{
+  display: flex;
+}
+.instagram {
+   display: 1;
+   flex-wrap: wrap;
+   width: 95%;
+   margin-left: auto;
+   margin-right: auto;
+   .instagram-container{
+      cursor: pointer;
+      overflow: hidden;
+      background-color: $white;
+      /*because it contains absolutely positioned divs*/
+      position: relative;
+      /*display 4 images per row on small screens*/
+      width: 25%;
+      /*fallback for no flexbox */
+      float: left;
+      .img{
+         position: absolute;
+         top: 0;
+         right: 0;
+         bottom: 0;
+         left: 0;
+         background: center center;
+         background-size: cover;
+         display: block;
+         margin: 5px;
+         /*zoom transition*/
+         transition: transform .1s ease-out;
+      }
+      /*to darken image on hover*/
+      .overlay{
+         margin: 5px;
+         position: absolute;
+         background-color: black;
+         opacity: 0;
+         transition: opacity 0.1s ease;
+      }
+      /*consider adding this on focus as well if images are focus-able*/
+      &:hover{
+         .overlay{ opacity: 0.5 }
+
+         .img{ transform: scale(1.2) }
+      }
+      /*force 1:1 aspect ratio*/;
+      &:before{
+         content: "";
+         display: block;
+         margin-top: 100%;
+      }
+      .text {
+        color: white;
+        font-size: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+      }
+      .instaLink{
+        width:100%;
+      }
+
+   }
+}
+
+.twitter{
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+  margin: 0 1.5rem;
+}
+
+@media only screen and (max-width: 500px) {
+      .social{
+        flex-direction: column;
+     }
+     .instagram{
+       width: 90%;
+     }
+     .twitter{
+       padding-top: 2.5%;
+       width: 90%;
+     }
+
+}
 }
