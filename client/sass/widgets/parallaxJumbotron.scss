@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:200');
+
+.parallax-container {
+  .image {
+    height: 60vh;
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+  }
+
+  .imageReviews {
+    height: 82vh;
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+  }
+
+  .title {
+    font-family: 'Raleway', sans-serif;
+    overflow-y: scroll;
+    font-size: 4rem;
+    position: absolute;
+    left: 0;
+    top: 35vh;
+    width: 100vw;
+    text-align: center;
+    color: white;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.75);
+    //margin-bottom: 25vh;
+  }
+
+  .reviewsContainer {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    left: 0;
+    overflow-y: scroll;
+    background-color: rgba(0,0,0,0.2);
+    .reviews {
+      font-family: 'Yantramanav', sans-serif;
+      color: #fff;
+      text-align: center;
+      width: 50vw;
+      margin: auto;
+      .headerWrapper {
+        margin-top: 6rem;
+      }
+      h3 {
+        margin: 0;
+        padding: 0;
+        font-size: 50px;
+        line-height: 50px;
+        font-style: normal;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 6px;
+      }
+      h4 {
+        margin: 0;
+        padding: 0;
+        font-size: 36px;
+        text-transform: uppercase;
+        letter-spacing: 0;
+        line-height: 42px;
+        font-weight: 100;
+      }
+      ul {
+        list-style: none;
+      }
+      p {
+        padding: 15px 60px;
+        font-size: 18px;
+        font-weight: 100;
+        line-height: 35px;
+        letter-spacing: 0;
+        text-transform: none;
+        font-style: normal;
+      }
+      .testimonialStars {
+        width: 100%;
+        display: inline-block;
+        text-align: center;
+        font-size: 30px;
+        color: #fff;
+        margin: 0;
+  
+      }
+      h5 {
+        margin: 0;
+        font-size: 22px;
+        font-weight: 100;
+        text-transform: uppercase;
+        line-height: 32px;
+        letter-spacing: 2px;
+        font-style: normal;
+      }
+    }
+  }
+}

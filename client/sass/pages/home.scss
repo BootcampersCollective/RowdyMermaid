@@ -1,1 +1,46 @@
+.home-container {
+  .snowmeltLogo {
+      padding-top: 50px;
+      margin-bottom: -50px;
+  }
+  .home-carousel {
+    margin: auto;
+    max-width: 85%;
+    padding-top: 80px;
 
+    .ui-carousel {
+      margin-top: 50px;
+      text-align: center;
+    }
+    .carousel-btn {
+      z-index: 0;
+  }
+
+    img {
+      height: 50%;
+      width: 50%;
+    }
+  }
+
+  .flavor-button {
+    text-align: center;
+    margin-bottom: 50px;
+
+    button {
+      margin-top: 20px;
+      background-color: $white;
+      border: 2px solid $black;
+      box-shadow: 0 0 20px $gray;
+      font-size: 30px;
+      font-weight: 400;
+      line-height: 54px;
+      letter-spacing: 3px;
+    }
+    button:hover {
+      transition: .5s;
+      background-color: $gray;
+      color: $white;
+      border: 2px solid $gray;
+    }
+  }
+}

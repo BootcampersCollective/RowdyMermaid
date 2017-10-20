@@ -1,0 +1,144 @@
+.container, .story{
+  width: 100%;
+  height: auto;
+  background-color: #0a0a0a;
+  color: #fffcfc;
+  position: relative;
+}
+
+.story{
+  padding: 8em 0;
+  margin-bottom: 80px;
+
+  .video{
+    padding: 4em 0;
+    width: 30.1%;
+    height: 400px;
+    margin: 0 auto;
+  }
+
+  .story-container{
+    width: 60.94%;
+    margin: 1em auto;
+    justify-content: space-between;
+
+    .story-image{
+      width: 48.72%;
+      height: auto;
+      margin-bottom: 150px;
+
+      img{
+        width: 100%;
+      }
+    }
+
+    article{
+      width: 48.72%;
+
+      h1{
+        text-align: center;
+        font-size: 50px;
+        text-transform: uppercase;
+        letter-spacing: 6px;
+        margin: 0;
+      }
+
+      p{
+        margin-top: 5px;
+        font-size: 1rem;
+        line-height: 1.7;
+      }
+
+      button{
+        width: 33.1%;
+        padding: 10px;
+        background-color: $light-gray;
+        border: 2px solid $light-gray;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        @include hover-text-color-transition();
+
+        &:hover{
+          background-color: $black;
+          color: $white;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 767px) {
+    .video, .story-container{
+      width: 90%;
+    }
+
+    .story-container{
+      flex-direction: column;
+
+      .story-image, article{
+        width: 100%;
+      }
+    }
+  }
+}
+
+.container {
+  display: flex;
+
+  .text {
+    font-family: Raleway, sans-serif;
+    line-height: 2rem;
+    width: 50%;
+    font-size: 1rem;
+    padding: 3% 3%;
+  }
+
+  .image {
+    width: 50%;
+    overflow: hidden;
+    background-image: url("/images/kombuchaOnTap.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  .kombucha-tap{
+    width: 80%;
+    margin: 2.5em auto 1.5em;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+
+    .kombucha-tap-image, .kombucha-tap-article{
+      width: 45%;
+    }
+
+    .kombucha-tap-image{
+      img{
+        width: 100%;
+      }
+    }
+
+    .kombucha-tap-article{
+      line-height: 1.7;
+      font-size: 19px;
+
+      h1{
+        text-align: left;
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  @media (max-width: 767px){
+    .kombucha-tap{
+      flex-direction: column;
+
+      .kombucha-tap-image, .kombucha-tap-article{
+        width: 100%;
+      }
+    }
+  }
+}
+
+.kombucha-tap-section{
+  margin-bottom: 8em;
+}

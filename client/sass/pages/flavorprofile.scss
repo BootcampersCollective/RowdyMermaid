@@ -1,0 +1,75 @@
+.flavorPage {
+    margin-top: 80px;
+    height: auto;
+    width: 100vw;
+    display: block;
+    .flavorprofileTitle {
+        text-align: center;
+        margin-top: 90px;
+        h1 {
+            font-size: 4vw;
+            line-height: 20px;
+        }
+        h2 {
+            font-size: 3vw;
+        }
+    }
+    .flavorContainer {
+        text-align: center;
+        .flavorImage {
+            display: inline-block;
+            vertical-align: top;
+            img {
+                max-width: 16vw;
+                height: auto;
+                display: inline-block;
+            }
+        }
+        .flavorDescription {
+            max-width: 45vw;
+            height: auto;
+            display: inline-block;
+            margin-left: 5%;
+            border-style: solid;
+            text-align: center;
+            vertical-align: center;
+            margin-left: 5vw;
+            h2 {
+                line-height: 5px;
+            }
+            p {
+                line-height: 18px;
+            }
+            h4 {
+                line-height: 1px;
+            }
+            .probioticsPhrase {
+                font-size: 1vw;
+                line-height: 15px;
+            }
+            span {
+                width: 100%;
+                display: block;
+                vertical-align: baseline;
+                img {
+                margin-top: 10px;
+                width: 5vw;
+                height: auto;
+                }
+            }
+        }
+    }
+    .flavorCarousel {
+        width: 70vw;
+        height: auto;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+            .carouselImage {
+                max-width: 7vw;
+                margin-left: auto;
+                margin-right: auto;
+        }
+    }
+}

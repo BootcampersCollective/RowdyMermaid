@@ -1,1 +1,1 @@
-angular.module('RowdyMermaid-site.widgets', []);
+angular.module('RowdyMermaid-site.widgets', ['ngAnimate']);

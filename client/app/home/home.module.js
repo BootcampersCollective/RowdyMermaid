@@ -1,1 +1,1 @@
-angular.module('RowdyMermaid-site.home', []);
+angular.module('RowdyMermaid-site.home', ['ui.carousel']);

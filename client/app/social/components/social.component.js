@@ -39,7 +39,6 @@ const social = {
    </div>
  </div>
 
-
      `
 
 };

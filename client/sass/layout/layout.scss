@@ -1,46 +1,107 @@
 .container-main {
-
   .container-top {
     display: flex;
     flex-direction: column;
-    height: 92.9vh;
-    .container-left {
+    height: 100%;
+    .container-header {
       flex: 0 0 auto;
-      flex-direction: column;
-      // align-items: center;
-      display: flex;
+      height: 80px;
+      width: 100%;
+      position: fixed;
+      background-color: $white;
+      z-index: 4;
 
       @include breakpoint($bp-768) {
-        flex: 0 0 200px;
-        height: 50vh;
+        flex: 0 0 12%;
         justify-content: stretch;
       }
 
       .container-menu {
-        height: 150px;
+        // background-color: #31b0d5;
+        height: 12%;
+        padding: 15px 0;
         width: 100%;
-        background-color: #31b0d5;
 
         @include breakpoint($bp-768) {
-          width: 100vw;
           height: auto;
+          width: 100vw;
         }
       }
     }
 
-    .container-right {
+    .container-body {
       flex: 0 0 auto;
 
       @include breakpoint($bp-768) {
         flex: 1 0 auto;
-        height: 93vh;
-        overflow-y: scroll;
+        /*height: 93vh;*/
+        /* setting the height causes body to overlap the footer making the links non-funcitonal */
+        // overflow-y: scroll;
+      }
+    }
+  }
+
+  .gallery {
+    width: 100%;
+    height: auto;
+    background-color: $white;
+    text-align: center;
+    padding: 1.5em 0;
+    text-transform: uppercase;
+
+    .gallery-images {
+      width: 80%;
+      height: auto;
+      margin: 4em auto 1em;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      .image-holder {
+        width: 31.62%;
+        height: auto;
+        margin-bottom: 3em;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+
+    @media (max-width: $bp-900) {
+      .gallery-images {
+        width: 96%;
+      }
+    }
+
+    @media (max-width: $bp-480) {
+      .gallery-images {
+        .image-holder {
+          width: 100%;
+          margin-bottom: 1em;
+        }
+      }
+    }
+
+    button {
+      width: 111.42px;
+      height: 40;
+      border: 2px solid $black;
+      padding: 10px 0;
+      text-transform: uppercase;
+      font-size: 14px;
+      background-color: $light-gray;
+      margin-bottom: 3em;
+      @include hover-text-color-transition();
+      &:hover {
+        background-color: $black;
+        color: $white;
       }
     }
   }
 
   .container-footer {
     flex: 0 0 5vh;
-    background-color: #B99967;
   }
 }

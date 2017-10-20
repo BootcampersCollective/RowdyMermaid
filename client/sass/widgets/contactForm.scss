@@ -1,0 +1,119 @@
+.contact-form {
+  .contact-form-header {
+    font-size: 50px;
+    margin: 20px 0 5px 0;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  form {
+    margin: 0 auto;
+    padding: 1px;
+
+    div {
+      border: 1px solid $light-gray;
+      border-radius: 3px;
+      padding: 10px;
+
+      button {
+        border: 3px solid $black;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 22px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+
+        &:not([disabled]):hover {
+          background-color: $black;
+          color: $white;
+        }
+      }
+
+      input {
+        height: 40px;
+      }
+
+      label {
+        color: $gray;
+        font-size: 14px;
+        height: 15px;
+        margin-top: -20px;
+        overflow: hidden;
+        padding: 2px 5px;
+      }
+
+      textarea {
+        height: 175px;
+        resize: none;
+      }
+
+      input,
+      textarea {
+        border: 1px inset;
+        font-size: 20px;
+        font-weight: 100;
+        letter-spacing: 0;
+        line-height: 35px;
+        width: 100%;
+      }
+
+      input,
+      textarea,
+      button {
+        font-family: inherit;
+
+        &:focus {
+          outline: none;
+          border-color: $gray;
+          box-shadow: 0 0 10px $gray;
+        }
+      }
+    }
+  }
+
+  .msg-sent {
+    color: $success-green;
+    font-size: 20px;
+  }
+
+  .has-error {
+    border-color: $error-red;
+    box-shadow: 0 0 10px $error-red;
+  }
+
+  .submit-enabled {
+    background-color: $white;
+  }
+
+  .submit-disabled {
+    border: 3px solid $gray;
+    background-color: $white;
+    color: $gray;
+    cursor: not-allowed;
+  }
+
+  .error-text {
+    color: $error-red;
+  }
+
+  .animate-show,
+  .animate-hide {
+    -webkit-transition: all linear 1s;
+    -moz-transition: all linear 1s;
+    -ms-transition: all linear 1s;
+    -o-transition: all linear 1s;
+    transition: all linear 1s;
+  }
+
+  .animate-show.ng-hide-remove,
+  .animate-hide.ng-hide-add.ng-hide-add-active {
+    opacity: 0;
+    display: inline !important;
+  }
+
+  .animate-hide.ng-hide-add,
+  .animate-show.ng-hide-remove.ng-hide-remove-active {
+    opacity: 1;
+    display: inline !important;
+  }
+}

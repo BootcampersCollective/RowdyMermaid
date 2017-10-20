@@ -1,0 +1,41 @@
+.kombucha-products {
+  width: 90%;
+  margin: 0 auto;
+  font-family: yantramanav;
+  font-size: 1.2em;
+  font-weight: 100;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  p {
+    margin: 0;
+    margin-top: 0.2em;
+  }
+  .kombucha-flavor {
+    display: inline-block;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 100px;
+    margin-top: 100px;
+
+    img,
+    div {
+      max-height: 40vw;
+      max-width: 30vw;
+      margin-left: 5vw;
+      margin-right: 5vw;
+    }
+
+
+    .kombucha-name {
+      letter-spacing: 1px;
+      font-size: 1.3em;
+    }
+
+    .kombucha-description {
+      font-size: 1.5em;
+      font-style: italic;
+      font-weight: 300;
+    }
+  }
+}
