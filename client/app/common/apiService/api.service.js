@@ -5,6 +5,7 @@ function apiService($q, $http) {
     getMenu: getMenu,
     getEvents: getEvents,
     sendEmail: sendEmail,
+    getInstagram: getInstagram,
     setSomething: setSomething
   };
   return service;
@@ -20,6 +21,13 @@ function apiService($q, $http) {
     return $http({
       method: 'GET',
       url: '/api/events'
+    });
+  }
+
+  function getInstagram(){
+   return $http({
+     method:'GET',
+     url: '/api/instagram',
     });
   }
 

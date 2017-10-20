@@ -1,9 +1,25 @@
 const home = {
   bindings: {},
-  controller: function() {
+  controller: /*@ngInject*/ function($http, apiService) {
     let ctrl = this;
 
+
+
     ctrl.$onInit = function() {
+      ctrl.instagrams = []
+      apiService
+          .getInstagram()
+          .then(function(res) {
+              // console.log(res.data)
+              for (var i = 0; i < res.data.length; i++) {
+                  ctrl.instagrams.push({photo:res.data[i].images.standard_resolution.url,
+                      link:res.data[i].link})
+                  }
+                    console.log(ctrl.instagrams[0].photo)
+        });
+
+
+
       ctrl.carouselImages = [
         'images/autumnHaze.jpg',
         'images/livingGinger.jpg',
@@ -14,6 +30,7 @@ const home = {
         'images/rowdyBelly.jpg',
         'images/summerberry.jpg'
       ];
+
       ctrl.carouselReviews = [
         {
           quote:
@@ -54,16 +71,31 @@ const home = {
         <img ng-src={{item}}>
         </carousel-item>
       </ui-carousel>
-
       <div class="flavor-button">
         <button ui-sref="app.kombucha">See All Flavors</button>
       </div>
     </div>
+    <div class="social">
+        <aside class="instagram">
+        <div ng-repeat = "instagram in $ctrl.instagrams" class ="instagram-container" >
+          <div class="img" ng-style="{backgroundImage: 'url({{instagram.photo}})'}"></div>
+          <div class="overlay">
+            <div class="text">
+              <a href="{{instagram.link}}" target="_blank">
+              <img class ="instaLink" src="https://assets.ifttt.com/images/channels/28/icons/on_color_large.png" >
+              </a>
+            </div>
+          </div>
+        </div>
+      </aside>
+      <div class = "twitter">
+        <a class="twitter-timeline" data-height="110%" href="https://twitter.com/rowdymermaid">Tweets by rowdymermaid</a>
+      </div>
+    </div>
+
     <carousel slides="$ctrl.carouselReviews"></carousel>
     <header header-image="'images/flatirons.png'"></header>
     `
 };
 
 angular.module('RowdyMermaid-site.home').component('home', home);
-
-home.$inject = [];
