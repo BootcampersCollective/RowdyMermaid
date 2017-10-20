@@ -49,12 +49,13 @@
 .instagram {
    display: 1;
    flex-wrap: wrap;
-   width: 50%;
-   margin: 0 1.5rem;
+   width: 95%;
+   margin-left: auto;
+   margin-right: auto;
    .instagram-container{
       cursor: pointer;
       overflow: hidden;
-      background-color: black;
+      background-color: $white;
       /*because it contains absolutely positioned divs*/
       position: relative;
       /*display 4 images per row on small screens*/
@@ -70,23 +71,21 @@
          background: center center;
          background-size: cover;
          display: block;
+         margin: 5px;
          /*zoom transition*/
-         transition: transform 0.66s ease-out;
+         transition: transform .1s ease-out;
       }
       /*to darken image on hover*/
       .overlay{
+         margin: 5px;
          position: absolute;
-         top: 0;
-         right: 0;
-         bottom: 0;
-         left: 0;
          background-color: black;
          opacity: 0;
-         transition: opacity 0.2s ease;
+         transition: opacity 0.1s ease;
       }
       /*consider adding this on focus as well if images are focus-able*/
       &:hover{
-         .overlay{ opacity: 0.4 }
+         .overlay{ opacity: 0.5 }
 
          .img{ transform: scale(1.2) }
       }

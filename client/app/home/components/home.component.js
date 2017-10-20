@@ -11,11 +11,11 @@ const home = {
           .getInstagram()
           .then(function(res) {
               // console.log(res.data)
-              for (var i = 0; i < res.data.length; i++) {
+              for (var i = 0; i < 8; i++) {
                   ctrl.instagrams.push({photo:res.data[i].images.standard_resolution.url,
                       link:res.data[i].link})
                   }
-                    console.log(ctrl.instagrams[0].photo)
+              console.log(ctrl.instagrams)
         });
 
 
@@ -76,23 +76,21 @@ const home = {
       </div>
     </div>
     <div class="social">
-        <aside class="instagram">
+        <span class="instagram">
         <div ng-repeat = "instagram in $ctrl.instagrams" class ="instagram-container" >
+          <a href="{{instagram.link}}" target="_blank">
           <div class="img" ng-style="{backgroundImage: 'url({{instagram.photo}})'}"></div>
+          </a>
           <div class="overlay">
             <div class="text">
-              <a href="{{instagram.link}}" target="_blank">
-              <img class ="instaLink" src="https://assets.ifttt.com/images/channels/28/icons/on_color_large.png" >
-              </a>
             </div>
           </div>
         </div>
-      </aside>
-      <div class = "twitter">
+      </span>
+      <!--<div class = "twitter">
         <a class="twitter-timeline" data-height="110%" href="https://twitter.com/rowdymermaid">Tweets by rowdymermaid</a>
-      </div>
+      </div>-->
     </div>
-
     <carousel slides="$ctrl.carouselReviews"></carousel>
     <header header-image="'images/flatirons.png'"></header>
     `
