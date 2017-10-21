@@ -10,7 +10,6 @@ const shoppingCart = {
 
 	},
 	template: `
-
 	`
 };
 
