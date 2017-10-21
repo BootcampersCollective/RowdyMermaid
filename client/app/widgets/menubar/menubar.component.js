@@ -2,6 +2,11 @@ const rowdyMenuBar = {
   bindings: {},
   controller: function() {
     let ctrl = this;
+
+    ctrl.buynow = function() {
+        console.log('BUY!');
+      }
+
     ctrl.menuButtons = [
       {
         name: 'Kombucha',
@@ -56,6 +61,8 @@ const rowdyMenuBar = {
 
 
 				<a ui-sref="app.store" ng-click="className=''">Continue shopping</a>
+        <br/>
+        <button ng-click=ctrl.buynow()>Buy Now</button>
 			</div>
 	</nav>
 	`
