@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+.store-display {
+  display: flex;
+  flex-direction: row;
+  width: 95vw;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  margin: auto;
+
+  .merch-item-container {
+    display: inline-flex;
+    height: 30vw;
+    width: 30vw;
+    margin: 3px;
+
+  }
+
+  .signage-container {
+    //visibility: hidden;
+    position: relative;
+    top: 0;
+    left: -30vw;
+    float: left;
+    width: 100%;
+
+    .item-title {
+    }
+
+    .item-price {
+
+    }
+  }
+
+  .merchitemVisual:hover {
+    opacity: 0.3;
+  }
+
+  .signage-container:hover {
+    visibility: visible;
+  }
+
+  .pos-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+  }
+}
+
+
+
+.merchitemVisual {
+  //display: inline-flex;
+  //position: absolute;
+  //overflow: hidden;
+
+  img {
+    height: 30vw;
+    width: 30vw;
+  }
+}
+
+.button {
+  font-family: 'yantramanav', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  padding: 5px 10px 5px 10px;
+  color: aliceblue;
+}
+
+.buynow {
+  background-color: crimson;
+}
+
+.button:hover {
+  opacity: 0.6;
+}
+
+.addToCart {
+  background-color: burlywood;
+}
+
