@@ -3,7 +3,7 @@ const rowdyMenuBar = {
   controller: function() {
     let ctrl = this;
 
-    ctrl.buynow = function() {
+    ctrl.payNow = function() {
         console.log('BUY!');
       }
 
@@ -62,7 +62,7 @@ const rowdyMenuBar = {
 
 				<a ui-sref="app.store" ng-click="className=''">Continue shopping</a>
         <br/>
-        <button ng-click=ctrl.buynow()>Buy Now</button>
+        <button ng-click='$ctrl.payNow()'>Buy Now</button>
 			</div>
 	</nav>
 	`
